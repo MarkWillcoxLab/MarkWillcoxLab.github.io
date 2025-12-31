@@ -1,0 +1,52 @@
+---
+layout: default
+title: News
+---
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>News & Updates</h1>
+                <p class="lead">Latest research breakthroughs and announcements from our group</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% assign all_news = site.news | sort: 'date' | reverse %}
+{% if all_news.size > 0 %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% for news in all_news %}
+                <div class="news-item mb-5">
+                    {% if news.image %}
+                    <img src="{{ news.image | relative_url }}" class="img-fluid mb-3" alt="{{ news.title }}">
+                    {% endif %}
+                    <div class="text-muted small mb-2">{{ news.date | date: "%B %d, %Y" }}</div>
+                    <h3 class="mb-3">{{ news.title }}</h3>
+                    <div class="news-content">
+                        {{ news.content }}
+                    </div>
+                    {% if news.url %}
+                    <a href="{{ news.url }}" class="btn btn-outline-primary mt-3">Read More</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% else %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="lead">No news items available at this time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

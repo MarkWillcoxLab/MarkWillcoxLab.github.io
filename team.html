@@ -1,0 +1,532 @@
+---
+layout: default
+title: Team
+---
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Our Team</h1>
+                <p class="lead">Meet the researchers and students of the Mark Willcox Research Group</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <select class="form-select" id="teamFilter">
+                    <option value="all">All Team Members</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="postdoc">Postdoctoral Researchers</option>
+                    <option value="phd">PhD Students</option>
+                    <option value="masters">Masters Students</option>
+                    <option value="alumni">Alumni</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Principal Investigator</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ '/assets/images/mark.jpg' | relative_url }}" 
+                                 class="img-fluid rounded-start w-100" style="height: auto; object-fit: contain;" alt="Professor Mark Duncan Willcox">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Professor Mark Duncan Willcox</h3>
+                                <p class="text-muted mb-3">Principal Investigator & Director of Research</p>
+                                
+                                <h5>Biography</h5>
+                                <p>
+                                    I am a medical microbiologist who has worked for many years in the area of infections of medical devices. 
+                                    My laboratory focuses on development of novel antimicrobials that have applications as antibiotics and disinfectants. 
+                                    We also develop new antimicrobial coatings that can be used for a variety of purposes, including coating of medical 
+                                    devices to reduce associated infections.
+                                </p>
+                                
+                                <h5>Research Focus</h5>
+                                <ul>
+                                    <li>Design of novel antimicrobials for use as antibiotics and disinfectants</li>
+                                    <li>Design and testing of novel antimicrobial surfaces for medical devices</li>
+                                    <li>Evaluation of the ocular microbiome to ocular surface homeostasis</li>
+                                    <li>Discovery of biomarkers of human disease from tears</li>
+                                    <li>Understanding changes to tears during contact lens wear</li>
+                                    <li>Assessing microbial and mammalian responses during keratitis</li>
+                                </ul>
+                                
+                                <h5>Education</h5>
+                                <ul>
+                                    <li>DSc in ocular surface research (University of New South Wales, 2015)</li>
+                                    <li>PhD in Medical Microbiology/Dentistry (University of Manchester, 1987)</li>
+                                    <li>BSc Hons in Applied Biology (University of the West of England, 1983)</li>
+                                </ul>
+                                
+                                <h5>Key Achievements</h5>
+                                <ul>
+                                    <li>Over 550 peer-reviewed publications</li>
+                                    <li>15 patents</li>
+                                    <li>Fellow of the American Academy of Optometry</li>
+                                    <li>Fellow of the British Contact Lens Association</li>
+                                    <li>Fellow of the Australian Society for Microbiology</li>
+                                    <li>Fellow of the Association for Research in Vision and Ophthalmology</li>
+                                </ul>
+                                
+                                <h5>Contact</h5>
+                                <p class="mb-2">
+                                    <i class="fas fa-phone me-2"></i>+61-2-9065 5394<br>
+                                    <i class="fas fa-envelope me-2"></i><a href="mailto:m.willcox@unsw.edu.au">m.willcox@unsw.edu.au</a>
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fas fa-map-marker-alt me-2"></i>School of Optometry and Vision Science<br>
+                                    Room 3.004, Rupert Myers Building<br>
+                                    UNSW Sydney NSW 2052, Australia
+                                </p>
+                                
+                                <div class="mt-3">
+                                    <a href="mailto:m.willcox@unsw.edu.au" class="btn btn-primary me-2">
+                                        <i class="fas fa-envelope me-2"></i>Email
+                                    </a>
+                                    <a href="https://www.unsw.edu.au/staff/mark-willcox" target="_blank" class="btn btn-outline-primary me-2">
+                                        <i class="fas fa-external-link-alt me-2"></i>UNSW Profile
+                                    </a>
+                                    <a href="https://orcid.org/0000-0003-3842-7563" target="_blank" class="btn btn-outline-primary">
+                                        <i class="fas fa-external-link-alt me-2"></i>ORCID
+                                    </a>
+                                </div>
+                                
+                                <h5 class="mt-4">Professional Affiliations</h5>
+                                <ul>
+                                    <li>Director of Research at the School of Optometry and Vision Science</li>
+                                    <li>Past President of the International Society for Contact Lens Research</li>
+                                    <li>Treasurer - Tear Film and Ocular Surface Society</li>
+                                    <li>Member of the Scientific Advisory Board – Ophtecs Corporation</li>
+                                    <li>Fellow of the American Academy of Optometry (FAAO)</li>
+                                    <li>Fellow of the British Contact Lens Association (FBCLA)</li>
+                                    <li>Fellow of the Australian Society for Microbiology</li>
+                                    <li>Fellow of the Association for Research in Vision and Ophthalmology (ARVO Gold Fellow)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% assign postdocs = site.team | where: "category", "postdoc" %}
+{% if postdocs.size > 0 %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Postdoctoral Researchers</h2>
+                <p class="lead">Our experienced research team</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in postdocs %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-member" data-category="postdoc">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x200/6c757d/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ member.position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">{{ member.research }}</p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.researchgate %}
+                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
+                        {% endif %}
+                        {% if member.scholar %}
+                        <a href="{{ member.scholar }}" target="_blank" class="text-muted me-2"><i class="fab fa-google"></i></a>
+                        {% endif %}
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign phd_students = site.team | where: "category", "phd" %}
+{% if phd_students.size > 0 %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>PhD Students</h2>
+                <p class="lead">Current doctoral research projects</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in phd_students %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-member" data-category="phd">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x200/17a2b8/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ member.position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">{{ member.research }}</p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.researchgate %}
+                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
+                        {% endif %}
+                        {% if member.scholar %}
+                        <a href="{{ member.scholar }}" target="_blank" class="text-muted me-2"><i class="fab fa-google"></i></a>
+                        {% endif %}
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+            </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign masters_students = site.team | where: "category", "masters" %}
+{% if masters_students.size > 0 %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Masters Students</h2>
+                <p class="lead">Graduate research projects</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in masters_students %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-member" data-category="masters">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x200/28a745/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ member.position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">{{ member.research }}</p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.researchgate %}
+                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
+                        {% endif %}
+                        {% if member.scholar %}
+                        <a href="{{ member.scholar }}" target="_blank" class="text-muted me-2"><i class="fab fa-google"></i></a>
+                        {% endif %}
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign visiting = site.team | where: "category", "visiting" %}
+{% if visiting.size > 0 %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Visiting Fellows</h2>
+                <p class="lead">Visiting researchers and collaborators</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in visiting %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-member" data-category="visiting">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x200/6f42c1/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ member.position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">{{ member.research }}</p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.researchgate %}
+                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
+                        {% endif %}
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign others = site.team | where: "category", "other" %}
+{% assign others_filtered = others | where_exp: "member", "member.name != 'Tope A. Ibisanmi'" %}
+{% if others_filtered.size > 0 %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Research Staff</h2>
+                <p class="lead">Research officers and staff</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in others_filtered %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-member" data-category="other">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x200/ffc107/000000?text={{ member.name | url_encode }}" alt="{{ member.name }}">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ member.position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">{{ member.research }}</p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.researchgate %}
+                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
+                        {% endif %}
+                        {% if member.scholar %}
+                        <a href="{{ member.scholar }}" target="_blank" class="text-muted me-2"><i class="fab fa-google"></i></a>
+                        {% endif %}
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign alumni = site.team | where: "category", "alumni" %}
+{% if alumni.size > 0 %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Alumni</h2>
+                <p class="lead">Former lab members</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in alumni %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="team-member" data-category="alumni">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <img src="https://via.placeholder.com/200x200/6c757d/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ member.position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">{{ member.research }}</p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                        {% endif %}
+                        {% if member.researchgate %}
+                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
+                        {% endif %}
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Research Areas</h2>
+                <p class="lead">Our expertise spans multiple disciplines</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-bacteria fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Ocular Microbiology</h5>
+                        <p class="card-text">Study of microbial communities and infections of the eye</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-dna fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Ocular Microbiome</h5>
+                        <p class="card-text">Analysis of the microbial ecosystem of the ocular surface</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Novel Antimicrobials</h5>
+                        <p class="card-text">Development of new antibiotics and disinfectants</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-eye fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Contact Lenses</h5>
+                        <p class="card-text">Research on contact lens materials and comfort</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% assign technical_team_main = site.team | where: "category", "technical" %}
+{% assign technical_team_with_role = site.team | where_exp: "member", "member.technical_role != nil" %}
+{% assign all_technical = technical_team_main | concat: technical_team_with_role | uniq %}
+{% if all_technical.size > 0 or technical_team_with_role.size > 0 %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Technical Team</h2>
+                <p class="lead">Website development and technical support</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in site.team %}
+                {% if member.category == "technical" or member.technical_role %}
+                    {% assign display_position = member.position %}
+                    {% if member.technical_role %}
+                        {% assign display_position = member.technical_role %}
+                    {% endif %}
+                    {% assign display_order = 999 %}
+                    {% if member.name == "Tope A. Ibisanmi" %}
+                        {% assign display_order = 1 %}
+                    {% elsif member.name == "Jiawei Shen" %}
+                        {% assign display_order = 2 %}
+                    {% elsif member.name == "Shyam Kumar Mishra" %}
+                        {% assign display_order = 3 %}
+                    {% elsif member.name == "Abiye Tigabu Molla" %}
+                        {% assign display_order = 4 %}
+                    {% endif %}
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4" style="order: {{ display_order }};">
+                <div class="team-member text-center" data-category="technical">
+                    {% if member.image %}
+                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    {% else %}
+                    <img src="https://via.placeholder.com/150x150/007bff/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    {% endif %}
+                    <h4>{{ member.name }}</h4>
+                    <p class="position">{{ display_position }}</p>
+                    {% if member.research %}
+                    <p class="text-muted">Research focus: {{ member.research }}</p>
+                    {% endif %}
+                    {% if member.hobbies %}
+                    <p class="text-muted"><small>Hobbies: {{ member.hobbies }}</small></p>
+                    {% endif %}
+                    <div class="social-links">
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2>Join Our Research Team</h2>
+                <p class="lead mb-4">
+                    We're always looking for talented researchers, students, and collaborators. 
+                    Our group offers opportunities for cutting-edge research in ocular microbiology, 
+                    antimicrobial development, and medical device innovation.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{{ '/contact/' | relative_url }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contact Us
+                    </a>
+                    <a href="{{ '/research/' | relative_url }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-flask me-2"></i>Research Areas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+</section> 

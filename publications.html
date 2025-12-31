@@ -1,0 +1,470 @@
+---
+layout: default
+title: Publications
+---
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Publications</h1>
+                <p class="lead">Research publications from the Mark Willcox Research Group</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control" id="publicationSearch" placeholder="Search publications by title, authors, or journal...">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-8 mx-auto text-center">
+                <label class="mb-2">Filter by Type:</label>
+                <div class="btn-group mb-3" role="group">
+                    <input type="radio" class="btn-check" name="typeFilter" id="allTypes" value="all" checked>
+                    <label class="btn btn-outline-primary" for="allTypes">All Types</label>
+                    
+                    <input type="radio" class="btn-check" name="typeFilter" id="bookChapters" value="book_chapter">
+                    <label class="btn btn-outline-primary" for="bookChapters">Book Chapters</label>
+                    
+                    <input type="radio" class="btn-check" name="typeFilter" id="journalArticles" value="journal">
+                    <label class="btn btn-outline-primary" for="journalArticles">Journal Articles</label>
+                    
+                    <input type="radio" class="btn-check" name="typeFilter" id="otherPubs" value="other">
+                    <label class="btn btn-outline-primary" for="otherPubs">Other</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-8 mx-auto text-center">
+                <label class="mb-2">Filter by Year:</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="yearFilter" id="allYears" value="all" checked>
+                    <label class="btn btn-outline-primary" for="allYears">All Years</label>
+                    
+                    <input type="radio" class="btn-check" name="yearFilter" id="year2024" value="2024">
+                    <label class="btn btn-outline-primary" for="year2024">2024</label>
+                    
+                    <input type="radio" class="btn-check" name="yearFilter" id="year2023" value="2023">
+                    <label class="btn btn-outline-primary" for="year2023">2023</label>
+                    
+                    <input type="radio" class="btn-check" name="yearFilter" id="year2022" value="2022">
+                    <label class="btn btn-outline-primary" for="year2022">2022</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Publications</h2>
+
+                {% assign book_chapters = site.publications | where: "type", "book_chapter" | sort: 'year' | reverse %}
+                {% for pub in book_chapters %}
+                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="book_chapter">
+                    <h5 class="publication-title">{{ pub.title }}</h5>
+                    <p class="publication-authors">{{ pub.authors }}</p>
+                    {% if pub.book %}
+                    <p class="publication-journal"><em>{{ pub.book }}</em>{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}</p>
+                    {% endif %}
+                    {% if pub.publisher %}
+                    <p class="text-muted">{{ pub.publisher }}{% if pub.location %}, {{ pub.location }}{% endif %}</p>
+                    {% endif %}
+                    <span class="publication-year">{{ pub.year }}</span>
+                    <span class="badge bg-info ms-2">Book Chapter</span>
+                    {% if pub.doi %}
+                    <div class="mt-2">
+                        <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
+                    </div>
+                    {% endif %}
+                    {% if pub.url %}
+                    <div class="mt-2">
+                        <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+
+                {% assign journal_articles = site.publications | where: "type", "journal" | sort: 'year' | reverse %}
+                {% for pub in journal_articles %}
+                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="journal">
+                    <h5 class="publication-title">{{ pub.title }}</h5>
+                    <p class="publication-authors">{{ pub.authors }}</p>
+                    {% if pub.journal %}
+                    <p class="publication-journal"><em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}</p>
+                    {% endif %}
+                    <span class="publication-year">{{ pub.year }}</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    {% if pub.doi %}
+                    <div class="mt-2">
+                        <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                    {% endif %}
+                    {% if pub.url %}
+                    <div class="mt-2">
+                        <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                    {% endif %}
+                    {% if pub.featured %}
+                    <span class="badge bg-warning ms-2">Featured</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+
+                {% assign other_pubs = site.publications | where: "type", "other" | sort: 'year' | reverse %}
+                {% for pub in other_pubs %}
+                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="other">
+                    <h5 class="publication-title">{{ pub.title }}</h5>
+                    <p class="publication-authors">{{ pub.authors }}</p>
+                    {% if pub.journal or pub.book %}
+                    <p class="publication-journal"><em>{% if pub.journal %}{{ pub.journal }}{% else %}{{ pub.book }}{% endif %}</em></p>
+                    {% endif %}
+                    <span class="publication-year">{{ pub.year }}</span>
+                    <span class="badge bg-secondary ms-2">Other</span>
+                    {% if pub.doi %}
+                    <div class="mt-2">
+                        <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
+                    </div>
+                    {% endif %}
+                    {% if pub.url %}
+                    <div class="mt-2">
+                        <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+
+                <div class="publication-item mb-4" data-year="2024" data-type="journal">
+                    <h5 class="publication-title">
+                        Novel antimicrobial peptides for ocular surface infections
+                    </h5>
+                    <p class="publication-authors">
+                        Willcox, M.D.P., Chen, S., Rodriguez, M., Watson, E.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Antimicrobial Agents and Chemotherapy</em>, 68(3), e01523-23
+                    </p>
+                    <span class="publication-year">2024</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1128/aac.01523-23" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                        <span class="badge bg-warning ms-2">Featured</span>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2024" data-type="journal">
+                    <h5 class="publication-title">
+                        Ocular microbiome changes during contact lens wear
+                    </h5>
+                    <p class="publication-authors">
+                        Rodriguez, M., Willcox, M.D.P., Afzal, M., Chakraborty, S.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Microbiome</em>, 12(1), 45
+                    </p>
+                    <span class="publication-year">2024</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1186/s40168-024-01745-8" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2024" data-type="journal">
+                    <h5 class="publication-title">
+                        Antimicrobial coatings for medical devices: A comprehensive review
+                    </h5>
+                    <p class="publication-authors">
+                        Watson, E., Willcox, M.D.P., Chen, S., Yu, T.T.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Advanced Materials</em>, 36(8), 2304567
+                    </p>
+                    <span class="publication-year">2024</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1002/adma.202304567" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2023" data-type="journal">
+                    <h5 class="publication-title">
+                        Tear film proteomics in contact lens wearers
+                    </h5>
+                    <p class="publication-authors">
+                        Willcox, M.D.P., Sara, M., Mishra, S.K., Sarwat, S.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Proteomics</em>, 23(15), 2200123
+                    </p>
+                    <span class="publication-year">2023</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1002/pmic.202200123" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2023" data-type="journal">
+                    <h5 class="publication-title">
+                        Acanthamoeba keratitis: Current treatment strategies
+                    </h5>
+                    <p class="publication-authors">
+                        Peguda, H.K., Rayamajhee, B., Willcox, M.D.P.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Clinical Microbiology Reviews</em>, 36(4), e00123-22
+                    </p>
+                    <span class="publication-year">2023</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1128/cmr.00123-22" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                        <span class="badge bg-warning ms-2">Featured</span>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2023" data-type="journal">
+                    <h5 class="publication-title">
+                        Staphylococcus aureus antibiotic resistance in ocular infections
+                    </h5>
+                    <p class="publication-authors">
+                        Yu, T.T., Afzal, M., Willcox, M.D.P.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Journal of Medical Microbiology</em>, 72(8), 001678
+                    </p>
+                    <span class="publication-year">2023</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1099/jmm.0.001678" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2022" data-type="journal">
+                    <h5 class="publication-title">
+                        Contact lens discomfort: Biomarkers and mechanisms
+                    </h5>
+                    <p class="publication-authors">
+                        Willcox, M.D.P., Rourke, R., Chen, S., Watson, E.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Contact Lens and Anterior Eye</em>, 45(6), 101723
+                    </p>
+                    <span class="publication-year">2022</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1016/j.clae.2022.101723" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2022" data-type="journal">
+                    <h5 class="publication-title">
+                        Novel disinfectants against coronaviruses
+                    </h5>
+                    <p class="publication-authors">
+                        Chakraborty, S., Willcox, M.D.P., Rodriguez, M.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Journal of Hospital Infection</em>, 120, 89-97
+                    </p>
+                    <span class="publication-year">2022</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.1016/j.jhin.2022.01.015" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item mb-4" data-year="2022" data-type="journal">
+                    <h5 class="publication-title">
+                        Quantum dots for tear film analysis
+                    </h5>
+                    <p class="publication-authors">
+                        Sara, M., Willcox, M.D.P., Mishra, S.K.
+                    </p>
+                    <p class="publication-journal">
+                        <em>Nanomedicine</em>, 17(15), 1023-1035
+                    </p>
+                    <span class="publication-year">2022</span>
+                    <span class="badge bg-success ms-2">Journal Article</span>
+                    <div class="mt-2">
+                        <a href="https://doi.org/10.2217/nnm-2022-0123" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Publication Statistics</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
+                        <h3 class="mb-2">700+</h3>
+                        <p class="card-text">Peer-reviewed publications</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-quote-left fa-3x text-primary mb-3"></i>
+                        <h3 class="mb-2">38,000+</h3>
+                        <p class="card-text">Total citations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h3 class="mb-2">15</h3>
+                        <p class="card-text">Patents</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                        <h3 class="mb-2">100+</h3>
+                        <p class="card-text">h-index</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Publication Categories</h2>
+                <p class="lead">Our research spans multiple areas</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bacteria fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Ocular Microbiology</h5>
+                        <p class="card-text">Publications on microbial infections and the ocular microbiome</p>
+                        <span class="badge bg-primary">150+ papers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Antimicrobial Development</h5>
+                        <p class="card-text">Research on novel antibiotics and disinfectants</p>
+                        <span class="badge bg-primary">200+ papers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-eye fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Contact Lens Research</h5>
+                        <p class="card-text">Studies on contact lens materials and comfort</p>
+                        <span class="badge bg-primary">180+ papers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2>Access Our Research</h2>
+                <p class="lead mb-4">
+                    Explore our full publication database and stay updated with our latest research findings.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://www.unsw.edu.au/staff/mark-willcox" target="_blank" class="btn btn-light btn-lg">
+                        <i class="fas fa-university me-2"></i>UNSW Profile
+                    </a>
+                    <a href="https://orcid.org/0000-0003-3842-7563" target="_blank" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-external-link-alt me-2"></i>ORCID Profile
+                    </a>
+                    <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Request Papers
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('publicationSearch');
+    const typeFilters = document.querySelectorAll('input[name="typeFilter"]');
+    const yearFilters = document.querySelectorAll('input[name="yearFilter"]');
+    const publications = document.querySelectorAll('.publication-item');
+    
+    function filterPublications() {
+        const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+        const selectedType = document.querySelector('input[name="typeFilter"]:checked').value;
+        const selectedYear = document.querySelector('input[name="yearFilter"]:checked').value;
+        
+        publications.forEach(function(pub) {
+            const pubType = pub.getAttribute('data-type') || '';
+            const pubYear = pub.getAttribute('data-year') || '';
+            const pubText = pub.textContent.toLowerCase();
+            
+            // Check type filter
+            const typeMatch = selectedType === 'all' || pubType === selectedType;
+            
+            // Check year filter
+            const yearMatch = selectedYear === 'all' || pubYear === selectedYear;
+            
+            // Check search filter
+            const searchMatch = !searchTerm || pubText.includes(searchTerm);
+            
+            // Show/hide based on all filters
+            if (typeMatch && yearMatch && searchMatch) {
+                pub.style.display = 'block';
+            } else {
+                pub.style.display = 'none';
+            }
+        });
+    }
+    
+    // Add event listeners
+    if (searchInput) {
+        searchInput.addEventListener('keyup', filterPublications);
+    }
+    
+    typeFilters.forEach(function(filter) {
+        filter.addEventListener('change', filterPublications);
+    });
+    
+    yearFilters.forEach(function(filter) {
+        filter.addEventListener('change', filterPublications);
+    });
+});
+</script>

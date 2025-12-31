@@ -1,0 +1,111 @@
+# Site settings
+title: Mark'S Lab
+email: m.willcox@unsw.edu.au
+description: >- 
+  The Mark Willcox Research Group focuses on antimicrobial development, 
+  novel antibiotics, and disinfectant research. Our interdisciplinary 
+  research addresses the global challenge of antimicrobial resistance.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://markwillcoxlab.github.io" # the base hostname & protocol for your site
+
+# GitHub Pages configuration
+github: [metadata]
+
+# Author information
+author:
+  name: "Prof. Mark Willcox"
+  email: "m.willcox@unsw.edu.au"
+  bio: "Professor of Medical Microbiology and Antimicrobial Research"
+  location: "School of Optometry and Vision Science, UNSW Sydney"
+  links:
+    - label: "Google Scholar"
+      icon: "fab fa-google"
+      url: "https://scholar.google.com/citations?user=example"
+    - label: "ResearchGate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Mark_Willcox"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/markwillcox"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:title/
+  team:
+    output: true
+    permalink: /team/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
+  news:
+    output: true
+    permalink: /news/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "person"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+
+# Pagination
+paginate: 5
+paginate_path: "/news/page:num/"
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-category
+    tag: archive-tag
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/ 
