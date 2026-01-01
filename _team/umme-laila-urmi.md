@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/team/umme-laila-urmi.png"
+image: "/assets/images/Profile-urmi.jpg"
 name: "Umme Laila Urmi"
 position: "Postdoctoral Researcher"
 category: "postdoc"
