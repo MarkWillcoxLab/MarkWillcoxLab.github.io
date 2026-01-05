@@ -1,5 +1,5 @@
 # Site settings
-title: Mark'S Lab
+title: Willcox's Lab
 email: m.willcox@unsw.edu.au
 description: >- 
   The Mark Willcox Research Group focuses on antimicrobial development, 
@@ -108,4 +108,5 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
-  - vendor/ruby/ 
+  - vendor/ruby/
+  - "*.code-workspace" 
