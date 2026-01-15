@@ -357,8 +357,6 @@ title: Team
 </section>
 {% endif %}
 
-{% assign alumni = site.team | where: "category", "alumni" %}
-{% if alumni.size > 0 %}
 <section class="py-5">
     <div class="container">
         <div class="row">
@@ -367,38 +365,75 @@ title: Team
                 <p class="lead">Former lab members</p>
             </div>
         </div>
-        <div class="row">
-            {% for member in alumni %}
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="team-member" data-category="alumni">
-                    {% if member.image %}
-                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
-                    {% else %}
-                    <img src="https://via.placeholder.com/200x200/6c757d/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
-                    {% endif %}
-                    <h4>{{ member.name }}</h4>
-                    <p class="position">{{ member.position }}</p>
-                    {% if member.research %}
-                    <p class="text-muted">{{ member.research }}</p>
-                    {% endif %}
-                    <div class="social-links">
-                        {% if member.linkedin %}
-                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
-                        {% endif %}
-                        {% if member.researchgate %}
-                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
-                        {% endif %}
-                        {% if member.email %}
-                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
-                        {% endif %}
+        <div class="alumni-container">
+            <div class="alumni-grid-visible">
+                <div class="alumni-name-item"><p class="mb-0">Margaret Patrikakis</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Andrew J. Geyelin</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Helen J Oakey</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Masahiko Fukuda</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Christina Baleriola-Lucas</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Fakhry Bestawros</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Dr Wylinn Boey</p></div>
+                <div class="alumni-name-item"><p class="mb-0">A/Professor Archana Thakur</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Julie Wickson</p></div>
+                <div class="alumni-name-item"><p class="mb-0">Dr Rebecca Taylor</p></div>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#alumniCollapse" aria-expanded="false" aria-controls="alumniCollapse">
+                    <i class="fas fa-chevron-down me-2"></i>View All Alumni (44 more)
+                </button>
+                <div class="collapse mt-3" id="alumniCollapse">
+                    <div class="alumni-grid-collapsed">
+                        <div class="alumni-name-item"><p class="mb-0">Dr Kaye Power</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Najat Harmis</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Alison Clegg</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Akta Chauhan</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Karen Corrigan</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Damon Pearce</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Gulhan Demirci</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Jai-Min Kim</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Sreedharan Athmanathan</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Sophie Thuruthyil</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Yulina Aliwarga</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Jason Kassis</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Maxine Tan</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Katherine Hollis-Watts</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Shamila Khan</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Linda Garthwaite</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Rani Bandara</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Aidong Ding</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">A/Professor Qian Garrett</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Banglao Xu</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Zhenjun Zhao</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Wen Wang</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Carla de Freitas Campos</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Ruo Zhong (Tony) Xie</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Shamil Iskander</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Professor Jingfang Liu</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Duojia Wu</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Jaya Dantam</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Neeta Khandekar</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Cameron Postnikoff</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">A/Professor Maud Gorbet</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Keizo Watanabe</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Ulrike Hampel</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Shashidhar Nizalapur</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Aditi Taunk</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Bjorn Kamphuis</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Rasim Pinarbasi</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Franziska Kampshoff</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Davood Kharaghani</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Kate Browne</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Shekh Sabir</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Dr Lakshman Subbaraman</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Maud Kuipers</p></div>
+                        <div class="alumni-name-item"><p class="mb-0">Cima Hachem</p></div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
     </div>
 </section>
-{% endif %}
 
 <section class="py-5">
     <div class="container">

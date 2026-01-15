@@ -3,7 +3,7 @@ name: "Tope A. Ibisanmi"
 position: "Bioinformatician & Site Developer"
 category: "technical"
 order: 1
-email: "t.ibisanmi@gmail.com"
+email: "t.ibisanmi@unsw.edu.au"
 github: "https://github.com/Ibisanmi1"
 research: "Antimicrobial resistance, computational and experimental drug design"
 image: "/assets/images/team/tope-ibisanmi.jpg"
