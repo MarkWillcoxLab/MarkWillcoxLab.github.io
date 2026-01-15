@@ -549,10 +549,10 @@ p {
 
 .alumni-grid-visible,
 .alumni-grid-collapsed {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    margin-bottom: 1rem;
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
 }
 
 .alumni-name-item {
