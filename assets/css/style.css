@@ -585,28 +585,28 @@ p {
 @media (max-width: 1200px) {
     .alumni-grid-visible,
     .alumni-grid-collapsed {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
 @media (max-width: 992px) {
     .alumni-grid-visible,
     .alumni-grid-collapsed {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 
 @media (max-width: 768px) {
     .alumni-grid-visible,
     .alumni-grid-collapsed {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
 @media (max-width: 576px) {
     .alumni-grid-visible,
     .alumni-grid-collapsed {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
 
