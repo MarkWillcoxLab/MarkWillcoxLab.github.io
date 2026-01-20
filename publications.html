@@ -69,77 +69,66 @@ title: Publications
             <div class="col-12">
                 <h2 class="mb-4">Publications</h2>
 
-                {% assign book_chapters = site.publications | where: "type", "book_chapter" | sort: 'year' | reverse %}
-                {% for pub in book_chapters %}
-                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="book_chapter">
+                {% assign all_publications = site.publications | sort: 'year' | reverse %}
+                {% for pub in all_publications %}
+                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="{{ pub.type }}">
                     <h5 class="publication-title">{{ pub.title }}</h5>
                     <p class="publication-authors">{{ pub.authors }}</p>
-                    {% if pub.book %}
-                    <p class="publication-journal"><em>{{ pub.book }}</em>{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}</p>
-                    {% endif %}
-                    {% if pub.publisher %}
-                    <p class="text-muted">{{ pub.publisher }}{% if pub.location %}, {{ pub.location }}{% endif %}</p>
-                    {% endif %}
-                    <span class="publication-year">{{ pub.year }}</span>
-                    <span class="badge bg-info ms-2">Book Chapter</span>
-                    {% if pub.doi %}
-                    <div class="mt-2">
-                        <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
-                    </div>
-                    {% endif %}
-                    {% if pub.url %}
-                    <div class="mt-2">
-                        <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
-                    </div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-
-                {% assign journal_articles = site.publications | where: "type", "journal" | sort: 'year' | reverse %}
-                {% for pub in journal_articles %}
-                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="journal">
-                    <h5 class="publication-title">{{ pub.title }}</h5>
-                    <p class="publication-authors">{{ pub.authors }}</p>
-                    {% if pub.journal %}
-                    <p class="publication-journal"><em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}</p>
-                    {% endif %}
-                    <span class="publication-year">{{ pub.year }}</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    {% if pub.doi %}
-                    <div class="mt-2">
-                        <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                    {% endif %}
-                    {% if pub.url %}
-                    <div class="mt-2">
-                        <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                    {% endif %}
-                    {% if pub.featured %}
-                    <span class="badge bg-warning ms-2">Featured</span>
-                    {% endif %}
-                </div>
-                {% endfor %}
-
-                {% assign other_pubs = site.publications | where: "type", "other" | sort: 'year' | reverse %}
-                {% for pub in other_pubs %}
-                <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="other">
-                    <h5 class="publication-title">{{ pub.title }}</h5>
-                    <p class="publication-authors">{{ pub.authors }}</p>
-                    {% if pub.journal or pub.book %}
-                    <p class="publication-journal"><em>{% if pub.journal %}{{ pub.journal }}{% else %}{{ pub.book }}{% endif %}</em></p>
-                    {% endif %}
-                    <span class="publication-year">{{ pub.year }}</span>
-                    <span class="badge bg-secondary ms-2">Other</span>
-                    {% if pub.doi %}
-                    <div class="mt-2">
-                        <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
-                    </div>
-                    {% endif %}
-                    {% if pub.url %}
-                    <div class="mt-2">
-                        <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
-                    </div>
+                    
+                    {% if pub.type == "book_chapter" %}
+                        {% if pub.book %}
+                        <p class="publication-journal"><em>{{ pub.book }}</em>{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}</p>
+                        {% endif %}
+                        {% if pub.publisher %}
+                        <p class="text-muted">{{ pub.publisher }}{% if pub.location %}, {{ pub.location }}{% endif %}</p>
+                        {% endif %}
+                        <span class="publication-year">{{ pub.year }}</span>
+                        <span class="badge bg-info ms-2">Book Chapter</span>
+                        {% if pub.doi %}
+                        <div class="mt-2">
+                            <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
+                        </div>
+                        {% endif %}
+                        {% if pub.url %}
+                        <div class="mt-2">
+                            <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
+                        </div>
+                        {% endif %}
+                    {% elsif pub.type == "journal" %}
+                        {% if pub.journal %}
+                        <p class="publication-journal"><em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}</p>
+                        {% endif %}
+                        <span class="publication-year">{{ pub.year }}</span>
+                        <span class="badge bg-success ms-2">Journal Article</span>
+                        {% if pub.doi %}
+                        <div class="mt-2">
+                            <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                        </div>
+                        {% endif %}
+                        {% if pub.url %}
+                        <div class="mt-2">
+                            <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+                        </div>
+                        {% endif %}
+                        {% if pub.featured %}
+                        <span class="badge bg-warning ms-2">Featured</span>
+                        {% endif %}
+                    {% else %}
+                        {% if pub.journal or pub.book %}
+                        <p class="publication-journal"><em>{% if pub.journal %}{{ pub.journal }}{% else %}{{ pub.book }}{% endif %}</em></p>
+                        {% endif %}
+                        <span class="publication-year">{{ pub.year }}</span>
+                        <span class="badge bg-secondary ms-2">Other</span>
+                        {% if pub.doi %}
+                        <div class="mt-2">
+                            <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
+                        </div>
+                        {% endif %}
+                        {% if pub.url %}
+                        <div class="mt-2">
+                            <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
+                        </div>
+                        {% endif %}
                     {% endif %}
                 </div>
                 {% endfor %}

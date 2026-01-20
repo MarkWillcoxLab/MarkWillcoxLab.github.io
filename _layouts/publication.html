@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>{{ page.title }}</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="publication-item">
+                    <p class="publication-authors">{{ page.authors }}</p>
+                    {% if page.journal %}
+                    <p class="publication-journal"><em>{{ page.journal }}</em>{% if page.volume %}, {{ page.volume }}{% if page.issue %}({{ page.issue }}){% endif %}{% endif %}{% if page.pages %}, {{ page.pages }}{% endif %}</p>
+                    {% endif %}
+                    {% if page.book %}
+                    <p class="publication-journal"><em>{{ page.book }}</em>{% if page.pages %}, pp. {{ page.pages }}{% endif %}</p>
+                    {% endif %}
+                    <span class="publication-year">{{ page.year }}</span>
+                    {% if page.doi %}
+                    <div class="mt-2">
+                        <a href="https://doi.org/{{ page.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
+                    </div>
+                    {% endif %}
+                    {% if page.url %}
+                    <div class="mt-2">
+                        <a href="{{ page.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
+                    </div>
+                    {% endif %}
+                </div>
+                
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</section>
