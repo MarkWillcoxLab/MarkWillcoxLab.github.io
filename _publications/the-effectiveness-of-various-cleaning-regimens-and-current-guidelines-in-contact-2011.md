@@ -1,4 +1,5 @@
 ---
+sort_key: "2011-00-00"
 title: "The effectiveness of various cleaning regimens and current guidelines in contact lens case biofilm removal"
 authors: "Wu, Y.T., Zhu, H., Willcox, M., Stapleton, F."
 type: "journal"

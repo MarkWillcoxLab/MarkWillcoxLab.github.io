@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Effect of a warming device on contact lens case contamination"
 authors: "Willcox, M.D.P., Zhu, H., Vijay, A.K."
 type: "journal"

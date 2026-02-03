@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "Design and synthesis of short amphiphilic cationic peptidomimetics based on biphenyl backbone as antibacterial agents"
 authors: "Kuppusamy, R., Yasir, M., Berry, T., Cranfield, C.G., Nizalapur, S., Yee, E., Kimyon, O., Taunk, A., Ho, K.K.K., Cornell, B., Manefield, M., Willcox, M., Black, D.S., Kumar, N."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Immobilization of antibacterial dihydropyrrol-2-ones on functional polymer supports to prevent bacterial infections in vivo"
 authors: "Ho, K.K.K., Cole, N., Chen, R., Willcox, M.D.P., Rice, S.A., Kumar, N."
 type: "journal"

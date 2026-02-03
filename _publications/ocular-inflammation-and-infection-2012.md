@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 journal: "International Journal of Inflammation"
 title: "Ocular inflammation and infection"
 authors: "Callegan, M., Gregory-Ksander, M., Willcox, M., Lightman, S."

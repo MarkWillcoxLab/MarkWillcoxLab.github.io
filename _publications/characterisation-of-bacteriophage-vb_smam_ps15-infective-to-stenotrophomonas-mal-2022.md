@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-03-00"
 title: "Characterisation of Bacteriophage vB_SmaM_Ps15 Infective to <i>Stenotrophomonas maltophilia</i> Clinical Ocular Isolates"
 authors: "Dragica Damnjanović, Xabier Vázquez-Campos, Lisa Elliott, Mark Willcox, Wallace J. Bridge"
 type: "journal"

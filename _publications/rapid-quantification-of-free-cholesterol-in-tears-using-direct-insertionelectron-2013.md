@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "Rapid quantification of free cholesterol in tears using direct insertion/electron ionization-Mass spectrometry"
 authors: "Wei, X.E., Korth, J., Brown, S.H.J., Mitchell, T.W., Truscott, R.J.W., Blanksby, S.J., Willcox, M.D.P., Zhao, Z."
 type: "journal"

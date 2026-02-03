@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "Effect of lens care systems on the clinical performance of a contact lens"
 authors: "De La Jara, P.L., Papas, E., Diec, J., Naduvilath, T., Willcox, M.D.P., Holden, B.A."
 type: "journal"

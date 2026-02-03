@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Esculentin-1a derived peptides kill Pseudomonas aeruginosa biofilm on soft contact lenses and retain antibacterial activity upon immobilization to the lens surface"
 authors: "Casciaro, B., Dutta, D., Loffredo, M.R., Marcheggiani, S., Mcdermott, A.M., Willcox, M.D., Mangoni, M.L."
 type: "journal"

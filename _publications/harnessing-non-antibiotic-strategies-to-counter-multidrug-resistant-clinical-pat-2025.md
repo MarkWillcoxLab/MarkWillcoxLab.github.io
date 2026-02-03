@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-01-00"
 title: "Harnessing Non-Antibiotic Strategies to Counter Multidrug-Resistant Clinical Pathogens with Special Reference to Antimicrobial Peptides and Their Coatings"
 authors: "Shyam Kumar Mishra, Tanzina Akter, Umme Laila Urmi, George Enninful, Manjulatha Sara, Jiawei Shen, Dittu Suresh, Liangjun Zheng, Elias Shiferaw Mekonen, Binod Rayamajhee, Francesco M. Labricciosa, Massimo Sartelli, Mark Willcox"
 type: "journal"

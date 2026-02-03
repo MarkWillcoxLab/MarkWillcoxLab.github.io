@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Post-translation modification of proteins in tears"
 authors: "You, J., Fitzgerald, A., Cozzi, P.J., Zhao, Z., Graham, P., Russell, P.J., Walsh, B.J., Willcox, M., Zhong, L., Wasinger, V., Li, Y."
 type: "journal"

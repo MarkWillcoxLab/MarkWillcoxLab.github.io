@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Effect of salicylic acid on the membrane proteome and virulence of Pseudomonas aeruginosa"
 authors: "Bandara, M., Sankaridurg, P., Zhu, H., Hume, E., Willcox, M."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-08-00"
 title: "Comparative Analysis of Adverse Events From a Series of Proof-of-Principle Extended Wear Studies."
 authors: "Ozkan J, Lazon de la Jara P, Willcox M"
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2011-00-00"
 title: "Effect of cholesterol deposition on bacterial adhesion to contact lenses"
 authors: "Omali, N.B., Zhu, H., Zhao, Z., Ozkan, J., Xu, B., Borazjani, R., Willcox, M.D.P."
 type: "journal"

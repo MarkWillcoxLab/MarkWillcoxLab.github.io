@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "Protein deposition and its effect on bacterial adhesion to contact lenses"
 authors: "Omali, N.B., Zhu, H., Zhao, Z., Willcox, M.D.P."
 type: "journal"

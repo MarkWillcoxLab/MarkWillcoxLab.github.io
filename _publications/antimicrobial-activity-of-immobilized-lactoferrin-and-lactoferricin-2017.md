@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Antimicrobial activity of immobilized lactoferrin and lactoferricin"
 authors: "Chen, R., Cole, N., Dutta, D., Kumar, N., Willcox, M.D.P."
 type: "journal"

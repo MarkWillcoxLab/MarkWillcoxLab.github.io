@@ -1,4 +1,5 @@
 ---
+sort_key: "2020-09-00"
 title: "A New Era of Antibiotics: The Clinical Potential of Antimicrobial Peptides"
 authors: "Katrina Browne, Sudip Chakraborty, Renxun Chen, Mark  DP Willcox, David  StClair Black, William  R Walsh, Naresh Kumar"
 type: "journal"

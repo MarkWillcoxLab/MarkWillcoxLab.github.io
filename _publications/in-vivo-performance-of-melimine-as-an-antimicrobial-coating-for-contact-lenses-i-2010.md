@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "In vivo performance of melimine as an antimicrobial coating for contact lenses in models of CLARE and CLPU"
 authors: "Cole, N., Hume, E.B.H., Vijay, A.K., Sankaridurg, P., Kumar, N., Willcox, M.D.P."
 type: "journal"

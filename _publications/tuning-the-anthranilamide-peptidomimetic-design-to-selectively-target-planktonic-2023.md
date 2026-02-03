@@ -1,4 +1,5 @@
 ---
+sort_key: "2023-03-00"
 title: "Tuning the Anthranilamide Peptidomimetic Design to Selectively Target Planktonic Bacteria and Biofilm"
 authors: "Rajesh Kuppusamy, Muhammad Yasir, Tsz Tin Yu, Florida Voli, Orazio Vittorio, Michael J. Miller, Peter Lewis, David StC Black, Mark Willcox, Naresh Kumar"
 type: "journal"

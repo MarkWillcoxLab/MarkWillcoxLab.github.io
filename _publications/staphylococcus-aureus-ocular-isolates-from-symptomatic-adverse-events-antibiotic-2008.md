@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 title: "Staphylococcus aureus ocular isolates from symptomatic adverse events: Antibiotic resistance and similarity of bacteria causing adverse events"
 authors: "Schubert, T.L., Hume, E.B., Willcox, M.D."
 type: "journal"

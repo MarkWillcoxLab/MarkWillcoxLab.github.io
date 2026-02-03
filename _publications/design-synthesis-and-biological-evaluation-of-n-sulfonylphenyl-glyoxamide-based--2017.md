@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Design, Synthesis and Biological Evaluation of N-Sulfonylphenyl glyoxamide-Based Antimicrobial Peptide Mimics as Novel Antimicrobial Agents"
 authors: "Yu, T.T., Nizalapur, S., Ho, K.K.K., Yee, E., Berry, T., Cranfield, C.G., Willcox, M., Black, D.S., Kumar, N."
 type: "journal"

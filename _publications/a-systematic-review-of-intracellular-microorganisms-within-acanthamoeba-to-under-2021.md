@@ -1,4 +1,5 @@
 ---
+sort_key: "2021-02-00"
 title: "A Systematic Review of Intracellular Microorganisms within <i>Acanthamoeba</i> to Understand Potential Impact for Infection"
 authors: "Binod Rayamajhee, Dinesh Subedi, Hari  Kumar Peguda, Mark  Duncan Willcox, Fiona  L. Henriquez, Nicole Carnt"
 type: "journal"

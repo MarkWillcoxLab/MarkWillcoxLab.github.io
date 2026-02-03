@@ -1,4 +1,5 @@
 ---
+sort_key: "2020-02-24"
 title: "The Antimicrobial Activity of Multipurpose Disinfecting Solutions in the Presence of Different Organic Soils."
 authors: "Katsuhide Yamasaki, Yohei Mizuno, Yoshiyuki Kitamura, Mark Willcox"
 type: "journal"

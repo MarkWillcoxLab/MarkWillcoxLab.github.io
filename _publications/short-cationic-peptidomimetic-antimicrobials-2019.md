@@ -1,4 +1,5 @@
 ---
+sort_key: "2019-04-18"
 title: "Short Cationic Peptidomimetic Antimicrobials"
 authors: "Rajesh Kuppusamy, Mark Willcox, David StC. Black, Naresh Kumar"
 type: "journal"

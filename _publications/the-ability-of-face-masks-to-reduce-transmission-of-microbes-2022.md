@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-02-17"
 journal: "Clinical and Experimental Optometry"
 title: "The ability of face masks to reduce transmission of microbes"
 authors: "Parthasarathi Kalaiselvan, Shyam Sunder Tummanapalli, Ajay Kumar Vijay, Prateek Bahl, Chandini Raina MacIntyre, Mark D P Willcox"

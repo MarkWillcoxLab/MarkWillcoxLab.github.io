@@ -1,4 +1,5 @@
 ---
+sort_key: "2026-04-00"
 title: "Differential possession of type 6 secretion system effector genes in exoU and exoS Pseudomonas aeruginosa in microbial keratitis"
 authors: "Tanzina Akter, Abrar Maswood Haider, Fiona Stapleton, Mark Willcox"
 type: "journal"

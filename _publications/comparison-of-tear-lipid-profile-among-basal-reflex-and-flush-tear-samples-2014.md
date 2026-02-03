@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "Comparison of tear lipid profile among basal, reflex, and flush tear samples"
 authors: "Rohit, A., Stapleton, F., Brown, S.H.J., Mitchell, T.W., Willcox, M.D.P."
 type: "journal"

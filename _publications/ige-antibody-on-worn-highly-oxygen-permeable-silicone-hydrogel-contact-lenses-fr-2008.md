@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 title: "IgE antibody on worn highly oxygen-permeable silicone hydrogel contact lenses from patients with contact lens-induced papillary conjunctivitis (CLPC)"
 authors: "Zhao, Z., Fu, H., Skotnitsky, C.C., Sankaridurg, P.R., Willcox, M.D.P."
 type: "journal"

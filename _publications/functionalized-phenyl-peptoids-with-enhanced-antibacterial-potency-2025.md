@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-06-13"
 title: "Functionalized Phenyl Peptoids with Enhanced Antibacterial Potency"
 authors: "Ghayah Bahatheg, Rajesh Kuppusamy, Muhammad Yasir, Shyam Kumar Mishra, David StClair Black, Mark Willcox, Naresh Kumar"
 type: "journal"

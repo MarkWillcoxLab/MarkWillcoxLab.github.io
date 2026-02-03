@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "The impact of diabetes on corneal nerve morphology and ocular surface integrity"
 authors: "Markoulli, M., Flanagan, J., Tummanapalli, S.S., Wu, J., Willcox, M."
 type: "journal"

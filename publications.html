@@ -69,7 +69,12 @@ title: Publications
             <div class="col-12">
                 <h2 class="mb-4">Publications</h2>
 
-                {% assign all_publications = site.publications | sort: 'year' | reverse %}
+                {%- comment -%}
+                Sort by a full date key (year‑month‑day) when available so that
+                the most recently published papers appear first. Older entries
+                without a sort_key will naturally fall towards the end.
+                {%- endcomment -%}
+                {% assign all_publications = site.publications | sort: 'sort_key' | reverse %}
                 {% for pub in all_publications %}
                 <div class="publication-item mb-4" data-year="{{ pub.year }}" data-type="{{ pub.type }}">
                     <h5 class="publication-title">{{ pub.title }}</h5>

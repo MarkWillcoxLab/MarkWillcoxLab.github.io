@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Effect of phospholipid deposits on adhesion of bacteria to contact lenses"
 authors: "Babaei Omali, N., Proschogo, N., Zhu, H., Zhao, Z., Diec, J., Borazjani, R., Willcox, M.D.P."
 type: "journal"

@@ -83,6 +83,9 @@ def parse_full_work(root: ET.Element):
     title = find_text(root, "title") or ""
     journal = find_text(root, "journal-title") or ""
     year = find_text(root, "year") or "0000"
+    # Month/day used to build a sortable key so newest appears first
+    month = find_text(root, "month") or ""
+    day = find_text(root, "day") or ""
     doi = ""
     url = ""
     authors = []
@@ -104,6 +107,13 @@ def parse_full_work(root: ET.Element):
 
     if not year.isdigit():
         year = "0000"
+    # normalise month/day to 2‑digit strings (or "00" if missing)
+    month = month if month.isdigit() else "0"
+    day = day if day.isdigit() else "0"
+    month = month.zfill(2)
+    day = day.zfill(2)
+
+    sort_key = f"{year}-{month}-{day}"
 
     # Fallback authors string if ORCID record has no contributors
     authors_str = ", ".join(authors) if authors else "Willcox M.D.P. et al."
@@ -113,6 +123,9 @@ def parse_full_work(root: ET.Element):
         "authors": authors_str,
         "journal": journal,
         "year": year,
+        "month": month,
+        "day": day,
+        "sort_key": sort_key,
         "doi": doi or "",
         "url": url or "",
         "type": "journal",
@@ -192,6 +205,8 @@ def update_front_matter(front: str, work: dict) -> str:
         set_or_add("doi", work["doi"], quoted=True)
     if work.get("url"):
         set_or_add("url", work["url"], quoted=True)
+    if work.get("sort_key"):
+        set_or_add("sort_key", work["sort_key"], quoted=True)
 
     return front
 
@@ -237,6 +252,7 @@ def write_new_publication_md(publications_dir: str, work: dict):
     doi = work.get("doi") or ""
     url = work.get("url") or (f"https://doi.org/{doi}" if doi else "")
     year = work.get("year") or "0000"
+    sort_key = work.get("sort_key") or f"{year}-00-00"
     pub_type = work.get("type") or "journal"
 
     lines = [
@@ -252,6 +268,8 @@ def write_new_publication_md(publications_dir: str, work: dict):
         lines.append(f'doi: "{escape_yaml(doi)}"')
     if url:
         lines.append(f'url: "{escape_yaml(url)}"')
+    if sort_key:
+        lines.append(f'sort_key: "{escape_yaml(sort_key)}"')
     lines.append("---")
     lines.append("")
 

@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Identification of pathogenic factors potentially involved in Staphylococcus aureus keratitis using proteomics"
 authors: "Khan, S., Cole, N., Hume, E.B.H., Garthwaite, L.L., Nguyen-Khuong, T., Walsh, B.J., Willcox, M.D.P."
 type: "journal"

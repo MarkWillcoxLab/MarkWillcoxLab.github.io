@@ -1,4 +1,5 @@
 ---
+sort_key: "2015-00-00"
 title: "Hybrids of acylated homoserine lactone and nitric oxide donors as inhibitors of quorum sensing and virulence factors in Pseudomonas aeruginosa"
 authors: "Kutty, S.K., Barraud, N., Ho, K.K.K., Iskander, G.M., Griffith, R., Rice, S.A., Bhadbhade, M., Willcox, M.D.P., Black, D.S., Kumar, N."
 type: "journal"

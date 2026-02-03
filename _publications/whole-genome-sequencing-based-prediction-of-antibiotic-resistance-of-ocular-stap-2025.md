@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-08-00"
 title: "Whole genome sequencing-based prediction of antibiotic-resistance of ocular Staphylococcus aureus across six continents"
 authors: "Jiawei Shen, Muhammad Yasir, Mark Willcox"
 type: "journal"

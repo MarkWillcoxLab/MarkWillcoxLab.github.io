@@ -1,4 +1,5 @@
 ---
+sort_key: "2015-00-00"
 title: "Indole-based novel small molecules for the modulation of bacterial signalling pathways"
 authors: "Biswas, N.N., Kutty, S.K., Barraud, N., Iskander, G.M., Griffith, R., Rice, S.A., Willcox, M., Black, D.S., Kumar, N."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Activity of a melimine derived peptide Mel4 against Stenotrophomonas, Delftia, Elizabethkingia, Burkholderia and biocompatibility as a contact lens coating"
 authors: "Dutta, D., Zhao, T., Cheah, K.B., Holmlund, L., Willcox, M.D.P."
 type: "journal"

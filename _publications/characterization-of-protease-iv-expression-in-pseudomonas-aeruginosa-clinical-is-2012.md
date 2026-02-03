@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Characterization of protease IV expression in Pseudomonas aeruginosa clinical isolates"
 authors: "Conibear, T.C.R., Willcox, M.D.P., Flanagan, J.L., Zhu, H."
 type: "journal"

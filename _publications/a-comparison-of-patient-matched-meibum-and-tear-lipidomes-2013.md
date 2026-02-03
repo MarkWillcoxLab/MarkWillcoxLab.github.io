@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "A comparison of patient matched meibum and tear lipidomes"
 authors: "Brown, S.H.J., Kunnen, C.M.E., Duchoslav, E., Dolla, N.K., Kelso, M.J., Papas, E.B., Lazon de la Jara, P., Willcox, M.D.P., Blanksby, S.J., Mitchell, T.W."
 type: "journal"

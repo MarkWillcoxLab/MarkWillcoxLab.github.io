@@ -1,4 +1,5 @@
 ---
+sort_key: "2021-04-00"
 title: "Development of antibiotic resistance in the ocular Pseudomonas aeruginosa clone ST308 over twenty years"
 authors: "Mahjabeen Khan, Mark D.P. Willcox, Scott A. Rice, Savitri Sharma, Fiona Stapleton"
 type: "journal"

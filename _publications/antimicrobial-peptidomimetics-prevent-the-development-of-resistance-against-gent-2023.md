@@ -1,4 +1,5 @@
 ---
+sort_key: "2023-10-00"
 title: "Antimicrobial Peptidomimetics Prevent the Development of Resistance against Gentamicin and Ciprofloxacin in Staphylococcus and Pseudomonas Bacteria"
 authors: "Katrina Browne, Rajesh Kuppusamy, William R. Walsh, David StC Black, Mark D. P. Willcox, Naresh Kumar, Renxun Chen"
 type: "journal"

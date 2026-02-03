@@ -1,4 +1,5 @@
 ---
+sort_key: "2021-10-00"
 title: "Susceptibility of Ocular <i>Staphylococcus aureus</i> to Antibiotics and Multipurpose Disinfecting Solutions"
 authors: "Madeeha Afzal, Ajay Kumar Vijay, Fiona Stapleton, Mark D. P. Willcox"
 type: "journal"

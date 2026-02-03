@@ -1,4 +1,5 @@
 ---
+sort_key: "2020-04-29"
 title: "The Development of an Antimicrobial Contact Lens – From the Laboratory to the Clinic"
 authors: "Mark D.P. Willcox, R. Chen, P. Kalaiselvan, M. Yasir, R. Rasul, N. Kumar, D. Dutta"
 type: "journal"

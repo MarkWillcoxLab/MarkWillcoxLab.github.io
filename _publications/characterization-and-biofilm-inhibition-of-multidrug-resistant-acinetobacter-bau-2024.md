@@ -1,4 +1,5 @@
 ---
+sort_key: "2024-01-00"
 title: "Characterization and Biofilm Inhibition of Multidrug‐Resistant Acinetobacter baumannii Isolates"
 authors: "Poonam Yadav, Sreska Shrestha, Deepak Basyal, Ananda Tiwari, Ranjit Sah, Anil Kumar Sah, Bishal Yadav, Mark Willcox, Shyam Kumar Mishra, Kai Zheng"
 type: "journal"

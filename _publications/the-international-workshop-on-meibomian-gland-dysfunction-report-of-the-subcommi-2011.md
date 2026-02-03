@@ -1,4 +1,5 @@
 ---
+sort_key: "2011-00-00"
 title: "The international workshop on meibomian gland dysfunction: Report of the subcommittee on tear film lipids and lipid-protein interactions in health and disease"
 authors: "Green-Church, K.B., Butovich, I., Willcox, M., Borchman, D., Paulsen, F., Barabino, S., Glasgow, B.J."
 type: "journal"

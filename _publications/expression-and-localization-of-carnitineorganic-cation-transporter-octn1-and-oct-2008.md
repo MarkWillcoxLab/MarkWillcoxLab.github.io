@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 title: "Expression and localization of carnitine/organic cation transporter OCTN1 and OCTN2 in ocular epithelium"
 authors: "Garrett, Q., Xu, S., Simmons, P.A., Vehige, J., Flanagan, J.L., Willcox, M.D."
 type: "journal"

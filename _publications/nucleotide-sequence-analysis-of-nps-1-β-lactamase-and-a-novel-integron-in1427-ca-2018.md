@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "Nucleotide sequence analysis of NPS-1 β-lactamase and a novel integron (In1427)-carrying transposon in an MDR Pseudomonas aeruginosa keratitis strain"
 authors: "Subedi, D., Vijay, A.K., Kohli, G.S., Rice, S.A., Willcox, M."
 type: "journal"

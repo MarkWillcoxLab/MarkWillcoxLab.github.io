@@ -1,4 +1,5 @@
 ---
+sort_key: "2019-11-11"
 title: "Analytical separations for lipids in complex, nonpolar lipidomes using differential mobility spectrometry"
 authors: "Sarah E. Hancock, Berwyck L.J. Poad, Mark D.P. Willcox, Stephen J. Blanksby, Todd W. Mitchell"
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2015-00-00"
 journal: "Antibacterial Surfaces"
 title: "Development of fimbrolides, halogenated furanones and their derivatives as antimicrobial agents"
 authors: "Ho, K.K.K., Kutty, S.K., Chan, D., Chen, R., Willcox, M.D.P., Kumar, N."

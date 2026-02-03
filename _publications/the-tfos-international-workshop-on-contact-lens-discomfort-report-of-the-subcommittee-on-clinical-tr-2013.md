@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "The TFOS International Workshop on Contact Lens Discomfort: Report of the subcommittee on clinical trial design and outcomes"
 authors: "Foulks, G., Chalmers, R., Keir, N., Woods, C.A., Simpson, T., Lippman, R., Gleason, W., Schaumberg, D.A., Willcox, M.D.P., Jalbert, I."
 type: "journal"

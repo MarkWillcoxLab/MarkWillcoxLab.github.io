@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 journal: "Current Eye Research"
 title: "Bovine lactoferrin promotes corneal wound healing and suppresses IL-1 expression in alkali wounded mouse cornea"
 authors: "Pattamatta, U., Willcox, M., Stapleton, F., Garrett, Q."

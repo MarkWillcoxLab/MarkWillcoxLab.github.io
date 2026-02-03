@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-12-00"
 title: "Harnessing Machine Learning Approaches for the Identification, Characterization, and Optimization of Novel Antimicrobial Peptides"
 authors: "Naveed Saleem, Naresh Kumar, Emad El-Omar, Mark Willcox, Xiao-Tao Jiang"
 type: "journal"

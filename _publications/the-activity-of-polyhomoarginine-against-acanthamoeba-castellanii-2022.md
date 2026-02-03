@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-11-28"
 title: "The Activity of Polyhomoarginine against Acanthamoeba castellanii"
 authors: "Hari Kumar Peguda, Rajamani Lakshminarayanan, Nicole A. Carnt, Zi Gu, Mark D. P. Willcox"
 type: "journal"

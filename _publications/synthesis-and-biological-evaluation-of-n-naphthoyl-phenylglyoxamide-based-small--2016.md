@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Synthesis and biological evaluation of N-naphthoyl-phenylglyoxamide-based small molecular antimicrobial peptide mimics as novel antimicrobial agents and biofilm inhibitors"
 authors: "Nizalapur, S., Ho, K.K.K., Kimyon, Ö., Yee, E., Berry, T., Manefield, M., Cranfield, C.G., Willcox, M., Black, D.S., Kumar, N."
 type: "journal"

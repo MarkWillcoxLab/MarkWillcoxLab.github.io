@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "Quorum sensing inhibitory activities of surface immobilized antibacterial dihydropyrrolones via click chemistry"
 authors: "Ho, K.K.K., Chen, R., Willcox, M.D.P., Rice, S.A., Cole, N., Iskander, G., Kumar, N."
 type: "journal"

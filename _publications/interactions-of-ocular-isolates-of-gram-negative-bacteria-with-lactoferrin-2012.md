@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Interactions of ocular isolates of gram-negative bacteria with lactoferrin"
 authors: "Williams, T.J., Willcox, M.D.P., Schneider, R.P."
 type: "journal"

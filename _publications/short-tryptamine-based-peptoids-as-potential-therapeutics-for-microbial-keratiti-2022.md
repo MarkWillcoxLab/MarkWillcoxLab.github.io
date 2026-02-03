@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-08-00"
 title: "Short Tryptamine-Based Peptoids as Potential Therapeutics for Microbial Keratitis: Structure-Function Correlation Studies"
 authors: "Ghayah Bahatheg, Rajesh Kuppusamy, Muhammad Yasir, David StC. Black, Mark Willcox, Naresh Kumar"
 type: "journal"

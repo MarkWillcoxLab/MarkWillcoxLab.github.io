@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "Bacterial coaggregation and cohesion among isolates from contact lens cases"
 authors: "Datta, A., Stapleton, F., Willcox, M.D.P."
 type: "journal"

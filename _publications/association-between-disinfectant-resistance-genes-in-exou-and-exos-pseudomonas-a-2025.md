@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-10-00"
 title: "Association between disinfectant resistance genes in exoU and exoS Pseudomonas aeruginosa with sensitivity to multipurpose disinfecting solutions and antibiotics"
 authors: "Tanzina Akter, Fiona Stapleton, Matthew Green, Mark Willcox"
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2020-12-00"
 title: "Hybrid engineered dental composites by multiscale reinforcements with chitosan-integrated halloysite nanotubes and S-glass fibers"
 authors: "Kiho Cho, Muhammad Yasir, Minkyo Jung, Mark D.P. Willcox, Martina H. Stenzel, Ginu Rajan, Paul Farrar, B. Gangadhara Prusty"
 type: "journal"

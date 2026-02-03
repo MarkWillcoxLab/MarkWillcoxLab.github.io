@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Interactions of lens care with silicone hydrogel lenses and effect on comfort"
 authors: "Willcox, M.D.P., Phillips, B., Ozkan, J., Jalbert, I., Meagher, L., Gengenbach, T., Holden, B., Papas, E."
 type: "journal"

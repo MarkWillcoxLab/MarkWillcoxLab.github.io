@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-11-30"
 title: "The Anti-Amoebic Activity of a Peptidomimetic against Acanthamoeba castellanii"
 authors: "Hari Kumar Peguda, Nicole A. Carnt, Zi Gu, Naresh Kumar, Mark D. P. Willcox, Rajesh Kuppusamy"
 type: "journal"

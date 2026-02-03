@@ -1,4 +1,5 @@
 ---
+sort_key: "2023-01-00"
 journal: "Journal of Clinical Pharmacy and Therapeutics"
 title: "Antimicrobial Resistance and Biofilm Production in Uropathogens from Renal Disease Patients Admitted to Tribhuvan University Teaching Hospital, Nepal"
 authors: "Anuja Dahal, Kamal Shrestha, Rashmi Karki, Saraswati Bhattarai, Shiva Aryal, Satish Kumar Deo, Balmukunda Regmi, Mark Willcox, Shyam Kumar Mishra, Keiko Hosohata"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-03-03"
 title: "Antimicrobial activity of peptoids against Metallo-β-lactamase-producing Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and other WHO priority pathogens, including Candida auris"
 authors: "Shyam Kumar Mishra, Muhammad Yasir, Rajesh Kuppusamy, Edgar H H Wong, Alex Hui, Kristian Sørensen, Jennifer S Lin, Håvard Jenssen, Annelise E Barron, Mark Willcox"
 type: "journal"

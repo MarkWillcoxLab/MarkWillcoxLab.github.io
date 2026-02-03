@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-08-00"
 title: "Efficacy of Ultraviolet Radiations against Coronavirus, Bacteria, Fungi, Fungal Spores and Biofilm"
 authors: "Mahjabeen Khan, Murray McDonald, Kaustubh Mundada, Mark Willcox"
 type: "journal"

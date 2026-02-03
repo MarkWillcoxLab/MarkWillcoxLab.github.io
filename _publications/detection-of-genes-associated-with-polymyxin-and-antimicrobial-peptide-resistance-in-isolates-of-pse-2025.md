@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-10-00"
 title: "Detection of Genes Associated with Polymyxin and Antimicrobial Peptide Resistance in Isolates of <i>Pseudomonas aeruginosa</i>"
 authors: "Meseret Alem Damtie, Ajay Kumar Vijay, Mark Duncan Perry Willcox"
 type: "journal"

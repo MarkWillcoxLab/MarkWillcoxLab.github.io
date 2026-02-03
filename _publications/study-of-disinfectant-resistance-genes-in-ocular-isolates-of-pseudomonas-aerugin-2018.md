@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-10-15"
 title: "Study of Disinfectant Resistance Genes in Ocular Isolates of Pseudomonas aeruginosa"
 authors: "Dinesh Subedi, Ajay Kumar Vijay, Mark Willcox"
 type: "journal"

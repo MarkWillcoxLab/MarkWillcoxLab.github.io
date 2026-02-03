@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-11-10"
 title: "Comparison of virulence factors genes between exoU and exoS Pseudomonas aeruginosa in microbial keratitis"
 authors: "Tanzina Akter, Fiona Stapleton, Jake Ireland, Mark Willcox"
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-10-00"
 title: "Antibiotic Prescription Patterns for Acute Diarrhea in a Hospital in Shanghai in 2016: A Cross-sectional Study."
 authors: "Hu Y, Wang S, Hua S, Willcox M, Moore M, Little P"
 type: "journal"

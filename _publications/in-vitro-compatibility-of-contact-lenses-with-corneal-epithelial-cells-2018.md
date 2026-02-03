@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "In Vitro Compatibility of Contact Lenses With Corneal Epithelial Cells"
 authors: "Vijay, A.K., Fadli, Z., Lakkis, C., Coles-Brennan, C., Willcox, M.D.P."
 type: "journal"

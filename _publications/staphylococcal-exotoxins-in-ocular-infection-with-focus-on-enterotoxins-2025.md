@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-10-00"
 title: "Staphylococcal exotoxins in ocular infection with focus on enterotoxins"
 authors: "Jiawei Shen, Muhammad Yasir, Mark Willcox"
 type: "journal"

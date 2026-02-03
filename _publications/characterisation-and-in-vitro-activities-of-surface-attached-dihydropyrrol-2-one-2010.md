@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 journal: "Biofouling"
 title: "Characterisation and in vitro activities of surface attached dihydropyrrol-2-ones against Gram-negative and Gram-positive bacteria."
 authors: "Ho, K.K., Cole, N., Chen, R., Willcox, M.D., Rice, S.A., Kumar, N."

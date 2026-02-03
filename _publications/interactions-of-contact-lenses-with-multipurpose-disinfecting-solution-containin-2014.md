@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "Interactions of contact lenses with multipurpose disinfecting solution containing PHMB"
 authors: "Willcox, M.D.P., Stapleton, F."
 type: "journal"

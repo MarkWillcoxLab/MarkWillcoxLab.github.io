@@ -1,4 +1,5 @@
 ---
+sort_key: "2011-00-00"
 title: "Pilot study of contact lens practitioner risk-taking propensity"
 authors: "Carnt, N., Keay, L., Willcox, M.D.P., Evans, V., Stapleton, F."
 type: "journal"

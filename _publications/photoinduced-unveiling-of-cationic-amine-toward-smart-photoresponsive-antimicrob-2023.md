@@ -1,4 +1,5 @@
 ---
+sort_key: "2023-10-13"
 title: "Photoinduced Unveiling of Cationic Amine: Toward Smart Photoresponsive Antimicrobial Polymers"
 authors: "Zeyu Shao, Karen Hakobyan, Jiangtao Xu, Renxun Chen, Naresh Kumar, Mark Willcox, Edgar H. H. Wong"
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Glycan involvement in the adhesion of Pseudomonas aeruginosa to tears"
 authors: "Kautto, L., Nguyen-Khuong, T., Everest-Dass, A., Leong, A., Zhao, Z., Willcox, M.D.P., Packer, N.H., Peterson, R."
 type: "journal"

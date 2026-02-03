@@ -1,4 +1,5 @@
 ---
+sort_key: "2015-00-00"
 title: "In vitro effects of docosahexaenoic and eicosapentaenoic acid on human meibomian gland epithelial cells"
 authors: "Hampel, U., Krüger, M., Kunnen, C., Garreis, F., Willcox, M., Paulsen, F."
 type: "journal"

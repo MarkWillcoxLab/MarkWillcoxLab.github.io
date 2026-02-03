@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "The eyelids and tear film in contact lens discomfort"
 authors: "Siddireddy, J.S., Vijay, A.K., Tan, J., Willcox, M."
 type: "journal"

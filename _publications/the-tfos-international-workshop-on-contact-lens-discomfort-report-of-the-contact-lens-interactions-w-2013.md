@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "The TFOS International Workshop on Contact Lens Discomfort: Report of the contact lens interactions with the ocular surface and adnexa subcommittee"
 authors: "Efron, N., Jones, L., Bron, A.J., Knop, E., Arita, R., Barabino, S., McDermott, A.M., Villani, E., Willcox, M.D.P., Markoulli, M."
 type: "journal"

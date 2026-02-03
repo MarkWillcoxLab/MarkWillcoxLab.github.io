@@ -1,4 +1,5 @@
 ---
+sort_key: "2009-00-00"
 journal: "Biofouling"
 title: "Synthesis, characterization and in vitro activity of a surface-attached antimicrobial cationic peptide"
 authors: "Chen, R., Cole, N., Willcox, M.D.P., Park, J., Rasul, R., Carter, E., Kumar, N."

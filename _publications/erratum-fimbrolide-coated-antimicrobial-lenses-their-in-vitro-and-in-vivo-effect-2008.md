@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 title: "Erratum: Fimbrolide-coated antimicrobial lenses: their in vitro and in vivo effects (Optometry and Vision Science (2008) 85 (292-300)"
 authors: "Zhu, H., Kumar, A., Ozkan, J., Bandara, R., Ding, A., Perera, I., Steinberg, P., Kumar, N., Lao, W., Griesser, S.S., Britcher, L., Griesser, H.J., Willcox, M.D.P."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Tear lipocalin is the predominant phosphoprotein in human tear fluid"
 authors: "Zhao, Z., Liu, J., Wasinger, V.C., Malouf, T., Nguyen-Khuong, T., Walsh, B., Willcox, M.D.P."
 type: "journal"

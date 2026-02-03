@@ -1,4 +1,5 @@
 ---
+sort_key: "2021-09-00"
 title: "Enhancement of Antibiofilm Activity of Ciprofloxacin against <i>Staphylococcus aureus</i> by Administration of Antimicrobial Peptides"
 authors: "Muhammad Yasir, Debarun Dutta, Mark D. P. Willcox"
 type: "journal"

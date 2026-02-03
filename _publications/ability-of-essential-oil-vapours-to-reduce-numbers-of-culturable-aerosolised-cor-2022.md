@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-03-00"
 title: "Ability of Essential Oil Vapours to Reduce Numbers of Culturable Aerosolised Coronavirus, Bacteria and Fungi"
 authors: "Parthasarathi Kalaiselvan, Muhammad Yasir, Rajesh Kuppusamy, Mark Willcox, Ajay Kumar Vijay"
 type: "journal"

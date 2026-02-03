@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Amphipathic guanidine-embedded glyoxamide-based peptidomimetics as novel antibacterial agents and biofilm disruptors"
 authors: "Nizalapur, S., Kimyon, O., Yee, E., Ho, K., Berry, T., Manefield, M., Cranfield, C.G., Willcox, M., Black, D.S., Kumar, N."
 type: "journal"

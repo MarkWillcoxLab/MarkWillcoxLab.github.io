@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-11-00"
 title: "Tuning the Structure–Functional Properties Within Peptide-Mimicking Antimicrobial Hydrogels"
 authors: "Samuel T. Attard, Vina R. Aldilla, Rajesh Kuppusamy, Renxun Chen, David StC Black, Pall Thordarson, Mark D. P. Willcox, Naresh Kumar"
 type: "journal"

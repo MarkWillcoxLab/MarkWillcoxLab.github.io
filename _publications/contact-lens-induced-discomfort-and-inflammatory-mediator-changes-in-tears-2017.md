@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Contact lens-induced discomfort and inflammatory mediator changes in tears"
 authors: "Masoudi, S., Zhao, Z., Stapleton, F., Willcox, M."
 type: "journal"

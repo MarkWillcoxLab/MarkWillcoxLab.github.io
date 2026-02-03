@@ -1,4 +1,5 @@
 ---
+sort_key: "2020-09-00"
 title: "Design, Synthesis and Biological Evaluation of Biphenylglyoxamide-Based Small Molecular Antimicrobial Peptide Mimics as Antibacterial Agents"
 authors: "Tsz  Tin Yu, Rajesh Kuppusamy, Muhammad Yasir, Md.  Musfizur Hassan, Amani Alghalayini, Satyanarayana Gadde, Evelyne Deplazes, Charles Cranfield, Mark  D. P. Willcox, David  StC Black, Naresh Kumar"
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-10-18"
 title: "Structural and functional insights into Pseudomonas aeruginosa’s secretion systems 1–6: regulation, role in microbial keratitis and drug targets"
 authors: "Tanzina Akter, Paula-Maree Challita, Abrar Maswood Haider, Shiful Islam, Kaniz Fatema, Fiona Stapleton, Mark Willcox"
 type: "journal"

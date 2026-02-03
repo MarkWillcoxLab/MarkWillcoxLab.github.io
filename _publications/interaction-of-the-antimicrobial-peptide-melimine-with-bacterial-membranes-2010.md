@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Interaction of the antimicrobial peptide melimine with bacterial membranes"
 authors: "Rasul, R., Cole, N., Balasubramanian, D., Chen, R., Kumar, N., Willcox, M.D.P."
 type: "journal"

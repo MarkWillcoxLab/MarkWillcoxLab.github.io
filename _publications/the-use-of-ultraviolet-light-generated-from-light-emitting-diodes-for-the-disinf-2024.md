@@ -1,4 +1,5 @@
 ---
+sort_key: "2024-02-23"
 title: "The use of ultraviolet light generated from light-emitting diodes for the disinfection of transvaginal ultrasound probes"
 authors: "Muhammad Yasir, Amitava Mukherjee, Mark D. P. Willcox"
 type: "journal"

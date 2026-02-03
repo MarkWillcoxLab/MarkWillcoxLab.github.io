@@ -1,4 +1,5 @@
 ---
+sort_key: "2023-03-00"
 title: "Correction: Peguda et al. The Activity of Polyhomoarginine against <i>Acanthamoeba castellanii</i>. <i>Biology</i> 2022, <i>11</i>, 1726"
 authors: "Hari Kumar Peguda, Rajamani Lakshminarayanan, Nicole A. Carnt, Zi Gu, Mark D. P. Willcox"
 type: "journal"

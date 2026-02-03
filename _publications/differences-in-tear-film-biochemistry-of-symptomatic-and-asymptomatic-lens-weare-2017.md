@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Differences in Tear Film Biochemistry of Symptomatic and Asymptomatic Lens Wearers"
 authors: "Masoudi, S., Stapleton, F.J., Willcox, M.D.P."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-09-00"
 title: "Adhesion of Stenotrophomonas maltophilia, Delftia acidovorans, and Achromobacter xylosoxidans to Contact Lenses."
 authors: "Vijay AK, Willcox MDP"
 type: "journal"

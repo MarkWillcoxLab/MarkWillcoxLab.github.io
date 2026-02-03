@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Antimicrobial peptide melimine coating for titanium and its in vivo antibacterial activity in rodent subcutaneous infection models"
 authors: "Chen, R., Willcox, M.D.P., Ho, K.K.K., Smyth, D., Kumar, N."
 type: "journal"

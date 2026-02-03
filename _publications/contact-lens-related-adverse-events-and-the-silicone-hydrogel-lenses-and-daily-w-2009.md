@@ -1,4 +1,5 @@
 ---
+sort_key: "2009-00-00"
 title: "Contact lens-related adverse events and the silicone hydrogel lenses and daily wear care system used"
 authors: "Carnt, N.A., Evans, V.E., Naduvilath, T.J., Willcox, M.D.P., Papas, E.B., Frick, K.D., Holden, B.A."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2023-07-00"
 title: "Electrostatic and Covalent Binding of an Antibacterial Polymer to Hydroxyapatite for Protection against <i>Escherichia coli</i> Colonization"
 authors: "Sudip Chakraborty, Georgio Katsifis, Iman Roohani, Cyrille Boyer, David McKenzie, Mark D. P. Willcox, Renxun Chen, Naresh Kumar"
 type: "journal"

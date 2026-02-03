@@ -1,4 +1,5 @@
 ---
+sort_key: "2019-05-09"
 title: "A Pilot Study of the Synergy between Two Antimicrobial Peptides and Two Common Antibiotics"
 authors: "Franziska Kampshoff, Mark D. P. Willcox, Debarun Dutta"
 type: "journal"

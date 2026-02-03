@@ -1,4 +1,5 @@
 ---
+sort_key: "2007-00-00"
 title: "A critical role for CCL2 and CCL3 chemokines in the regulation of polymorphonuclear neutrophils recruitment during corneal infection in mice"
 authors: "Xue, M.-L., Thakur, A., Cole, N., Lloyd, A., Stapleton, F., Wakefield, D., Willcox, M.D.P."
 type: "journal"

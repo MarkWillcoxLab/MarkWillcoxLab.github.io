@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 journal: "Journal of Immunoassay and Immunochemistry"
 title: "Multiplex bead analysis of urinary cytokines of type 2 diabetic patients with normo- and microalbuminuria"
 authors: "Liu, J., Zhao, Z., Willcox, M.D.P., Xu, B., Shi, B."

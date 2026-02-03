@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 title: "Role of quorum sensing by Pseudomonas aeruginosa in microbial keratitis and cystic fibrosis"
 authors: "Willcox, M.D.P., Zhu, H., Conibear, T.C.R., Hume, E.B.H., Givskov, M., Kjelleberg, S., Rice, S.A."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2022-11-00"
 title: "Acanthamoeba, an environmental phagocyte enhancing survival and transmission of human pathogens"
 authors: "Binod Rayamajhee, Mark D.P. Willcox, Fiona L. Henriquez, Constantinos Petsoglou, Dinesh Subedi, Nicole Carnt"
 type: "journal"

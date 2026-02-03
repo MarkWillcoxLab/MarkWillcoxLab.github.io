@@ -1,4 +1,5 @@
 ---
+sort_key: "2026-01-29"
 title: "Antimicrobial nanocoatings and films for contact lenses: progress and promise"
 authors: "Manjulatha Sara, Samuel Attard, Naresh Kumar, Mark Willcox"
 type: "journal"

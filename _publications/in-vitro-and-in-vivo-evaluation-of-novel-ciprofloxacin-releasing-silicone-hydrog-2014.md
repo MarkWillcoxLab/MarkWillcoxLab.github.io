@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "In vitro and in vivo evaluation of novel ciprofloxacin-releasing silicone hydrogel contact lenses"
 authors: "Hui, A., Willcox, M., Jones, L."
 type: "journal"

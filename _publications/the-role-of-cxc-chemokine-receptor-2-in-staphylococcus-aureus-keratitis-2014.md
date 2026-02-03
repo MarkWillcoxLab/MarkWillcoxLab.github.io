@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "The role of CXC chemokine receptor 2 in Staphylococcus aureus keratitis"
 authors: "Cole, N., Hume, E.B.H., Khan, S., Garthwaite, L., Conibear, T.C.R., Willcox, M.D.P."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Effects of lipid supplements on tear biochemistry in contact lens wearers"
 authors: "Rohit, A., Willcox, M.D.P., Stapleton, F."
 type: "journal"

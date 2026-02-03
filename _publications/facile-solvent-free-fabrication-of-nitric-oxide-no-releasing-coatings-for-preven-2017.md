@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Facile solvent-free fabrication of nitric oxide (NO)-releasing coatings for prevention of biofilm formation"
 authors: "Ho, K.K.K., Ozcelik, B., Willcox, M.D.P., Thissen, H., Kumar, N."
 type: "journal"

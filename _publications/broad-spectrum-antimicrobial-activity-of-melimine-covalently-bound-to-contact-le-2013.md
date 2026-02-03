@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "Broad spectrum antimicrobial activity of melimine covalently bound to contact lenses"
 authors: "Dutta, D., Cole, N., Kumar, N., Willcox, M.D.P."
 type: "journal"

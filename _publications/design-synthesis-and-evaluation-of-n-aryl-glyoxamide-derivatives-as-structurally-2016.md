@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Design, synthesis and evaluation of N-aryl-glyoxamide derivatives as structurally novel bacterial quorum sensing inhibitors"
 authors: "Nizalapur, S., Kimyon, Ö., Biswas, N.N., Gardner, C.R., Griffith, R., Rice, S.A., Manefield, M., Willcox, M., Black, D.S., Kumar, N."
 type: "journal"

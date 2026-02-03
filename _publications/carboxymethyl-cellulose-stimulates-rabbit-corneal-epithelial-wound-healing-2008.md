@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 journal: "Current Eye Research"
 title: "Carboxymethyl cellulose stimulates rabbit corneal epithelial wound healing"
 authors: "Garrett, Q., Xu, S., Simmons, P.A., Vehige, J., Xie, R.Z., Kumar, A., Flanagan, J.L., Zhao, Z., Willcox, M.D.P."

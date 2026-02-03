@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Immune defense single nucleotide polymorphisms and recruitment strategies associated with contact lens keratitis"
 authors: "Carnt, N.A., Willcox, M.D.P., Hau, S., Keay, L., Dart, J.K.G., Chakrabarti, S., Stapleton, F."
 type: "journal"

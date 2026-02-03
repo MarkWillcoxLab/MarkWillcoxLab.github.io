@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Innovative biomarkers for prostate cancer early diagnosis and progression"
 authors: "You, J., Cozzi, P., Walsh, B., Willcox, M., Kearsley, J., Russell, P., Li, Y."
 type: "journal"

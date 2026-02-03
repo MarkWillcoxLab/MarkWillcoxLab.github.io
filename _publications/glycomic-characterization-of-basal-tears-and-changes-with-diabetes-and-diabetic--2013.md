@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "Glycomic characterization of basal tears and changes with diabetes and diabetic retinopathy"
 authors: "Nguyen-Khuong, T., Everest-Dass, A.V., Kautto, L., Zhao, Z., Willcox, M.D.P., Packer, N.H."
 type: "journal"

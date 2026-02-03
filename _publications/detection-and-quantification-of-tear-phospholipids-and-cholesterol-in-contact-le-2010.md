@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Detection and quantification of tear phospholipids and cholesterol in contact lens deposits: The effect of contact lens material and lens care solution"
 authors: "Saville, J.T., Zhao, Z., Willcox, M.D.P., Blanksby, S.J., Mitchell, T.W."
 type: "journal"

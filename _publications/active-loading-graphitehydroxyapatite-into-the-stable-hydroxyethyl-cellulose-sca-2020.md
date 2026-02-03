@@ -1,4 +1,5 @@
 ---
+sort_key: "2020-01-25"
 title: "Active loading graphite/hydroxyapatite into the stable hydroxyethyl cellulose scaffold nanofibers for artificial cornea application"
 authors: "Davood Kharaghani, Debarun Dutta, Kitty K. K. Ho, Ke-Qin Zhang, Wei Kai, Xuehong Ren, Mark D. P. Willcox, Ick Soo Kim"
 type: "journal"

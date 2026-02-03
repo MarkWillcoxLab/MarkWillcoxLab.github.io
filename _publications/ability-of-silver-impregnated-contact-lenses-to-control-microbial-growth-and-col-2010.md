@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Ability of silver-impregnated contact lenses to control microbial growth and colonisation"
 authors: "Willcox, M.D.P., Hume, E.B.H., Vijay, A.K., Petcavich, R."
 type: "journal"

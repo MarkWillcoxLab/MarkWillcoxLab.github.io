@@ -1,4 +1,5 @@
 ---
+sort_key: "2009-00-00"
 title: "Care regimen and lens material influence on silicone hydrogel contact lens deposition"
 authors: "Zhao, Z., Carnt, N.A., Aliwarga, Y., Wei, X., Naduvilath, T., Garrett, Q., Korth, J., Willcox, M.D.P."
 type: "journal"

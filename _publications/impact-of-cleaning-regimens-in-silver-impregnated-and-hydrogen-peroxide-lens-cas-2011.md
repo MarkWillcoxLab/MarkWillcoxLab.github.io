@@ -1,4 +1,5 @@
 ---
+sort_key: "2011-00-00"
 title: "Impact of cleaning regimens in silver-impregnated and hydrogen peroxide lens cases"
 authors: "Wu, Y.T., Zhu, H., Willcox, M., Stapleton, F."
 type: "journal"

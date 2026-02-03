@@ -1,4 +1,5 @@
 ---
+sort_key: "2016-00-00"
 title: "Evaluation of Protamine as a Disinfectant for Contact Lenses"
 authors: "Bandara, M.K., Masoudi, S., Zhu, H., Bandara, R., Willcox, M.D.P."
 type: "journal"

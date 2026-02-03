@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "Overview of mechanisms of antibiotic resistance in Pseudomonas aeruginosa: an ocular perspective"
 authors: "Subedi, D., Vijay, A.K., Willcox, M."
 type: "journal"

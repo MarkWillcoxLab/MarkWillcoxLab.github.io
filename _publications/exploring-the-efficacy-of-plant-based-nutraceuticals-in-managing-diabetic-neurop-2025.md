@@ -1,4 +1,5 @@
 ---
+sort_key: "2025-06-00"
 title: "Exploring the efficacy of plant-based nutraceuticals in managing diabetic neuropathy"
 authors: "Samea Khan, Maria Markoulli, Amy T. Tsoi, Mark Willcox"
 type: "journal"

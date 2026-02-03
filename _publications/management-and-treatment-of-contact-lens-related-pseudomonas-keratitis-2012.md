@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Management and treatment of contact lens-related Pseudomonas keratitis"
 authors: "Willcox, M.D.P."
 type: "journal"

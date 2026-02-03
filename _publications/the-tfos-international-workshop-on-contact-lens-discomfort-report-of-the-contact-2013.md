@@ -1,4 +1,5 @@
 ---
+sort_key: "2013-00-00"
 title: "The TFOS International Workshop on Contact Lens Discomfort: Report of the contact lens interactions with the tear film subcommittee"
 authors: "Craig, J.P., Willcox, M.D.P., Argüeso, P., Maissa, C., Stahl, U., Tomlinson, A., Wang, J., Yokoi, N., Stapleton, F."
 type: "journal"

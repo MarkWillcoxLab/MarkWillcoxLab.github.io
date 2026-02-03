@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "Association between possession of ExoU and antibiotic resistance in pseudomonas aeruginosa"
 authors: "Subedi, D., Vijay, A.K., Kohli, G.S., Rice, S.A., Willcox, M."
 type: "journal"

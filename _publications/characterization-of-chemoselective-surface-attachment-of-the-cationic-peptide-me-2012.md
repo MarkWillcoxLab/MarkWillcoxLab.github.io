@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Characterization of chemoselective surface attachment of the cationic peptide melimine and its effects on antimicrobial activity"
 authors: "Chen, R., Willcox, M.D.P., Cole, N., Ho, K.K.K., Rasul, R., Denman, J.A., Kumar, N."
 type: "journal"

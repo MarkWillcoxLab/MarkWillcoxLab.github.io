@@ -1,4 +1,5 @@
 ---
+sort_key: "2017-00-00"
 title: "Poly(ethylene glycol)-based coatings combining low-biofouling and quorum-sensing inhibiting properties to reduce bacterial colonization"
 authors: "Ozcelik, B., Ho, K.K.K., Glattauer, V., Willcox, M., Kumar, N., Thissen, H."
 type: "journal"

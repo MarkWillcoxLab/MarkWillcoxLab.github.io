@@ -1,4 +1,5 @@
 ---
+sort_key: "2018-00-00"
 title: "Guanidine functionalized anthranilamides as effective antibacterials with biofilm disruption activity"
 authors: "Kuppusamy, R., Yasir, M., Yee, E., Willcox, M., Black, D.S.C., Kumar, N."
 type: "journal"

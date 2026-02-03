@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "Osmolality and tear film dynamics"
 authors: "Stahl, U., Willcox, M., Stapleton, F."
 type: "journal"

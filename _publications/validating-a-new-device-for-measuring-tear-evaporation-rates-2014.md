@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "Validating a new device for measuring tear evaporation rates"
 authors: "Rohit, A., Ehrmann, K., Naduvilath, T., Willcox, M., Stapleton, F."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2012-00-00"
 title: "In vivo assessment of antimicrobial efficacy of silver-impregnated contact lens storage cases"
 authors: "Dantam, J., Zhu, H., Willcox, M., Ozkan, J., Naduvilath, T., Thomas, V., Stapleton, F."
 type: "journal"

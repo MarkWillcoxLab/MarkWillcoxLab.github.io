@@ -1,4 +1,5 @@
 ---
+sort_key: "2009-00-00"
 title: "Soft contact lens disinfection solution efficacy: Clinical Fusarium isolates vs. ATCC 36031"
 authors: "Hume, E.B.H., Flanagan, J., Masoudi, S., Zhu, H., Cole, N., Willcox, M.D.P."
 type: "journal"

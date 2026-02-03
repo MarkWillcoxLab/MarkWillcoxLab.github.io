@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 title: "Clinical and biochemical tear lipid parameters in contact lens wearers"
 authors: "Rohit, A., Willcox, M.D.P., Brown, S.H.J., Mitchell, T.W., Stapleton, F."
 type: "journal"

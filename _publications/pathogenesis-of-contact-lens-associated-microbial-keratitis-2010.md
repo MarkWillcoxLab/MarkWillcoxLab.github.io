@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Pathogenesis of contact lens-associated microbial keratitis"
 authors: "Carnt, N., Willcox, M.D.P., Keay, L., Flanagan, J., Stapleton, F."
 type: "journal"

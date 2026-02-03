@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 title: "Risk factors for corneal inflammatory and mechanical events with extended wear silicone hydrogel contact lenses"
 authors: "Ozkan, J., Mandathara, P., Krishna, P., Sankaridurg, P., Naduvilath, T., Willcox, M.D.P., Holden, B."
 type: "journal"

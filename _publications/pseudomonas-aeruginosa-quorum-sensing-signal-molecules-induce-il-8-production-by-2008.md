@@ -1,4 +1,5 @@
 ---
+sort_key: "2008-00-00"
 title: "Pseudomonas aeruginosa quorum-sensing signal molecules induce IL-8 production by human corneal epithelial cells"
 authors: "Zhu, H., Conibear, T.C.R., Thuruthyil, S.J., Willcox, M.D.P."
 type: "journal"

@@ -1,4 +1,5 @@
 ---
+sort_key: "2011-00-00"
 title: "Synthesis of dendrimeric N-glyoxylamide peptide mimics"
 authors: "Le, T., Cheah, W.C., Wood, K., Black, D.S.C., Willcox, M.D., Kumar, N."
 type: "journal"

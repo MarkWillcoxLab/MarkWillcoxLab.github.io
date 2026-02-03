@@ -1,4 +1,5 @@
 ---
+sort_key: "2021-08-00"
 title: "In vivo efficacy of silver-impregnated barrel contact lens storage cases"
 authors: "Ananya Datta, Mark D.P. Willcox, Fiona Stapleton"
 type: "journal"

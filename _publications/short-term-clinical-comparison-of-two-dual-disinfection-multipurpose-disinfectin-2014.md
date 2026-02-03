@@ -1,4 +1,5 @@
 ---
+sort_key: "2014-00-00"
 journal: "Eye and Contact Lens"
 title: "Short-term clinical comparison of two dual-disinfection multipurpose disinfecting solutions"
 authors: "Tilia, D., Lazon De La Jara, P., Weng, R., Naduvilath, T., Willcox, M.D.P."

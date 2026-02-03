@@ -1,4 +1,5 @@
 ---
+sort_key: "2010-00-00"
 journal: "Nutrition and Metabolism"
 title: "Role of carnitine in disease"
 authors: "Flanagan, J.L., Simmons, P.A., Vehige, J., Willcox, M.D., Garrett, Q."
