@@ -12,6 +12,8 @@ url: "https://markwillcoxlab.github.io" # the base hostname & protocol for your 
 github: [metadata]
 
 # Author information
+# orcid_id is used by scripts/sync_orcid_publications.py (and ORCID_ID env overrides)
+orcid_id: "0000-0003-3842-7563"
 author:
   name: "Prof. Mark Willcox"
   email: "m.willcox@unsw.edu.au"
