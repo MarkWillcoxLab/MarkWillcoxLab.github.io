@@ -129,7 +129,7 @@ title: Team
     </div>
 </section>
 
-{% assign postdocs = site.team | where: "category", "postdoc" %}
+{% assign postdocs = site.team | where: "category", "postdoc" | sort: "order" %}
 {% if postdocs.size > 0 %}
 <section class="py-5 bg-light">
     <div class="container">
@@ -141,7 +141,7 @@ title: Team
         </div>
         <div class="row">
             {% for member in postdocs %}
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="team-member" data-category="postdoc">
                     {% if member.image %}
                     <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
@@ -187,7 +187,7 @@ title: Team
         </div>
         <div class="row">
             {% for member in phd_students %}
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="team-member" data-category="phd">
                     {% if member.image %}
                     <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
@@ -233,7 +233,7 @@ title: Team
         </div>
         <div class="row">
             {% for member in masters_students %}
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="team-member" data-category="masters">
                     {% if member.image %}
                     <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
@@ -279,7 +279,7 @@ title: Team
         </div>
         <div class="row">
             {% for member in visiting %}
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="team-member" data-category="visiting">
                     {% if member.image %}
                     <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
@@ -323,7 +323,7 @@ title: Team
         </div>
         <div class="row">
             {% for member in others_filtered %}
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="team-member" data-category="other">
                     {% if member.image %}
                     <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
