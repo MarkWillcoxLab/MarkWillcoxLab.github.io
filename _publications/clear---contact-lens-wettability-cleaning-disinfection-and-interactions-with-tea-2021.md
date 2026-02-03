@@ -1,12 +1,12 @@
 ---
-title: "CLEAR - Contact lens wettability, cleaning, disinfection and interactions with tears"
-authors: "Willcox M., Keir N., Maseedupally V., Masoudi S., McDermott A., Mobeen R., Purslow C., Santodomingo-Rubido J., Tavazzi S., Zeri F., Jones L."
+title: "BCLA CLEAR - Contact lens wettability, cleaning, disinfection and interactions with tears"
+authors: "Mark Willcox, Nancy Keir, Vinod Maseedupally, Simin Masoudi, Alison McDermott, Rabia Mobeen, Christine Purslow, Jacinto Santodomingo-Rubido, Silvia Tavazzi, Fabrizio Zeri, Lyndon Jones"
 type: "journal"
 year: 2021
-journal: "J"
+journal: "Contact Lens and Anterior Eye"
 volume: "44"
 issue: "2"
 pages: "pp. 157"
 doi: "10.1016/j.clae.2021.02.004"
-url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85103131910&doi=10.1016%2fj.clae.2021.02.004&partnerID=40&md5=bbf6ce0dc7c40a5942d24f072f69ecce"
+url: "https://doi.org/10.1016/j.clae.2021.02.004"
 ---

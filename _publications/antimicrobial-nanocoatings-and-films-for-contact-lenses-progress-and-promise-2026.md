@@ -1,6 +1,6 @@
 ---
 title: "Antimicrobial nanocoatings and films for contact lenses: progress and promise"
-authors: "Willcox M.D.P. et al."
+authors: "Manjulatha Sara, Samuel Attard, Naresh Kumar, Mark Willcox"
 type: "journal"
 year: 2026
 journal: "Nanomedicine"

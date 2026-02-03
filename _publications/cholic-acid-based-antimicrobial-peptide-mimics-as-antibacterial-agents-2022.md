@@ -1,6 +1,6 @@
 ---
 title: "Cholic Acid-Based Antimicrobial Peptide Mimics as Antibacterial Agents"
-authors: "Wu J., Yu T.T., Kuppusamy R., Hassan M.M., Alghalayini A., Cranfield C.G., Willcox M.D.P., Black D.S., Kumar N."
+authors: "Jie Wu, Tsz Tin Yu, Rajesh Kuppusamy, Md. Musfizur Hassan, Amani Alghalayini, Charles G. Cranfield, Mark D. P. Willcox, David StC. Black, Naresh Kumar"
 type: "journal"
 year: 2022
 journal: "International Journal of Molecular Sciences"
@@ -8,5 +8,5 @@ volume: "23"
 issue: "9"
 pages: "art. no. 4623"
 doi: "10.3390/ijms23094623"
-url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85128521549&doi=10.3390%2fijms23094623&partnerID=40&md5=cee3ad68d24a524c6f487807dc347f77"
+url: "https://doi.org/10.3390/ijms23094623"
 ---

@@ -1,232 +1,324 @@
 #!/usr/bin/env python3
 """
-Sync publications from ORCID to Jekyll _publications.
-Fetches works from ORCID Public API and adds new entries as markdown files.
-Only adds works that don't already exist (matched by DOI or slug).
-Uses only Python stdlib (urllib, xml.etree, re, os).
+Sync publications from ORCID to Jekyll `_publications/` (FULL METADATA VERSION).
+
+- Fetches work summaries from ORCID
+- Fetches full work records using put-code
+- Extracts complete authors, year, journal, DOI, URL
+- Avoids duplicates using DOI or normalized title
+- Updates existing markdown files when a matching DOI is found
+- Creates new markdown files for genuinely new works
+- Uses ONLY Python standard library
 """
 
 import os
 import re
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 
 ORCID_API = "https://pub.orcid.org/v3.0"
+# Default: Prof. Mark Willcox
 DEFAULT_ORCID = "0000-0003-3842-7563"
 
 
-def local_tag(elem):
-    """Return tag without namespace (local name)."""
-    if elem.tag is None:
-        return ""
-    return elem.tag.split("}")[-1] if "}" in elem.tag else elem.tag
+# -------------------- XML HELPERS --------------------
+
+def local(tag: str) -> str:
+    return tag.split("}")[-1] if tag and "}" in tag else (tag or "")
 
 
-def slugify(title, year, max_len=100):
-    """Generate a URL-safe filename slug from title and year."""
-    s = re.sub(r"[^a-z0-9\s-]", "", title.lower())
+def find_text(root: ET.Element, tag_name: str):
+    if root is None:
+        return None
+    for e in root.iter():
+        if local(e.tag) == tag_name and e.text and e.text.strip():
+            return e.text.strip()
+    return None
+
+
+def normalize_title(title: str) -> str:
+    return re.sub(r"\s+", " ", title.lower().strip())[:200] if title else ""
+
+
+def fetch_xml(url: str) -> ET.Element:
+    req = urllib.request.Request(url, headers={"Accept": "application/orcid+xml"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return ET.fromstring(r.read().decode("utf-8", errors="replace"))
+
+
+def get_put_code(ws: ET.Element):
+    """Get put-code from work-summary element (may be namespaced)."""
+    if ws is None or not ws.attrib:
+        return None
+    put_code = ws.attrib.get("put-code")
+    if put_code:
+        return put_code
+    for k, v in ws.attrib.items():
+        if v and (k == "put-code" or k.endswith("put-code")):
+            return v
+    return None
+
+
+def fetch_work_summaries(orcid_id: str):
+    root = fetch_xml(f"{ORCID_API}/{orcid_id}/works")
+    summaries = []
+    for ws in root.iter():
+        if local(ws.tag) == "work-summary":
+            put_code = get_put_code(ws)
+            title = find_text(ws, "title")
+            if put_code and title:
+                summaries.append({"put_code": put_code, "title": title})
+    return summaries
+
+
+def fetch_full_work(orcid_id: str, put_code: str) -> ET.Element:
+    return fetch_xml(f"{ORCID_API}/{orcid_id}/work/{put_code}")
+
+
+# -------------------- FULL METADATA PARSING --------------------
+
+def parse_full_work(root: ET.Element):
+    title = find_text(root, "title") or ""
+    journal = find_text(root, "journal-title") or ""
+    year = find_text(root, "year") or "0000"
+    doi = ""
+    url = ""
+    authors = []
+
+    for e in root.iter():
+        if local(e.tag) == "credit-name" and e.text:
+            authors.append(e.text.strip())
+
+        if local(e.tag) == "external-id":
+            id_type = find_text(e, "external-id-type")
+            id_val = find_text(e, "external-id-value")
+            if id_type and id_type.lower() == "doi" and id_val:
+                doi = id_val.strip()
+
+    if doi:
+        url = f"https://doi.org/{doi}"
+    else:
+        url = find_text(root, "url") or ""
+
+    if not year.isdigit():
+        year = "0000"
+
+    # Fallback authors string if ORCID record has no contributors
+    authors_str = ", ".join(authors) if authors else "Willcox M.D.P. et al."
+
+    return {
+        "title": title,
+        "authors": authors_str,
+        "journal": journal,
+        "year": year,
+        "doi": doi or "",
+        "url": url or "",
+        "type": "journal",
+    }
+
+
+# -------------------- EXISTING PUBLICATIONS (MARKDOWN) --------------------
+
+def slugify(title: str, year: str, max_len: int = 100) -> str:
+    s = re.sub(r"[^a-z0-9\s-]", "", (title or "").lower())
     s = re.sub(r"[-\s]+", "-", s).strip("-")
     if len(s) > max_len:
         s = s[:max_len].rstrip("-")
     return f"{s}-{year}" if s else str(year)
 
 
-def get_child_text(parent, tag_name):
-    """Get text of first child with given local tag name."""
-    if parent is None:
-        return None
-    for c in parent:
-        if local_tag(c) == tag_name and c.text and c.text.strip():
-            return c.text.strip()
-        t = get_child_text(c, tag_name)
-        if t:
-            return t
-    return None
-
-
-def get_year_from_publication_date(parent):
-    """Extract year from publication-date element (may have year as child)."""
-    if parent is None:
-        return None
-    for c in parent:
-        if local_tag(c) == "publication-date":
-            y = get_child_text(c, "year")
-            if y:
-                return y
-            for cc in c:
-                if local_tag(cc) == "year" and cc.text:
-                    return cc.text.strip()
-        elif "publication" in local_tag(c).lower():
-            return get_year_from_publication_date(c)
-    return None
-
-
-def get_doi_from_external_ids(parent):
-    """Extract DOI from external-ids (external-id with external-id-type=doi)."""
-    if parent is None:
-        return None
-    for c in parent.iter():
-        if local_tag(c) == "external-ids":
-            for ext in c:
-                if local_tag(ext) == "external-id":
-                    etype = None
-                    value = None
-                    for cc in ext:
-                        if local_tag(cc) == "external-id-type" and cc.text:
-                            etype = cc.text.strip().lower()
-                        if local_tag(cc) == "external-id-value" and cc.text:
-                            value = cc.text.strip()
-                    if etype == "doi" and value:
-                        return value
-        elif local_tag(c) == "external-id":
-            etype = None
-            value = None
-            for cc in c:
-                if local_tag(cc) == "external-id-type" and cc.text:
-                    etype = cc.text.strip().lower()
-                if local_tag(cc) == "external-id-value" and cc.text:
-                    value = cc.text.strip()
-            if etype == "doi" and value:
-                return value
-    return None
-
-
-def parse_work_summary(elem):
-    """Parse one work-summary element into a dict. Returns None if no title."""
-    title = get_child_text(elem, "title")
-    if not title:
-        return None
-    year = get_year_from_publication_date(elem) or get_child_text(elem, "year")
-    if not year or not str(year).isdigit():
-        year = "0000"
-    work_type = get_child_text(elem, "type") or "journal-article"
-    type_map = {"journal-article": "journal", "book": "book", "book-chapter": "book", "conference-paper": "conference"}
-    pub_type = type_map.get(work_type, "journal") if work_type else "journal"
-    journal = get_child_text(elem, "journal-title") or ""
-    doi = get_doi_from_external_ids(elem)
-    url = get_child_text(elem, "url") or ""
-    if doi and not url:
-        url = f"https://doi.org/{doi}"
-    return {
-        "title": title,
-        "year": str(year),
-        "type": pub_type,
-        "journal": journal,
-        "doi": doi or "",
-        "url": url,
-    }
-
-
-def fetch_orcid_works(orcid_id):
-    """Fetch works from ORCID Public API. Returns list of work dicts."""
-    url = f"{ORCID_API}/{orcid_id}/works"
-    req = urllib.request.Request(url, headers={"Accept": "application/orcid+xml"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        body = resp.read().decode("utf-8", errors="replace")
-    root = ET.fromstring(body)
-    works = []
-    for elem in root.iter():
-        if local_tag(elem) == "work-summary":
-            w = parse_work_summary(elem)
-            if w and w.get("title"):
-                works.append(w)
-    # Dedupe by DOI or title+year
-    seen = set()
-    out = []
-    for w in works:
-        key = (w.get("doi") or "").strip() or (w.get("title", "") + w.get("year", ""))
-        if key and key not in seen:
-            seen.add(key)
-            out.append(w)
-    return out
-
-
-def load_existing_dois_and_slugs(publications_dir):
-    """Load set of DOIs and slugs from existing _publications markdown files."""
-    dois = set()
-    slugs = set()
+def load_existing_publications(publications_dir: str):
+    """
+    Load existing markdown publications.
+    Returns:
+      - doi_map: {doi_lower: filepath}
+      - title_set: set of normalized titles
+    """
+    doi_map = {}
+    title_set = set()
     if not os.path.isdir(publications_dir):
-        return dois, slugs
+        return doi_map, title_set
+
     for name in os.listdir(publications_dir):
         if not name.endswith(".md"):
             continue
-        slugs.add(name[:-3])
         path = os.path.join(publications_dir, name)
         try:
             with open(path, "r", encoding="utf-8", errors="ignore") as f:
-                content = f.read(4096)
-            m = re.search(r'doi:\s*["\']?([^"\'\s\n]+)', content)
-            if m:
-                dois.add(m.group(1).strip().lower())
+                content = f.read()
         except Exception:
-            pass
-    return dois, slugs
+            continue
+
+        # Title from front matter
+        m_title = re.search(r'^title:\s*"(.*)"\s*$', content, re.M)
+        if m_title:
+            title_set.add(normalize_title(m_title.group(1)))
+
+        # DOI from front matter
+        m_doi = re.search(r'^doi:\s*"?([^"\n]+)"?\s*$', content, re.M)
+        if m_doi:
+            doi_map[m_doi.group(1).strip().lower()] = path
+
+    return doi_map, title_set
 
 
-def write_publication_md(filepath, work):
-    """Write one publication markdown file."""
-    title = work["title"]
-    year = work["year"]
-    pub_type = work["type"]
-    journal = work.get("journal") or ""
+def escape_yaml(s: str) -> str:
+    return (s or "").replace("\\", "\\\\").replace('"', '\\"')
+
+
+def update_front_matter(front: str, work: dict) -> str:
+    """Update or insert key metadata lines in existing YAML front matter."""
+
+    def set_or_add(key: str, raw_value: str, quoted: bool = True):
+        nonlocal front
+        if raw_value is None:
+            return
+        value = escape_yaml(raw_value) if quoted else raw_value
+        line = f'{key}: "{value}"' if quoted else f"{key}: {value}"
+        pattern = re.compile(rf"^{key}:\s*.*$", re.M)
+        if pattern.search(front):
+            front = pattern.sub(line, front)
+        else:
+            front = line + "\n" + front
+
+    set_or_add("title", work.get("title", "") or "", quoted=True)
+    set_or_add("authors", work.get("authors", "") or "", quoted=True)
+    set_or_add("journal", work.get("journal", "") or "", quoted=True)
+    set_or_add("type", work.get("type", "journal"), quoted=True)
+    set_or_add("year", work.get("year", "0000"), quoted=False)
+    if work.get("doi"):
+        set_or_add("doi", work["doi"], quoted=True)
+    if work.get("url"):
+        set_or_add("url", work["url"], quoted=True)
+
+    return front
+
+
+def update_existing_file(path: str, work: dict) -> bool:
+    """
+    Update metadata in an existing markdown file using ORCID work data.
+    Returns True if file was changed.
+    """
+    try:
+        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.read()
+    except Exception:
+        return False
+
+    if not content.lstrip().startswith("---"):
+        return False
+
+    # Split front matter and body
+    parts = content.split("---", 2)
+    if len(parts) < 3:
+        return False
+    _, front, body = parts
+
+    new_front = update_front_matter(front.strip("\n"), work)
+    new_content = "---\n" + new_front.strip("\n") + "\n---" + body
+
+    if new_content != content:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        return True
+    return False
+
+
+def write_new_publication_md(publications_dir: str, work: dict):
+    """Create a new markdown file for a work."""
+    slug = slugify(work["title"], work["year"])
+    filepath = os.path.join(publications_dir, f"{slug}.md")
+
+    title = escape_yaml(work["title"])
+    authors = escape_yaml(work["authors"])
+    journal = escape_yaml(work.get("journal") or "")
     doi = work.get("doi") or ""
     url = work.get("url") or (f"https://doi.org/{doi}" if doi else "")
+    year = work.get("year") or "0000"
+    pub_type = work.get("type") or "journal"
 
-    title_escaped = title.replace("\\", "\\\\").replace('"', '\\"')
     lines = [
         "---",
-        f'title: "{title_escaped}"',
-        'authors: "Willcox M.D.P. et al."',
+        f'title: "{title}"',
+        f'authors: "{authors}"',
         f'type: "{pub_type}"',
         f"year: {year}",
     ]
     if journal:
-        j = journal[:200] if len(journal) > 200 else journal
-        lines.append(f'journal: "{j.replace(chr(34), "")}"')
+        lines.append(f'journal: "{journal}"')
     if doi:
-        lines.append(f'doi: "{doi}"')
+        lines.append(f'doi: "{escape_yaml(doi)}"')
     if url:
-        lines.append(f'url: "{url.replace(chr(34), "")}"')
+        lines.append(f'url: "{escape_yaml(url)}"')
     lines.append("---")
     lines.append("")
 
-    os.makedirs(os.path.dirname(filepath) or ".", exist_ok=True)
+    os.makedirs(publications_dir, exist_ok=True)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
+    return slug
+
+
+# -------------------- MAIN --------------------
 
 def main():
-    repo_root = os.environ.get("GITHUB_WORKSPACE") or os.environ.get("REPO_ROOT") or "."
+    repo_root = os.environ.get("GITHUB_WORKSPACE") or os.environ.get("REPO_ROOT") or os.getcwd()
     orcid_id = os.environ.get("ORCID_ID") or DEFAULT_ORCID
     publications_dir = os.path.join(repo_root, "_publications")
 
-    existing_dois, existing_slugs = load_existing_dois_and_slugs(publications_dir)
+    doi_map, title_set = load_existing_publications(publications_dir)
+
     try:
-        works = fetch_orcid_works(orcid_id)
+        summaries = fetch_work_summaries(orcid_id)
     except Exception as e:
         print(f"Failed to fetch ORCID works: {e}", file=sys.stderr)
         return 1
 
     added = 0
-    for w in works:
-        doi = (w.get("doi") or "").strip()
-        slug = slugify(w["title"], w["year"])
-        if doi and doi.lower() in existing_dois:
-            continue
-        if slug in existing_slugs:
-            continue
-        filepath = os.path.join(publications_dir, f"{slug}.md")
-        write_publication_md(filepath, w)
-        added += 1
-        existing_slugs.add(slug)
-        if doi:
-            existing_dois.add(doi.lower())
+    updated = 0
 
-    print(f"ORCID works fetched: {len(works)}")
+    for s in summaries:
+        put_code = s["put_code"]
+        try:
+            full_root = fetch_full_work(orcid_id, put_code)
+            work = parse_full_work(full_root)
+        except Exception:
+            continue
+
+        doi_lower = (work.get("doi") or "").strip().lower()
+        title_norm = normalize_title(work.get("title", ""))
+
+        if doi_lower and doi_lower in doi_map:
+            # Update existing file metadata from ORCID
+            path = doi_map[doi_lower]
+            if update_existing_file(path, work):
+                updated += 1
+            # Small delay to be nice to ORCID API
+            time.sleep(0.1)
+            continue
+
+        if title_norm and title_norm in title_set:
+            # Likely already present via title match; skip creating duplicate
+            continue
+
+        # New work -> create markdown file
+        slug = write_new_publication_md(publications_dir, work)
+        added += 1
+        title_set.add(title_norm or slug)
+        if doi_lower:
+            doi_map[doi_lower] = os.path.join(publications_dir, f"{slug}.md")
+
+        time.sleep(0.1)
+
+    print(f"ORCID works fetched: {len(summaries)}")
     print(f"New publications added: {added}")
+    print(f"Existing publications updated: {updated}")
     return 0
 
 
 if __name__ == "__main__":
     sys.exit(main())
+

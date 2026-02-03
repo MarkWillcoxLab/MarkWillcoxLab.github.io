@@ -1,6 +1,6 @@
 ---
 title: "Differential possession of type 6 secretion system effector genes in exoU and exoS Pseudomonas aeruginosa in microbial keratitis"
-authors: "Willcox M.D.P. et al."
+authors: "Tanzina Akter, Abrar Maswood Haider, Fiona Stapleton, Mark Willcox"
 type: "journal"
 year: 2026
 journal: "Experimental Eye Research"

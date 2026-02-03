@@ -1,6 +1,6 @@
 ---
 title: "Antimicrobial resistance surveillance: lessons learnt from large databases of antimicrobial resistance genes"
-authors: "Willcox M.D.P. et al."
+authors: "Jiawei Shen, Abiye Tigabu, Shyam K Mishra, Umme Urmi, Jerome Ozkan, Fiona Stapleton, Muhammad Yasir, Mark Willcox"
 type: "journal"
 year: 2026
 journal: "British Journal of Ophthalmology"

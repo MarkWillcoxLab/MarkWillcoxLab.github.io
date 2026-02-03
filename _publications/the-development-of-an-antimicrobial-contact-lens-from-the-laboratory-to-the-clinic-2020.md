@@ -1,6 +1,6 @@
 ---
 title: "The Development of an Antimicrobial Contact Lens – From the Laboratory to the Clinic"
-authors: "Willcox M.D.P. et al."
+authors: "Mark D.P. Willcox, R. Chen, P. Kalaiselvan, M. Yasir, R. Rasul, N. Kumar, D. Dutta"
 type: "journal"
 year: 2020
 journal: "Current Protein & Peptide Science"

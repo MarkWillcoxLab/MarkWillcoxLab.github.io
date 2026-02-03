@@ -1,12 +1,12 @@
 ---
 title: "Engineering Mixed Micelle-Loaded Contact Lenses for Sustained Ocular Delivery of Dexamethasone: In Vitro and In Vivo Studies"
-authors: "Maulvi F.A., Mahala S.M., Shetty K.H., Sahu A., Patel A.R., Desai D.T., Shah D.O., Willcox M.D.P."
+authors: "Furqan A. Maulvi, Swati M. Mahala, Kiran H. Shetty, Amit Sahu, Ashmi R. Patel, Ditixa T. Desai, Dinesh O. Shah, Mark D. P. Willcox"
 type: "journal"
 year: 2025
-journal: "ACSABM"
+journal: "ACS Applied Bio Materials"
 volume: "8"
 issue: "12"
 pages: "pp. 10644"
 doi: "10.1021/acsabm.5c01145"
-url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105025020936&doi=10.1021%2facsabm.5c01145&partnerID=40&md5=62fd22a4051a336df996c6e241afc2fc"
+url: "https://doi.org/10.1021/acsabm.5c01145"
 ---
