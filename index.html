@@ -211,30 +211,40 @@ title: Home
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2>Featured Publications</h2>
-                <p class="lead">Recent high-impact research from our group</p>
+            <div class="col-12 text-center mb-4">
+                <h2>Gallery</h2>
+
             </div>
         </div>
-        <div class="row">
-            {% assign featured_pubs = site.publications | where: "featured", true | sort: 'date' | reverse | limit: 3 %}
-            {% for pub in featured_pubs %}
-            <div class="col-lg-4 mb-4">
-                <div class="publication-item">
-                    <h5 class="publication-title">{{ pub.title }}</h5>
-                    <p class="publication-authors">{{ pub.authors }}</p>
-                    <p class="publication-journal">{{ pub.journal }}</p>
-                    <span class="publication-year">{{ pub.year }}</span>
-                    {% if pub.doi %}
-                    <br><a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    {% endif %}
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-have 7" style="max-width: 800px;">
+                <div id="homeGallery" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner rounded overflow-hidden shadow">
+                        {% assign gallery_images = site.data.gallery_images %}
+                        {% for image_path in gallery_images %}
+                        {% assign img_url = '/assets/images/websiteimages/' | append: image_path | replace: ' ', '%20' %}
+                        <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                            <img src="{{ img_url | relative_url }}" class="d-block mx-auto" style="object-fit: cover; object-position: center; width: 100%; height: 400px;" alt="Lab gallery">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#homeGallery" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#homeGallery" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-lg">View All Publications</a>
+                <div class="d-flex justify-content-center gap-2 mt-3">
+                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#homeGallery" data-bs-slide="prev" aria-label="Previous">
+                        <i class="fas fa-chevron-left me-1"></i> Previous
+                    </button>
+                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#homeGallery" data-bs-slide="next" aria-label="Next">
+                        Next <i class="fas fa-chevron-right ms-1"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

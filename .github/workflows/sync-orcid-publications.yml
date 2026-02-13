@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # read + write so we can push new publication files
+  contents: write  # read + write so we can push new pubcalication files
 
 jobs:
   sync:
