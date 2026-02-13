@@ -1,0 +1,39 @@
+---
+layout: default
+title: Gallery
+---
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Gallery</h1>
+                <p class="lead">Lab life, conferences, group photos and member moments</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% assign gallery_sections = site.data.gallery_images %}
+
+{% for section in gallery_sections %}
+<section class="py-5 {% if forloop.first %}pb-4{% endif %}{% if forloop.index == 2 %} bg-light{% endif %}{% if forloop.index == 3 %}{% endif %}{% if forloop.index == 4 %} bg-light{% endif %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="h4 border-bottom pb-2" id="{{ section.slug }}">{{ section.name }}</h2>
+            </div>
+        </div>
+        <div class="row g-3">
+            {% for image_path in section.images %}
+            {% assign img_url = '/assets/images/websiteimages/' | append: image_path | replace: ' ', '%20' %}
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="{{ img_url | relative_url }}" target="_blank" rel="noopener" class="d-block rounded overflow-hidden shadow-sm">
+                    <img src="{{ img_url | relative_url }}" class="img-fluid w-100" style="object-fit: cover; height: 200px;" alt="{{ section.name }} — {{ forloop.index }}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endfor %}
