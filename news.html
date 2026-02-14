@@ -21,17 +21,20 @@ title: News
         <div class="row">
             <div class="col-12">
                 {% for news in all_news %}
-                <div class="news-item mb-5">
+                <div class="news-item mb-5 pb-4 border-bottom">
                     {% if news.image %}
-                    <img src="{{ news.image | relative_url }}" class="img-fluid mb-3" alt="{{ news.title }}">
+                    <img src="{{ news.image | relative_url }}" class="img-fluid mb-3 rounded" alt="{{ news.title }}" style="max-height: 200px; width: auto; object-fit: cover;">
                     {% endif %}
                     <div class="text-muted small mb-2">{{ news.date | date: "%B %d, %Y" }}</div>
-                    <h3 class="mb-3">{{ news.title }}</h3>
-                    <div class="news-content">
-                        {{ news.content }}
-                    </div>
+                    <h3 class="mb-2">
+                        {% if news.url %}
+                        <a href="{{ news.url }}" class="text-decoration-none">{{ news.title }}</a>
+                        {% else %}
+                        {{ news.title }}
+                        {% endif %}
+                    </h3>
                     {% if news.url %}
-                    <a href="{{ news.url }}" class="btn btn-outline-primary mt-3">Read More</a>
+                    <a href="{{ news.url }}" class="btn btn-outline-primary btn-sm mt-2">Read full story</a>
                     {% endif %}
                 </div>
                 {% endfor %}

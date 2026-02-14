@@ -48,6 +48,147 @@ title: Home
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
+                <h2>Research Areas</h2>
+                <p class="lead">Our research spans multiple cutting-edge areas in antimicrobial development and medical microbiology</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bacteria fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Antimicrobial Development</h4>
+                        <p class="card-text">
+                            Developing novel antimicrobial compounds and antibiotics to combat resistant 
+                            bacterial infections and emerging pathogens.
+                        </p>
+                        <a href="{{ '/research/#antimicrobials' | relative_url }}" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-virus fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Disinfectant Research</h4>
+                        <p class="card-text">
+                            Advancing next-generation disinfectants and sanitization technologies 
+                            for healthcare and industrial applications.
+                        </p>
+                        <a href="{{ '/research/#disinfectants' | relative_url }}" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-dna fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Microbial Resistance</h4>
+                        <p class="card-text">
+                            Studying mechanisms of antimicrobial resistance and developing strategies 
+                            to overcome resistance in clinical settings.
+                        </p>
+                        <a href="{{ '/research/#resistance' | relative_url }}" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Latest News</h2>
+                <p class="lead">Recent updates and announcements from our group</p>
+            </div>
+        </div>
+        {% assign latest_news = site.news | sort: 'date' | reverse | limit: 3 %}
+        {% if latest_news.size > 0 %}
+        <div class="row">
+            {% for item in latest_news %}
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    {% if item.image %}
+                    <img src="{{ item.image | relative_url }}" class="card-img-top" alt="{{ item.title }}" style="height: 180px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">{{ item.date | date: "%B %d, %Y" }}</p>
+                        <h5 class="card-title">
+                            {% if item.url %}
+                            <a href="{{ item.url }}" class="text-decoration-none stretched-link">{{ item.title }}</a>
+                            {% else %}
+                            {{ item.title }}
+                            {% endif %}
+                        </h5>
+                        {% if item.url %}
+                        <span class="text-primary small">Read full story <i class="fas fa-arrow-right fa-xs"></i></span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-3">
+            <a href="{{ '/news/' | relative_url }}" class="btn btn-outline-primary">View all news</a>
+        </div>
+        {% else %}
+        <p class="text-center text-muted">No news at the moment. Check back soon!</p>
+        {% endif %}
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Gallery</h2>
+
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-7" style="max-width: 800px;">
+                <div id="homeGallery" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-inner rounded overflow-hidden shadow">
+                        {% assign slide_index = 0 %}
+                        {% for section in site.data.gallery_images %}
+                        {% for image_path in section.images %}
+                        {% assign img_path_encoded = image_path | replace: ' ', '%20' | replace: '(', '%28' | replace: ')', '%29' %}
+                        {% assign img_url = '/assets/images/websiteimages/' | append: img_path_encoded %}
+                        <div class="carousel-item{% if slide_index == 0 %} active{% endif %}">
+                            <img src="{{ img_url | relative_url }}" class="d-block w-100" style="object-fit: cover; object-position: center; width: 100%; height: 400px;" alt="Lab gallery — {{ section.name }}">
+                        </div>
+                        {% assign slide_index = slide_index | plus: 1 %}
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#homeGallery" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#homeGallery" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center gap-2 mt-3">
+                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#homeGallery" data-bs-slide="prev" aria-label="Previous">
+                        <i class="fas fa-chevron-left me-1"></i> Previous
+                    </button>
+                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#homeGallery" data-bs-slide="next" aria-label="Next">
+                        Next <i class="fas fa-chevron-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
                 <h2>Lab Goals</h2>
                 <p class="lead">Our mission and objectives in advancing antimicrobial research</p>
             </div>
@@ -124,49 +265,25 @@ title: Home
 <section class="py-5 bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2>Research Areas</h2>
-                <p class="lead">Our research spans multiple cutting-edge areas in antimicrobial development and medical microbiology</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-bacteria fa-3x text-primary mb-3"></i>
-                        <h4 class="card-title">Antimicrobial Development</h4>
-                        <p class="card-text">
-                            Developing novel antimicrobial compounds and antibiotics to combat resistant 
-                            bacterial infections and emerging pathogens.
-                        </p>
-                        <a href="{{ '/research/#antimicrobials' | relative_url }}" class="btn btn-outline-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-shield-virus fa-3x text-primary mb-3"></i>
-                        <h4 class="card-title">Disinfectant Research</h4>
-                        <p class="card-text">
-                            Advancing next-generation disinfectants and sanitization technologies 
-                            for healthcare and industrial applications.
-                        </p>
-                        <a href="{{ '/research/#disinfectants' | relative_url }}" class="btn btn-outline-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-dna fa-3x text-primary mb-3"></i>
-                        <h4 class="card-title">Microbial Resistance</h4>
-                        <p class="card-text">
-                            Studying mechanisms of antimicrobial resistance and developing strategies 
-                            to overcome resistance in clinical settings.
-                        </p>
-                        <a href="{{ '/research/#resistance' | relative_url }}" class="btn btn-outline-primary">Learn More</a>
-                    </div>
+            <div class="col-lg-8 mx-auto text-center">
+                <h2>Join Our Research Team</h2>
+                <p class="lead mb-4">
+                    We're always looking for talented researchers, students, and collaborators. 
+                    Join us in pushing the boundaries of antimicrobial research and medical microbiology.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{{ '/team/' | relative_url }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-users me-2"></i>Meet Our Team
+                    </a>
+                    <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contact Us
+                    </a>
+                                            <a href="{{ '/research/' | relative_url }}" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-flask me-2"></i>Research Areas
+                        </a>
+                        <a href="{{ '/team/' | relative_url }}" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-users me-2"></i>Our Team
+                        </a>
                 </div>
             </div>
         </div>
@@ -207,77 +324,3 @@ title: Home
         </div>
     </div>
 </section>
-
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-4">
-                <h2>Gallery</h2>
-
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 col-xl-7" style="max-width: 800px;">
-                <div id="homeGallery" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
-                    <div class="carousel-inner rounded overflow-hidden shadow">
-                        {% assign slide_index = 0 %}
-                        {% for section in site.data.gallery_images %}
-                        {% for image_path in section.images %}
-                        {% assign img_path_encoded = image_path | replace: ' ', '%20' | replace: '(', '%28' | replace: ')', '%29' %}
-                        {% assign img_url = '/assets/images/websiteimages/' | append: img_path_encoded %}
-                        <div class="carousel-item{% if slide_index == 0 %} active{% endif %}">
-                            <img src="{{ img_url | relative_url }}" class="d-block w-100" style="object-fit: cover; object-position: center; width: 100%; height: 400px;" alt="Lab gallery — {{ section.name }}">
-                        </div>
-                        {% assign slide_index = slide_index | plus: 1 %}
-                        {% endfor %}
-                        {% endfor %}
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#homeGallery" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#homeGallery" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="d-flex justify-content-center gap-2 mt-3">
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#homeGallery" data-bs-slide="prev" aria-label="Previous">
-                        <i class="fas fa-chevron-left me-1"></i> Previous
-                    </button>
-                    <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#homeGallery" data-bs-slide="next" aria-label="Next">
-                        Next <i class="fas fa-chevron-right ms-1"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2>Join Our Research Team</h2>
-                <p class="lead mb-4">
-                    We're always looking for talented researchers, students, and collaborators. 
-                    Join us in pushing the boundaries of antimicrobial research and medical microbiology.
-                </p>
-                <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="{{ '/team/' | relative_url }}" class="btn btn-primary btn-lg">
-                        <i class="fas fa-users me-2"></i>Meet Our Team
-                    </a>
-                    <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-envelope me-2"></i>Contact Us
-                    </a>
-                                            <a href="{{ '/research/' | relative_url }}" class="btn btn-outline-primary btn-lg">
-                            <i class="fas fa-flask me-2"></i>Research Areas
-                        </a>
-                        <a href="{{ '/team/' | relative_url }}" class="btn btn-outline-primary btn-lg">
-                            <i class="fas fa-users me-2"></i>Our Team
-                        </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> 
