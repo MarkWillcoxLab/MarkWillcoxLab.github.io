@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/team/samuel-attard.jpeg"
+image: "/assets/images/Sam Attard.jpeg"
 name: "Samuel Attard"
 position: "PhD Student"
 category: "phd"
