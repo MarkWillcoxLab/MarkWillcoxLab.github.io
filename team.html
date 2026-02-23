@@ -502,10 +502,14 @@ title: Team
                         {% assign display_position = member.technical_role %}
                     {% endif %}
                     {% assign display_order = 999 %}
-                    {% if member.name == "Jiawei Shen" %}
+                    {% if member.name == "Tope A. Ibisanmi" %}
                         {% assign display_order = 1 %}
-                    {% elsif member.name == "Abiye Tigabu Molla" %}
+                    {% elsif member.name == "Jiawei Shen" %}
                         {% assign display_order = 2 %}
+                    {% elsif member.name == "Shyam Kumar Mishra" %}
+                        {% assign display_order = 3 %}
+                    {% elsif member.name == "Abiye Tigabu Molla" %}
+                        {% assign display_order = 4 %}
                     {% endif %}
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4" style="order: {{ display_order }};">
                 <div class="team-member text-center" data-category="technical">
