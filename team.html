@@ -49,7 +49,7 @@ title: Team
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">Professor Mark Willcox</h3>
-                                <p class="text-muted mb-3">Principal Investigator </p>
+                                <p class="text-muted mb-3">Principal Investigator</p>
                                 
                                 <h5>Biography</h5>
                                 <p>
@@ -309,7 +309,7 @@ title: Team
 {% endif %}
 
 {% assign others = site.team | where: "category", "other" %}
-{% assign others_filtered = others | where_exp: "member", "member.name != 'Tope A. Ibisanmi'" %}
+{% assign others_filtered = others %}
 {% if others_filtered.size > 0 %}
 <section class="py-5 bg-light">
     <div class="container">
@@ -502,12 +502,10 @@ title: Team
                         {% assign display_position = member.technical_role %}
                     {% endif %}
                     {% assign display_order = 999 %}
-                    {% if member.name == "Tope A. Ibisanmi" %}
+                    {% if member.name == "Jiawei Shen" %}
                         {% assign display_order = 1 %}
-                    {% elsif member.name == "Jiawei Shen" %}
-                        {% assign display_order = 2 %}
                     {% elsif member.name == "Abiye Tigabu Molla" %}
-                        {% assign display_order = 3 %}
+                        {% assign display_order = 2 %}
                     {% endif %}
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4" style="order: {{ display_order }};">
                 <div class="team-member text-center" data-category="technical">

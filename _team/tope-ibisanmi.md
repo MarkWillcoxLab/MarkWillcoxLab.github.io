@@ -1,14 +1,14 @@
 ---
 name: "Tope A. Ibisanmi"
-position: "Bioinformatician & Site Developer"
-category: "technical"
+position: "PhD Student"
+category: "phd"
 order: 1
 email: "t.ibisanmi@unsw.edu.au"
 github: "https://github.com/Ibisanmi1"
-research: "Antimicrobial resistance, computational and experimental drug design"
+research: "Antimicrobial resistance only"
 image: "/assets/images/team/tope-ibisanmi.jpg"
 hobbies: "Adventures, web surfing, football"
 ---
 
-Full stack bioinformatician and site developer with research interests in antimicrobial resistance, computational and experimental drug design.
+PhD student with research focus on antimicrobial resistance.
 
