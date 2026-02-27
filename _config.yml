@@ -25,10 +25,10 @@ author:
       url: "https://scholar.google.com/citations?user=example"
     - label: "ResearchGate"
       icon: "fab fa-researchgate"
-      url: "https://www.researchgate.net/profile/Mark_Willcox"
+      url: "https://www.researchgate.net/profile/Mark-Willcox-3?ev=brs_overview"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/markwillcox"
+      url: "https://www.linkedin.com/in/mark-willcox-81990a3/"
 
 # Build settings
 markdown: kramdown

@@ -2,6 +2,7 @@
 image: "/assets/images/team/jiawei-shen.jpg"
 name: "Jiawei Shen"
 position: "PhD Student"
+role: "Dev support engineer"
 category: "phd"
 email: "jiawei.shen@unsw.edu.au"
 research: "Bacterial infection; Virulence; Biofilm; Antibiotic resistance; Molecular biology; Genomics."

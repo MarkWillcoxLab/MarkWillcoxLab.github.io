@@ -193,7 +193,7 @@ title: Team
                     <img src="https://via.placeholder.com/200x200/17a2b8/ffffff?text={{ member.name | url_encode }}" alt="{{ member.name }}">
                     {% endif %}
                     <h4>{{ member.name }}</h4>
-                    <p class="position">{{ member.position }}</p>
+                    <p class="position">{{ member.position }}{% if member.role %} <span class="text-muted fst-italic">· {{ member.role }}</span>{% endif %}</p>
                     {% if member.research %}
                     <p class="text-muted">{{ member.research }}</p>
                     {% endif %}
