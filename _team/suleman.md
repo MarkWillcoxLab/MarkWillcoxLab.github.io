@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/team/suleman.jpg"
-name: "Suleman"
+name: "Suleman Irfan"
 position: "PhD Student"
 category: "phd"
 email: "s.irfan@unsw.edu.au"
