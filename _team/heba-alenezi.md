@@ -1,5 +1,5 @@
 ---
-image: "/assets/images/Heba.pdf"
+image: "/data/0302update/heba.jpg"
 name: "Heba Alenezi"
 position: "PhD Student"
 category: "phd"
