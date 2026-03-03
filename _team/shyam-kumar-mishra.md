@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/team/shyam-kumar-mishra.jpg"
-name: "Shyam Kumar Mishra"
+name: "Shyam Kumar Mishra, PhD"
 position: "Visiting Fellow"
 category: "visiting"
 email: "s.mishrabaishnab@unsw.edu.au"
