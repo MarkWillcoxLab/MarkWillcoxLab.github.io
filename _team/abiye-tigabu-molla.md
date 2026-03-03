@@ -2,6 +2,7 @@
 image: "/assets/images/team/abiye-tigabu-molla.jpg"
 name: "Abiye Tigabu Molla"
 position: "PhD Student"
+role: "Dev support engineer"
 category: "phd"
 email: "a.molla@unsw.edu.au"
 research: "Medical Microbiology, Genomics, molecular biology"
