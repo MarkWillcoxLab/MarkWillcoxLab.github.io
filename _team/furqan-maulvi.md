@@ -1,4 +1,5 @@
 ---
+image: "/assets/images/team/FURQAN.JPG"
 name: "Furqan Maulvi, PhD"
 position: "Visiting Fellow"
 category: "visiting"

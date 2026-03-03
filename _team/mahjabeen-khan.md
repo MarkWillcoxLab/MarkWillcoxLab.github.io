@@ -1,6 +1,6 @@
 ---
 image: "/assets/images/team/mahjabeen-khan.jpg"
-name: "Mahjabeen Khan"
+name: "Mahjabeen Khan, PhD"
 position: "Visiting Fellow"
 category: "visiting"
 email: "mahjabeen.khan@unsw.edu.au"
