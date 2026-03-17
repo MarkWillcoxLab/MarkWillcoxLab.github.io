@@ -118,15 +118,9 @@ title: Home
                     <div class="card-body">
                         <p class="text-muted small mb-2">{{ item.date | date: "%B %d, %Y" }}</p>
                         <h5 class="card-title">
-                            {% if item.url %}
-                            <a href="{{ item.url }}" class="text-decoration-none stretched-link">{{ item.title }}</a>
-                            {% else %}
-                            {{ item.title }}
-                            {% endif %}
+                            <a href="{{ item.url | relative_url }}" class="text-decoration-none stretched-link">{{ item.title }}</a>
                         </h5>
-                        {% if item.url %}
                         <span class="text-primary small">Read full story <i class="fas fa-arrow-right fa-xs"></i></span>
-                        {% endif %}
                     </div>
                 </div>
             </div>

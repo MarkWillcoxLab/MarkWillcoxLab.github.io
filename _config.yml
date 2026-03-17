@@ -104,6 +104,7 @@ jekyll-archives:
 
 # Exclude from processing
 exclude:
+  - "~$*"
   - Gemfile
   - Gemfile.lock
   - node_modules

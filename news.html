@@ -27,14 +27,12 @@ title: News
                     {% endif %}
                     <div class="text-muted small mb-2">{{ news.date | date: "%B %d, %Y" }}</div>
                     <h3 class="mb-2">
-                        {% if news.url %}
-                        <a href="{{ news.url }}" class="text-decoration-none">{{ news.title }}</a>
-                        {% else %}
-                        {{ news.title }}
-                        {% endif %}
+                        <a href="{{ news.url | relative_url }}" class="text-decoration-none">{{ news.title }}</a>
                     </h3>
-                    {% if news.url %}
-                    <a href="{{ news.url }}" class="btn btn-outline-primary btn-sm mt-2">Read full story</a>
+                    {% if news.external_url %}
+                    <a href="{{ news.external_url }}" class="btn btn-outline-primary btn-sm mt-2" target="_blank" rel="noopener">Read full story</a>
+                    {% else %}
+                    <a href="{{ news.url | relative_url }}" class="btn btn-outline-primary btn-sm mt-2">Read full story</a>
                     {% endif %}
                 </div>
                 {% endfor %}
