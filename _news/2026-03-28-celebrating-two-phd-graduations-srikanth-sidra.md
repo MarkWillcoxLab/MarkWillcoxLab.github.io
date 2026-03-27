@@ -3,7 +3,6 @@ layout: news
 title: "Celebrating Two PhD Graduations in Our Lab"
 date: 2026-03-28
 image: "/assets/images/sidra/image-31.jpg"
-hero_image: "/assets/images/sidra/image-31.jpg"
 slideshow_images:
   - "/assets/images/sidra/image-28.jpg"
   - "/assets/images/sidra/image-29.jpg"
