@@ -6,7 +6,7 @@ description: >-
   novel antibiotics, and disinfectant research. Our interdisciplinary 
   research addresses the global challenge of antimicrobial resistance.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://markwillcoxlab.github.io" # the base hostname & protocol for your site
+url: "https://markwillcoxlab.com.au" # canonical site URL (custom domain; used by sitemap & SEO)
 
 # GitHub Pages configuration
 github: [metadata]
