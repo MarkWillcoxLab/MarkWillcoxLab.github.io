@@ -1,0 +1,37 @@
+<div class="ambassador-slideshow">
+    <div class="ambassador-slideshow-wrapper">
+        {% for img in page.slideshow_images %}
+        <div class="ambassador-slide {% if forloop.first %}active{% endif %}">
+            <img src="{{ img | relative_url }}" class="img-fluid" alt="{{ page.title }}">
+        </div>
+        {% endfor %}
+    </div>
+    <button class="ambassador-slideshow-btn prev" aria-label="Previous">&#10094;</button>
+    <button class="ambassador-slideshow-btn next" aria-label="Next">&#10095;</button>
+    <div class="ambassador-slideshow-dots">
+        {% for img in page.slideshow_images %}
+        <span class="ambassador-dot {% if forloop.first %}active{% endif %}" data-slide="{{ forloop.index0 }}"></span>
+        {% endfor %}
+    </div>
+</div>
+<script>
+(function() {
+    var c = document.currentScript.closest('.col-md-8');
+    var slides = c.querySelectorAll('.ambassador-slide');
+    var dots = c.querySelectorAll('.ambassador-dot');
+    var total = slides.length;
+    if (total === 0) return;
+    var slideIndex = 0;
+    function showSlide(n) {
+        slideIndex = (n + total) % total;
+        slides.forEach(function(s, i) { s.classList.toggle('active', i === slideIndex); });
+        dots.forEach(function(d, i) { d.classList.toggle('active', i === slideIndex); });
+    }
+    var nextBtn = c.querySelector('.ambassador-slideshow-btn.next');
+    var prevBtn = c.querySelector('.ambassador-slideshow-btn.prev');
+    if (nextBtn) nextBtn.addEventListener('click', function() { showSlide(slideIndex + 1); });
+    if (prevBtn) prevBtn.addEventListener('click', function() { showSlide(slideIndex - 1); });
+    dots.forEach(function(d, i) { d.addEventListener('click', function() { showSlide(i); }); });
+    setInterval(function() { showSlide(slideIndex + 1); }, 5000);
+})();
+</script>

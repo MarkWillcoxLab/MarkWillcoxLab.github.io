@@ -34,47 +34,31 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                {% if page.slideshow_images %}
-                <div class="ambassador-slideshow">
-                    <div class="ambassador-slideshow-wrapper">
-                        {% for img in page.slideshow_images %}
-                        <div class="ambassador-slide {% if forloop.first %}active{% endif %}">
-                            <img src="{{ img | relative_url }}" class="img-fluid" alt="{{ page.title }}">
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <button class="ambassador-slideshow-btn prev" aria-label="Previous">&#10094;</button>
-                    <button class="ambassador-slideshow-btn next" aria-label="Next">&#10095;</button>
-                    <div class="ambassador-slideshow-dots">
-                        {% for img in page.slideshow_images %}
-                        <span class="ambassador-dot {% if forloop.first %}active{% endif %}" data-slide="{{ forloop.index0 }}"></span>
-                        {% endfor %}
-                    </div>
+                {% if page.slideshow_before_closing and page.slideshow_images %}
+                {% if page.hero_image %}
+                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+                {% endif %}
+                {% assign parts = content | split: '<!-- SLIDESHOW -->' %}
+                <div class="news-content">
+                    {{ parts[0] }}
                 </div>
-                <script>
-                (function() {
-                    var c = document.currentScript.closest('.col-md-8');
-                    var slides = c.querySelectorAll('.ambassador-slide');
-                    var dots = c.querySelectorAll('.ambassador-dot');
-                    var total = slides.length;
-                    var slideIndex = 0;
-                    function showSlide(n) {
-                        slideIndex = (n + total) % total;
-                        slides.forEach(function(s, i) { s.classList.toggle('active', i === slideIndex); });
-                        dots.forEach(function(d, i) { d.classList.toggle('active', i === slideIndex); });
-                    }
-                    c.querySelector('.ambassador-slideshow-btn.next').addEventListener('click', function() { showSlide(slideIndex + 1); });
-                    c.querySelector('.ambassador-slideshow-btn.prev').addEventListener('click', function() { showSlide(slideIndex - 1); });
-                    dots.forEach(function(d, i) { d.addEventListener('click', function() { showSlide(i); }); });
-                    setInterval(function() { showSlide(slideIndex + 1); }, 5000);
-                })();
-                </script>
+                {% include news-slideshow.html %}
+                <div class="news-content">
+                    {{ parts[1] }}
+                </div>
+                {% else %}
+                {% if page.hero_image %}
+                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+                {% endif %}
+                {% if page.slideshow_images %}
+                {% include news-slideshow.html %}
                 {% elsif page.image %}
                 <img src="{{ page.image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
                 {% endif %}
                 <div class="news-content">
                     {{ content }}
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
