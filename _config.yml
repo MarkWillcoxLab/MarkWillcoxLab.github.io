@@ -104,6 +104,8 @@ jekyll-archives:
 
 # Exclude from processing
 exclude:
+  - "_news/*.docx"
+  - "_news/natahyperlink"
   - "~$*"
   - Gemfile
   - Gemfile.lock
