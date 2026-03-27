@@ -2,6 +2,7 @@
 layout: news
 title: "Celebrating Two PhD Graduations in Our Lab"
 date: 2026-03-28
+permalink: /news/celebrating-two-phd-graduations-srikanth-sidra/
 image: "/assets/images/sidra/Image (31).jpg"
 hero_image: "/assets/images/sidra/Image (31).jpg"
 slideshow_images:
