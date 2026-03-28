@@ -4,6 +4,7 @@ layout: default
 
 <style>
 .ambassador-slideshow { position: relative; max-width: 100%; margin: 0 auto 1.5rem; }
+.ambassador-slideshow--half { max-width: 50%; }
 .ambassador-slideshow-wrapper { position: relative; overflow: hidden; }
 .ambassador-slide { display: none; }
 .ambassador-slide img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
@@ -15,6 +16,8 @@ layout: default
 .ambassador-slideshow-dots { text-align: center; margin-top: 0.75rem; }
 .ambassador-dot { display: inline-block; width: 10px; height: 10px; margin: 0 4px; background: #ccc; border-radius: 50%; cursor: pointer; }
 .ambassador-dot:hover, .ambassador-dot.active { background: #0d6efd; }
+.news-hero { margin-left: auto; margin-right: auto; }
+.news-hero img { display: block; width: 100%; height: auto; }
 </style>
 
 <section class="page-header">
@@ -36,7 +39,9 @@ layout: default
             <div class="col-md-8 mx-auto">
                 {% if page.slideshow_before_closing and page.slideshow_images %}
                 {% if page.hero_image %}
-                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+                <div class="news-hero mb-4 text-center"{% if page.hero_max_width_percent %} style="max-width: {{ page.hero_max_width_percent }}%;"{% endif %}>
+                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded" alt="{{ page.title }}">
+                </div>
                 {% endif %}
                 {% assign parts = content | split: '<!-- SLIDESHOW -->' %}
                 <div class="news-content">
@@ -48,7 +53,9 @@ layout: default
                 </div>
                 {% else %}
                 {% if page.hero_image %}
-                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+                <div class="news-hero mb-4 text-center"{% if page.hero_max_width_percent %} style="max-width: {{ page.hero_max_width_percent }}%;"{% endif %}>
+                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded" alt="{{ page.title }}">
+                </div>
                 {% endif %}
                 {% if page.slideshow_images %}
                 {% include news-slideshow.html %}

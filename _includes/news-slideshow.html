@@ -1,4 +1,4 @@
-<div class="ambassador-slideshow">
+<div class="ambassador-slideshow{% unless page.slideshow_max_width_percent %}{% if page.slideshow_half_width %} ambassador-slideshow--half{% endif %}{% endunless %}"{% if page.slideshow_max_width_percent %} style="max-width: {{ page.slideshow_max_width_percent }}%;"{% endif %}>
     <div class="ambassador-slideshow-wrapper">
         {% for img in page.slideshow_images %}
         <div class="ambassador-slide {% if forloop.first %}active{% endif %}">
