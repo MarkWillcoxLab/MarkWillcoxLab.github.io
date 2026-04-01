@@ -30,3 +30,19 @@ Our group participated in **Asia-Pacific Biofilms 2026**, bringing together rese
 </div>
 </div>
 </div>
+
+<div class="news-feature-highlight border rounded-3 p-4 p-md-4 bg-light mt-4">
+<div class="row align-items-center g-4">
+<div class="col-md-4 text-center news-feature-poster">
+<a href="{{ '/news/asia-pacific-biofilms-2026/kuma/' | relative_url }}" class="d-inline-block">
+<img src="{{ '/assets/images/asb2026/kuma/71A45A7E-BA48-4314-A153-80751545F650.jpeg' | relative_url }}" class="img-fluid rounded shadow-sm" alt="Kuma Urgeya Diriba with his conference poster">
+</a>
+</div>
+<div class="col-md-8">
+<h3 class="h4 mb-2"><a href="{{ '/news/asia-pacific-biofilms-2026/kuma/' | relative_url }}" class="text-decoration-none text-dark">Kuma Urgeya Diriba</a></h3>
+<p class="text-muted small mb-2">PhD student </p>
+<p class="mb-3 mb-md-0">  Conference poster, photos, and Kuma comment about the conference </p>
+<p class="mb-0"><a href="{{ '/news/asia-pacific-biofilms-2026/kuma/' | relative_url }}" class="btn btn-outline-primary btn-sm">Open Kuma’s page</a></p>
+</div>
+</div>
+</div>
