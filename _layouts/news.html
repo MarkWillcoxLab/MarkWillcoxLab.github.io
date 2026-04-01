@@ -18,6 +18,8 @@ layout: default
 .ambassador-dot:hover, .ambassador-dot.active { background: #0d6efd; }
 .news-hero { margin-left: auto; margin-right: auto; }
 .news-hero img { display: block; width: 100%; height: auto; }
+.news-feature-highlight .news-feature-poster img { max-height: 420px; object-fit: contain; width: 100%; }
+.news-content--justify { text-align: justify; text-justify: inter-word; hyphens: auto; }
 </style>
 
 <section class="page-header">
@@ -37,6 +39,11 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
+                {% if page.justify_content %}
+                {% assign news_content_class = "news-content news-content--justify" %}
+                {% else %}
+                {% assign news_content_class = "news-content" %}
+                {% endif %}
                 {% if page.slideshow_before_closing and page.slideshow_images %}
                 {% if page.hero_image %}
                 <div class="news-hero mb-4 text-center"{% if page.hero_max_width_percent %} style="max-width: {{ page.hero_max_width_percent }}%;"{% endif %}>
@@ -44,11 +51,11 @@ layout: default
                 </div>
                 {% endif %}
                 {% assign parts = content | split: '<!-- SLIDESHOW -->' %}
-                <div class="news-content">
+                <div class="{{ news_content_class }}">
                     {{ parts[0] }}
                 </div>
                 {% include news-slideshow.html %}
-                <div class="news-content">
+                <div class="{{ news_content_class }}">
                     {{ parts[1] }}
                 </div>
                 {% else %}
@@ -60,9 +67,13 @@ layout: default
                 {% if page.slideshow_images %}
                 {% include news-slideshow.html %}
                 {% elsif page.image %}
+                {% unless page.thumbnail_only %}
+                {% unless page.hero_image and page.image == page.hero_image %}
                 <img src="{{ page.image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+                {% endunless %}
+                {% endunless %}
                 {% endif %}
-                <div class="news-content">
+                <div class="{{ news_content_class }}">
                     {{ content }}
                 </div>
                 {% endif %}

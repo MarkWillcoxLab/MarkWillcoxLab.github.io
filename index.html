@@ -106,7 +106,7 @@ title: Home
                 <p class="lead">Recent updates and announcements from our group</p>
             </div>
         </div>
-        {% assign latest_news = site.news | sort: 'date' | reverse | limit: 3 %}
+        {% assign latest_news = site.news | sort: 'date' | reverse | where_exp: "item", "item.list_news != false" | limit: 3 %}
         {% if latest_news.size > 0 %}
         <div class="row">
             {% for item in latest_news %}
