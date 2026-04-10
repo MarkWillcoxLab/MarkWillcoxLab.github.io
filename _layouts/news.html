@@ -47,7 +47,7 @@ layout: default
                 {% if page.slideshow_before_closing and page.slideshow_images %}
                 {% if page.hero_image %}
                 <div class="news-hero mb-4 text-center"{% if page.hero_max_width_percent %} style="max-width: {{ page.hero_max_width_percent }}%;"{% endif %}>
-                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded" alt="{{ page.title }}">
+                <img src="{{ page.hero_image | replace: ' ', '%20' | relative_url }}" class="img-fluid rounded" alt="{{ page.title }}">
                 </div>
                 {% endif %}
                 {% assign parts = content | split: '<!-- SLIDESHOW -->' %}
@@ -61,7 +61,7 @@ layout: default
                 {% else %}
                 {% if page.hero_image %}
                 <div class="news-hero mb-4 text-center"{% if page.hero_max_width_percent %} style="max-width: {{ page.hero_max_width_percent }}%;"{% endif %}>
-                <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded" alt="{{ page.title }}">
+                <img src="{{ page.hero_image | replace: ' ', '%20' | relative_url }}" class="img-fluid rounded" alt="{{ page.title }}">
                 </div>
                 {% endif %}
                 {% if page.slideshow_images %}
@@ -69,7 +69,7 @@ layout: default
                 {% elsif page.image %}
                 {% unless page.thumbnail_only %}
                 {% unless page.hero_image and page.image == page.hero_image %}
-                <img src="{{ page.image | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
+                <img src="{{ page.image | replace: ' ', '%20' | relative_url }}" class="img-fluid rounded mb-4" alt="{{ page.title }}">
                 {% endunless %}
                 {% endunless %}
                 {% endif %}

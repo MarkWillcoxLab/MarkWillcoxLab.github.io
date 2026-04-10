@@ -2,7 +2,7 @@
     <div class="ambassador-slideshow-wrapper">
         {% for img in page.slideshow_images %}
         <div class="ambassador-slide {% if forloop.first %}active{% endif %}">
-            <img src="{{ img | relative_url }}" class="img-fluid" alt="{{ page.title }}">
+            <img src="{{ img | replace: ' ', '%20' | relative_url }}" class="img-fluid" alt="{{ page.title }}">
         </div>
         {% endfor %}
     </div>

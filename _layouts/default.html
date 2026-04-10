@@ -53,8 +53,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ '/publications/' | relative_url }}">Publications</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ '/news/' | relative_url }}">News</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ '/news/' | relative_url }}" id="newsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="newsDropdown">
+                            <li><a class="dropdown-item" href="{{ '/news/' | relative_url }}">All news</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{{ '/news/asia-pacific-biofilms-2026/' | relative_url }}">Asia-Pacific Biofilms 2026</a></li>
+                            <li><a class="dropdown-item" href="{{ '/news/asia-pacific-biofilms-2026/abiye/' | relative_url }}">Abiye Tigabu Molla</a></li>
+                            <li><a class="dropdown-item" href="{{ '/news/asia-pacific-biofilms-2026/kuma/' | relative_url }}">Kuma Urgeya Diriba</a></li>
+                            <li><a class="dropdown-item" href="{{ '/news/asia-pacific-biofilms-2026/gebreselassie/' | relative_url }}">Gebreselassie Demeke Mihiretie</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ '/contact/' | relative_url }}" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
