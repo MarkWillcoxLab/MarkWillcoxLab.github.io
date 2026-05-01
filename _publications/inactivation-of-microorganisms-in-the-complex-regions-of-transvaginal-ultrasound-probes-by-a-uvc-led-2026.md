@@ -1,4 +1,5 @@
 ---
+journal: ""
 title: "Inactivation of Microorganisms in the Complex Regions of Transvaginal Ultrasound Probes By a UVC-LED Light Based Disinfection System"
 authors: "Muhammad Yasir, Mark D.P. Willcox"
 type: "journal"
