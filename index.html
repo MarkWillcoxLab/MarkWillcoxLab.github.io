@@ -113,7 +113,7 @@ title: Home
             <div class="col-lg-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
                     {% if item.image %}
-                    <img src="{{ item.image | relative_url }}" class="card-img-top" alt="{{ item.title }}" style="height: 180px; object-fit: cover;">
+                    <img src="{{ item.image | replace: ' ', '%20' | relative_url }}" class="card-img-top" alt="{{ item.title }}" style="height: 180px; object-fit: cover;">
                     {% endif %}
                     <div class="card-body">
                         <p class="text-muted small mb-2">{{ item.date | date: "%B %d, %Y" }}</p>

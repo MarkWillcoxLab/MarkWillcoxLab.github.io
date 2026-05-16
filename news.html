@@ -24,7 +24,7 @@ permalink: /news/
                 {% for news in all_news %}
                 <div class="news-item mb-5 pb-4 border-bottom">
                     {% if news.image %}
-                    <img src="{{ news.image | relative_url }}" class="img-fluid mb-3 rounded" alt="{{ news.title }}" style="max-height: 200px; width: auto; object-fit: cover;">
+                    <img src="{{ news.image | replace: ' ', '%20' | relative_url }}" class="img-fluid mb-3 rounded" alt="{{ news.title }}" style="max-height: 200px; width: auto; object-fit: cover;">
                     {% endif %}
                     <div class="text-muted small mb-2">{{ news.date | date: "%B %d, %Y" }}</div>
                     <h3 class="mb-2">

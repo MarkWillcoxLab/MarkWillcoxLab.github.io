@@ -18,16 +18,30 @@ layout: default
 .ambassador-dot:hover, .ambassador-dot.active { background: #0d6efd; }
 .news-hero { margin-left: auto; margin-right: auto; }
 .news-hero img { display: block; width: 100%; height: auto; }
+.news-hero.news-poster-compact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-hero.news-poster-compact img {
+    width: auto;
+    max-width: 100%;
+    max-height: 260px;
+    height: auto;
+    object-fit: contain;
+}
 .news-feature-highlight .news-feature-poster img { max-height: 420px; object-fit: contain; width: 100%; }
 .news-content--justify { text-align: justify; text-justify: inter-word; hyphens: auto; }
 </style>
 
-<section class="page-header">
+<section class="page-header{% if page.compact_page_header %} page-header--compact{% endif %}">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 {% if page.date %}
+                {% unless page.hide_news_date %}
                 <p class="text-muted mb-2">{{ page.date | date: "%B %d, %Y" }}</p>
+                {% endunless %}
                 {% endif %}
                 <h1>{{ page.title }}</h1>
             </div>

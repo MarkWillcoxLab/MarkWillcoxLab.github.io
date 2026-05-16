@@ -98,10 +98,10 @@ p {
     box-shadow: none;
 }
 
-/* Main Content */
+/* Main Content — fixed navbar uses ~120px logo + vertical padding; keep titles clear */
 .main-content {
-    padding-top: 100px; /* Account for fixed navbar */
-    min-height: calc(100vh - 100px);
+    padding-top: 152px;
+    min-height: calc(100vh - 152px);
 }
 
 /* Hero Section */
@@ -424,6 +424,16 @@ p {
     padding: 6rem 0;
     margin-bottom: 4rem;
     box-shadow: var(--shadow-lg);
+}
+
+.page-header.page-header--compact {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.page-header.page-header--compact h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .page-header h1 {
