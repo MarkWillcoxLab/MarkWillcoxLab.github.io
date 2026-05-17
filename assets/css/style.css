@@ -436,12 +436,64 @@ p {
     margin-bottom: 0.5rem;
 }
 
+/* News: blue title band at ~60% of default vertical footprint */
+.page-header.page-header--scale-60 {
+    padding: 3.6rem 0;
+    margin-bottom: 2.4rem;
+}
+
+.page-header.page-header--scale-60 h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.page-header.page-header--scale-60 p.text-muted {
+    margin-bottom: 0.3rem !important;
+}
+
+/* News: optional photographic header band (set page_header_bg_image in front matter) */
+.page-header.page-header--bg-photo {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    background-image: var(--page-header-bg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header.page-header--bg-photo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(8, 145, 178, 0.48) 0%,
+        rgba(14, 116, 144, 0.42) 50%,
+        rgba(6, 182, 212, 0.38) 100%
+    );
+    z-index: 0;
+}
+
+.page-header.page-header--bg-photo .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header.page-header--bg-photo .text-muted {
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
 .page-header h1 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     letter-spacing: -0.02em;
+}
+
+.page-header.page-header--bg-photo h1 {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .page-header .lead {
