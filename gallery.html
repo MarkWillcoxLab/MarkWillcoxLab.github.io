@@ -26,7 +26,12 @@ title: Gallery
         </div>
         <div class="row g-3">
             {% for image_path in section.images %}
-            {% assign img_url = '/assets/images/websiteimages/' | append: image_path | replace: ' ', '%20' %}
+            {% assign segs = image_path | split: 'assets:' %}
+            {% if segs.size == 2 %}
+                {% assign img_url = '/assets/images/' | append: segs[1] | replace: ' ', '%20' %}
+            {% else %}
+                {% assign img_url = '/assets/images/websiteimages/' | append: image_path | replace: ' ', '%20' %}
+            {% endif %}
             <div class="col-6 col-md-4 col-lg-3">
                 <a href="{{ img_url | relative_url }}" target="_blank" rel="noopener" class="d-block rounded overflow-hidden shadow-sm">
                     <img src="{{ img_url | relative_url }}" class="img-fluid w-100" style="object-fit: cover; height: 200px;" alt="{{ section.name }} — {{ forloop.index }}">

@@ -150,8 +150,14 @@ title: Home
                         {% assign slide_index = 0 %}
                         {% for section in site.data.gallery_images %}
                         {% for image_path in section.images %}
-                        {% assign img_path_encoded = image_path | replace: ' ', '%20' | replace: '(', '%28' | replace: ')', '%29' %}
-                        {% assign img_url = '/assets/images/websiteimages/' | append: img_path_encoded %}
+                        {% assign segs = image_path | split: 'assets:' %}
+                        {% if segs.size == 2 %}
+                            {% assign img_path_encoded = segs[1] | replace: ' ', '%20' | replace: '(', '%28' | replace: ')', '%29' %}
+                            {% assign img_url = '/assets/images/' | append: img_path_encoded %}
+                        {% else %}
+                            {% assign img_path_encoded = image_path | replace: ' ', '%20' | replace: '(', '%28' | replace: ')', '%29' %}
+                            {% assign img_url = '/assets/images/websiteimages/' | append: img_path_encoded %}
+                        {% endif %}
                         <div class="carousel-item{% if slide_index == 0 %} active{% endif %}">
                             <img src="{{ img_url | relative_url }}" class="d-block w-100" style="object-fit: cover; object-position: center; width: 100%; height: 400px;" alt="Lab gallery — {{ section.name }}">
                         </div>

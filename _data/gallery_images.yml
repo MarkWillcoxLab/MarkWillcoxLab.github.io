@@ -24,6 +24,15 @@
 - name: "Conferences & presentations"
   slug: "conferences"
   images:
+    # Antibiotics 2026 — Advances in Antimicrobial Action and Resistance (Barcelona)
+    - "assets:antibioticsconfernce/90D716C6-C942-4931-9004-02C32F571281.jpeg"
+    - "assets:antibioticsconfernce/Suleman poster.jpg"
+    # Asia-Pacific Biofilms 2026 (Melbourne)
+    - "assets:asb2026/abiyeimage/369133dd-a056-4ca6-9371-7e1b52525ff7.JPG"
+    - "assets:asb2026/kuma/71A45A7E-BA48-4314-A153-80751545F650.jpeg"
+    - "assets:asb2026/Gebreselassie/Photo 2.JPG"
+    - "assets:asb2026/Desi/PHOTO-2026-03-29-11-04-33.jpg"
+    - "assets:asb2026/tope/PHOTO-2026-03-29-12-08-08-3.jpg"
     - "Conferences or presentation/20240822_162843.jpg"
     - "Conferences or presentation/20230708-all.jpg"
     - "Conferences or presentation/1749459985115.jpg"
