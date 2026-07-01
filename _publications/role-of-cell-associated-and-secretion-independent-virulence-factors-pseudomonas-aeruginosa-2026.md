@@ -1,5 +1,5 @@
 ---
-sort_key: "2026-04-08"
+sort_key: "2026-06-00"
 title: "Role of cell-associated and secretion-independent virulence factors of Pseudomonas aeruginosa in microbial keratitis and anti-virulence therapeutic strategies"
 authors: "Tanzina Akter, Shiful Islam, Samea Khan, Kazi Mohammad Zillur Rahman, Mahbuba Akter Lubna, Fiona Stapleton, Mark Willcox"
 type: "journal"
