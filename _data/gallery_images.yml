@@ -2,6 +2,11 @@
 - name: "Group photos"
   slug: "group-photos"
   images:
+    # ASM 2026 conferences
+    - "assets:asm/asm-vic-2026/group-selfie.jpg"
+    - "assets:asm/asm-vic-2026/group-scavenger-hunt.jpg"
+    - "assets:asm/asm-vic-2026/group-pic.jpeg"
+    - "assets:asm/asm-microbe-2026/group-picture.jpeg"
     - "Group photos/Hari complete group photo.jpeg"
     - "Group photos/IMG_2480.jpeg"
     - "Group photos/Willcox and Kumar labs Xmas 2019.jpeg"
@@ -24,6 +29,15 @@
 - name: "Conferences & presentations"
   slug: "conferences"
   images:
+    # ASM Microbe 2026 (Washington, D.C.)
+    - "assets:asm/asm-microbe-2026/teshome/1780740961545.jpeg"
+    - "assets:asm/asm-microbe-2026/teshome/1780740963840.jpeg"
+    - "assets:asm/asm-microbe-2026/kuma/1780892188658.jpeg"
+    # ASM National Meeting 2026 (Melbourne)
+    - "assets:asm/asm-vic-2026/nebiyat/ASM-1.jpg"
+    - "assets:asm/asm-vic-2026/jiawei/poster-jiawei.jpg"
+    - "assets:asm/asm-vic-2026/teshome/1781852665394.jpeg"
+    - "assets:asm/asm-vic-2026/umme/psoter.jpeg"
     # Antibiotics 2026 — Advances in Antimicrobial Action and Resistance (Barcelona)
     - "assets:antibioticsconfernce/90D716C6-C942-4931-9004-02C32F571281.jpeg"
     - "assets:antibioticsconfernce/Suleman poster.jpg"
