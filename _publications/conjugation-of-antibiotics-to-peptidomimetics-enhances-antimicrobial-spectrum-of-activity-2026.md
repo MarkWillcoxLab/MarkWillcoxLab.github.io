@@ -1,5 +1,5 @@
 ---
-sort_key: "2999-01-02"
+sort_key: "2026-05-00"
 title: "Conjugation of Antibiotics to Peptidomimetics Enhances Antimicrobial Spectrum of Activity"
 authors: "Joshua Fleming, Nathan James Carey, Yao Cheng, Hao Luo, Tsz Tin Yu, Mark D. P. Willcox, David StC Black, Edgar H. H. Wong, Naresh Kumar"
 type: "journal"
