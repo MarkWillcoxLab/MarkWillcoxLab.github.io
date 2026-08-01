@@ -1,4 +1,5 @@
 ---
+journal: ""
 title: "Evaluation of Patterns of Susceptibility of Clinical Isolates of <em>Acinetobacter baumannii</em> Towards Polymyxins and Different Cationic Antimicrobials"
 authors: "Willcox M.D.P. et al."
 type: "journal"

@@ -6,5 +6,5 @@ year: 2026
 journal: "Applied and Environmental Microbiology"
 doi: "10.1128/aem.00638-26"
 url: "https://doi.org/10.1128/aem.00638-26"
-sort_key: "2026-06-17"
+sort_key: "2026-07-22"
 ---
