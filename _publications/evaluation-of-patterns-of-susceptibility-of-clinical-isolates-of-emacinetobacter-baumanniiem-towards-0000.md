@@ -1,10 +1,10 @@
 ---
 journal: ""
 title: "Evaluation of Patterns of Susceptibility of Clinical Isolates of <em>Acinetobacter baumannii</em> Towards Polymyxins and Different Cationic Antimicrobials"
-authors: "Willcox M.D.P. et al."
+authors: "Shakeel Shahzad, Mark D. P. Willcox, Bushra Jamil, Binod Rayamajhee, Muhammad Yasir"
 type: "journal"
-year: 0000
+year: 2026
 doi: "10.20944/preprints202606.1302.v1"
 url: "https://doi.org/10.20944/preprints202606.1302.v1"
-sort_key: "0000-00-00"
+sort_key: "2026-06-17"
 ---
