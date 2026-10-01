@@ -1,4 +1,5 @@
 ---
+journal: ""
 title: "Controlled Bimatoprost Release from Graphene Oxide Laden Contact Lenses: <i>In vitro</i> and <i>in vivo</i> Studies"
 authors: "Furqan A. Maulvi, Parth D. Soni, Pooja J. Patel, Ankita R. Desai, Ditixa T. Desai, Manish R. Shukla, Shailesh A. Shah, Dinesh O. Shah, Mark D. P. Willcox"
 type: "journal"
