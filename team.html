@@ -308,53 +308,6 @@ title: Team
 </section>
 {% endif %}
 
-{% assign others = site.team | where: "category", "other" %}
-{% assign others_filtered = others %}
-{% if others_filtered.size > 0 %}
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2>Research Staff</h2>
-                <p class="lead">Research officers and staff</p>
-            </div>
-        </div>
-        <div class="row">
-            {% for member in others_filtered %}
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="team-member" data-category="other">
-                    {% if member.image %}
-                    <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
-                    {% else %}
-                    <img src="https://via.placeholder.com/200x200/ffc107/000000?text={{ member.name | url_encode }}" alt="{{ member.name }}">
-                    {% endif %}
-                    <h4>{{ member.name }}</h4>
-                    <p class="position">{{ member.position }}</p>
-                    {% if member.research %}
-                    <p class="text-muted">{{ member.research }}</p>
-                    {% endif %}
-                    <div class="social-links">
-                        {% if member.linkedin %}
-                        <a href="{{ member.linkedin }}" target="_blank" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
-                        {% endif %}
-                        {% if member.researchgate %}
-                        <a href="{{ member.researchgate }}" target="_blank" class="text-muted me-2"><i class="fab fa-researchgate"></i></a>
-                        {% endif %}
-                        {% if member.scholar %}
-                        <a href="{{ member.scholar }}" target="_blank" class="text-muted me-2"><i class="fab fa-google"></i></a>
-                        {% endif %}
-                        {% if member.email %}
-                        <a href="mailto:{{ member.email }}" class="text-muted"><i class="fas fa-envelope"></i></a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
 <section class="py-5">
     <div class="container">
         <div class="row">
