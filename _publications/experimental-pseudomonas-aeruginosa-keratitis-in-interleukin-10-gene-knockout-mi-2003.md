@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-03-00"
 title: "Experimental Pseudomonas aeruginosa keratitis in interleukin-10 gene knockout mice"
 authors: "Cole, N., Krockenberger, M., Stapleton, F., Khan, S., Hume, E., Husband, A.J., Willcox, M."
 type: "journal"

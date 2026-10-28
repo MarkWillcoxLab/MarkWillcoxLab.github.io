@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-06-00"
 title: "Effects of exogenous interleukin-6 during Pseudomonas aeruginosa corneal infection"
 authors: "Cole, N., Krockenberger, M., Bao, S., Beagley, K.W., Husband, A.J., Willcox, M."
 type: "journal"

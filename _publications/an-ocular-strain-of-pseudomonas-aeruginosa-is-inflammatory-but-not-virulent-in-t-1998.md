@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-09-00"
 title: "An ocular strain of Pseudomonas aeruginosa is inflammatory but not virulent in the scarified mouse model"
 authors: "Cowell, B.A., Willcox, M.D.P., Hobden, J.A., Schneider, R.P., Tout, S., Hazlett, L.D."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-03-04"
 title: "Hydrogel lens wettability and deposition in vivo"
 authors: "Carney, F.P., Keay, L., Stapleton, F., Morris, C.A., Willcox, M.D.P."
 type: "journal"

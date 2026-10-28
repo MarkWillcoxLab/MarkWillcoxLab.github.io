@@ -1,5 +1,5 @@
 ---
-sort_key: "2017-00-00"
+sort_key: "2017-01-31"
 journal: "Current Eye Research"
 title: "Relation between Ocular Comfort, Arachidonic Acid Mediators, and Histamine"
 authors: "Masoudi, S., Zhao, Z., Willcox, M."

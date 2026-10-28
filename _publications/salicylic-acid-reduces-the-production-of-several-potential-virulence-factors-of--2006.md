@@ -1,5 +1,5 @@
 ---
-sort_key: "2006-00-00"
+sort_key: "2006-10-01"
 title: "Salicylic acid reduces the production of several potential virulence factors of Pseudomonas aeruginosa associated with microbial keratitis"
 authors: "Bandara, M.B.K., Zhu, H., Sankaridurg, P.R., Willcox, M.D.P."
 type: "journal"

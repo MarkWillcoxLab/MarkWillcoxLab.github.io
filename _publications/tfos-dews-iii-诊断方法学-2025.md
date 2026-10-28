@@ -6,4 +6,5 @@ year: 2025
 journal: "J"
 doi: "10.1016/j.ajo.2025.10.018"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105021879173&doi=10.1016%2fj.ajo.2025.10.018&partnerID=40&md5=772b962e63c761945cccaddf158d93de"
+sort_key: "2025-10-18"
 ---

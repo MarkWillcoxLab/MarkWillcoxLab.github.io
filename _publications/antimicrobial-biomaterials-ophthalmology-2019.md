@@ -7,5 +7,6 @@ book: "Antimicrobial Materials for Biomedical Applications"
 publisher: "Royal Society of Chemistry"
 doi: "10.1039/9781788012638-00228"
 url: "http://dx.doi.org/10.1039/9781788012638-00228"
+sort_key: "2019-08-02"
 ---
 

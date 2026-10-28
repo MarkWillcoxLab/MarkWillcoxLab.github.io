@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-04-00"
 journal: "Optometry and Vision Science"
 title: "Interactions of bacteria with contact lenses: The effect of soluble protein and carbohydrate on bacterial adhesion to contact lenses"
 authors: "Williams, T.J., Willcox, M.D.P., Schneider, R.P."

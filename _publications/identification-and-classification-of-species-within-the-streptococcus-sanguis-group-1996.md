@@ -1,5 +1,5 @@
 ---
-sort_key: "1996-00-00"
+sort_key: "1996-04-00"
 title: "Identification and classification of species within the Streptococcus sanguis group"
 authors: "Willcox, M.D.P."
 type: "journal"

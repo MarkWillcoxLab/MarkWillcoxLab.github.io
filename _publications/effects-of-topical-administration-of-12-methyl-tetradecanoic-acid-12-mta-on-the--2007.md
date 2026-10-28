@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-02-13"
 title: "Effects of topical administration of 12-methyl tetradecanoic acid (12-MTA) on the development of corneal angiogenesis"
 authors: "Cole, N., Hume, E.B.H., Jalbert, I., Kumar Vijay, A., Krishnan, R., Willcox, M.D.P."
 type: "journal"

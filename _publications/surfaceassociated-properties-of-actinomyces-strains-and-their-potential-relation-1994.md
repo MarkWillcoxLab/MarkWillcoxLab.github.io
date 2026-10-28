@@ -1,5 +1,5 @@
 ---
-sort_key: "1994-00-00"
+sort_key: "1994-02-00"
 title: "Surface‐associated properties of Actinomyces strains and their potential relation to pathogenesis"
 authors: "Loo, C.Y., Willcox, M.D.P., Knox, K.W."
 type: "journal"

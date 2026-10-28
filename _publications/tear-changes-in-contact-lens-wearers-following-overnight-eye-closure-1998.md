@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-01-00"
 title: "Tear changes in contact lens wearers following overnight eye closure"
 authors: "Stapleton, F., Willcox, M.D.P., Morris, C.A., Sweeney, D.F."
 type: "journal"

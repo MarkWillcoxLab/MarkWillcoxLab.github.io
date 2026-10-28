@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Induction of apoptosis in human corneal epithelial cells in vitro"
 authors: "Kim, J.-M., McOptom, F.S., Willcox, M.D.P."
 type: "journal"

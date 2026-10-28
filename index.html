@@ -106,10 +106,10 @@ title: Home
                 <p class="lead">Recent updates and announcements from our group</p>
             </div>
         </div>
-        {% assign latest_news = site.news | sort: 'date' | reverse | where_exp: "item", "item.list_news != false" | limit: 3 %}
+        {% assign latest_news = site.news | sort: 'date' | reverse | where_exp: "item", "item.list_news != false" %}
         {% if latest_news.size > 0 %}
         <div class="row">
-            {% for item in latest_news %}
+            {% for item in latest_news limit: 6 %}
             <div class="col-lg-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
                     {% if item.image %}

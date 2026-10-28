@@ -1,5 +1,5 @@
 ---
-sort_key: "1991-00-00"
+sort_key: "1991-01-00"
 journal: "Microbial Ecology in Health and Disease"
 title: "The effect of ph on adhesion and hyphal formation by strains of candida albicans"
 authors: "Verran, J., Shakespeare, A.P., Willcox, M.D.P., Knox, K.W."

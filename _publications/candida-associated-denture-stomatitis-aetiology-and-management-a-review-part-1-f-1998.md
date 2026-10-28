@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-02-00"
 title: "Candida-associated denture stomatitis. Aetiology and management: A review. Part 1. Factors influencing distribution of candida species in the oral cavity"
 authors: "Webb, B.C., Thomas, C.J., Willcox, M.D.P., Harty, D.W.S., Knox, K.W."
 type: "journal"

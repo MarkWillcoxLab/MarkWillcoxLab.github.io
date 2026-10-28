@@ -1,5 +1,5 @@
 ---
-sort_key: "2015-00-00"
+sort_key: "2015-06-04"
 title: "Serum-induced keratinization processes in an immortalized human meibomian gland epithelial cell line"
 authors: "Hampel, U., Schröder, A., Mitchell, T., Brown, S., Snikeris, P., Garreis, F., Kunnen, C., Willcox, M., Paulsen, F."
 type: "journal"

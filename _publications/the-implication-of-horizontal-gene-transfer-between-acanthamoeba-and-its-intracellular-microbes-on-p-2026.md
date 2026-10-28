@@ -6,5 +6,5 @@ year: 2026
 journal: "Pathogens"
 doi: "10.3390/pathogens15060610"
 url: "https://doi.org/10.3390/pathogens15060610"
-sort_key: "2026-06-00"
+sort_key: "2026-06-08"
 ---

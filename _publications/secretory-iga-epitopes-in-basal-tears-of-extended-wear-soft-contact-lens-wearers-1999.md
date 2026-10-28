@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Secretory IgA epitopes in basal tears of extended-wear soft contact lens wearers and in non-lens wearers"
 authors: "Pearce, D.J., Demirci, G., Willcox, M.D.P."
 type: "journal"

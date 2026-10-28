@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Differences in the pathogenesis of bacteria isolated from contact-lens-induced infiltrative conditions"
 authors: "Willcox, M.D.P., Hume, E.B.H."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-06-01"
 title: "Pseudomonas aeruginosa with LasI quorum-sensing deficiency during corneal infection"
 authors: "Zhu, H., Bandara, R., Conibear, T.C.R., Thuruthyil, S.J., Rice, S.A., Kjelleberg, S., Givskov, M., Willcox, M.D.P."
 type: "journal"

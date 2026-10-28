@@ -1,5 +1,5 @@
 ---
-sort_key: "1991-00-00"
+sort_key: "1991-10-01"
 journal: "Journal of Dental Research"
 title: "Enumeration of Oral Streptococci on Media Containing Different Concentrations of Sodium and Potassium Ions"
 authors: "Willcox, M.D.P., Irwin, A.M., Jacques, N.A., Knox, K.W."

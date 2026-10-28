@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Detection of staphylococcal superantigens from contact-lens-induced inflammatory diseases"
 authors: "Zhu, H., Willcox, M.D.P."
 type: "journal"

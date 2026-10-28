@@ -8,4 +8,5 @@ volume: "608"
 pages: "art. no. 121105"
 doi: "10.1016/j.ijpharm.2021.121105"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85115432108&doi=10.1016%2fj.ijpharm.2021.121105&partnerID=40&md5=5f21611b2846a0f11ee59e6c30512f1d"
+sort_key: "2021-10-00"
 ---

@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-12-20"
 title: "Lacryglobin in human tears, a potential marker for cancer"
 authors: "Evans, V., Vockler, C., Friedlander, M., Walsh, B., Willcox, M.D.P."
 type: "journal"

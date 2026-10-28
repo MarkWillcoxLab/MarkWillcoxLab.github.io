@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-12-20"
 title: "Antimicrobial peptides: A potential role in ocular therapy"
 authors: "Aliwarga, Y., Hume, E.B.H., Lan, J., Willcox, M.D.P."
 type: "journal"

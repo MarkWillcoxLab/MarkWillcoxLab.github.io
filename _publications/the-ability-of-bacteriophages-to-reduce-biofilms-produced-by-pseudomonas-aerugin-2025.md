@@ -1,5 +1,5 @@
 ---
-sort_key: "2025-06-00"
+sort_key: "2025-06-20"
 title: "The Ability of Bacteriophages to Reduce Biofilms Produced by <i>Pseudomonas aeruginosa</i> Isolated from Corneal Infections"
 authors: "Kuma Diriba Urgeya, Dinesh Subedi, Naresh Kumar, Mark Willcox"
 type: "journal"

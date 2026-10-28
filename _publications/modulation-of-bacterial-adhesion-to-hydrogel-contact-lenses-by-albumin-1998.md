@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-01-00"
 journal: "Optometry and Vision Science"
 title: "Modulation of bacterial adhesion to hydrogel contact lenses by albumin"
 authors: "Taylor, R.L., Willcox, M.D.P., Williams, T.J., Verran, J."

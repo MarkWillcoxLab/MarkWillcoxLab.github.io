@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-09-00"
 title: "Furanones as potential anti-bacterial coatings on biomaterials"
 authors: "Baveja, J.K., Willcox, M.D.P., Hume, E.B.H., Kumar, N., Odell, R., Poole-Warren, L.A."
 type: "journal"

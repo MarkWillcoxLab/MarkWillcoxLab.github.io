@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-06-00"
 title: "Phenotypic characterization of clonal and nonclonal Pseudomonas aeruginosa strains isolated from lungs of adults with cystic fibrosis"
 authors: "Tingpej, P., Smith, L., Rose, B., Zhu, H., Conibear, T., Al Nassafi, K., Manos, J., Elkins, M., Bye, P., Willcox, M., Bell, S., Wainwright, C., Harbour, C."
 type: "journal"

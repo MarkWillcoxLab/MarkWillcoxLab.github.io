@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-10-00"
 title: "Lactoferrin-induced reduction of vanB vancomycin resistance in enterococci"
 authors: "Leitch, E.C., Willcox, M.D.P."
 type: "journal"

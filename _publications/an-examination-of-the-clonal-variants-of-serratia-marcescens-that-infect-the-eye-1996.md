@@ -1,5 +1,5 @@
 ---
-sort_key: "1996-00-00"
+sort_key: "1996-08-01"
 journal: "Journal of Medical Microbiology"
 title: "An examination of the clonal variants of Serratia marcescens that infect the eye during contact lens wear"
 authors: "Hume, E.B.H., Willcox, M.D.P., Sweeney, D.F., Holden, B.A."

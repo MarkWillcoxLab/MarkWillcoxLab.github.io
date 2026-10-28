@@ -1,5 +1,5 @@
 ---
-sort_key: "2026-05-01"
+sort_key: "2026-04-24"
 title: "Should Daily Disposable Silicone Hydrogel Contact Lens Use be Considered as the First Choice Among Soft Contact Lens Options for Pediatric Myopia Control?"
 authors: "Fiona Stapleton, Mark Willcox, Xu Cheng, Monica Jong"
 type: "journal"

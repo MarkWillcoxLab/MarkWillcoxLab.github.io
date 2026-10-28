@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-09-01"
 title: "Secretory phospholipase A<inf>2</inf>deposition on contact lenses and its effect on bacterial adhesion"
 authors: "Hume, E.B.H., Cole, N., Parmar, A., Tan, M.E., Aliwarga, Y., Schubert, T., Holden, B.A., Willcox, M.D.P."
 type: "journal"

@@ -8,4 +8,5 @@ volume: "279"
 pages: "pp. 451"
 doi: "10.1016/j.ajo.2025.05.040"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105015953033&doi=10.1016%2fj.ajo.2025.05.040&partnerID=40&md5=77156c8a93f4b91ad3eb138218815ef5"
+sort_key: "2025-06-04"
 ---

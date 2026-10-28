@@ -1,5 +1,5 @@
 ---
-sort_key: "1997-00-00"
+sort_key: "1997-01-00"
 title: "Establishment of the human reflex tear two-dimensional polyacrylamide gel electrophoresis reference map: New proteins of potential diagnostic value"
 authors: "Molloy, M.P., Bolis, S., Herbert, B.R., Ou, K., Tyler, M.I., Van Dyk, D.D., Willcox, M.D.P., Gooley, A.A., Williams, K.L., Morris, C.A., Walsh, B.J."
 type: "journal"

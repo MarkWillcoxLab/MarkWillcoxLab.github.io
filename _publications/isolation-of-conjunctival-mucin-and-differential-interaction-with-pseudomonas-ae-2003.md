@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-12-00"
 title: "Isolation of conjunctival mucin and differential interaction with Pseudomonas aeruginosa strains of varied pathogenic potential"
 authors: "Aristoteli, L.P., Bojarski, B., Willcox, M.D.P."
 type: "journal"

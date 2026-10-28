@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Effect of lysozyme on adhesion and toxin release by Staphylococcus aureus"
 authors: "Thakur, A., Chauhan, A., Willcox, M.D.P."
 type: "journal"

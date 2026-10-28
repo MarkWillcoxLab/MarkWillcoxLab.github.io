@@ -1,5 +1,5 @@
 ---
-sort_key: "1993-00-00"
+sort_key: "1993-05-01"
 journal: "Journal of General Microbiology"
 title: "Biochemical properties of Streptococcus sobrinus reisolates from the gastrointestinal tract of a gnotobiotic rat"
 authors: "Willcox, M.D.P., Fitzgerald, R.J., Adams, B.O., Patrikakis, M., Knox, K.W."

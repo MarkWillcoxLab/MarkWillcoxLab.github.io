@@ -1,5 +1,5 @@
 ---
-sort_key: "1997-00-00"
+sort_key: "1997-12-00"
 journal: "Optometry and Vision Science"
 title: "Potential sources of bacteria that are isolated from contact lenses during wear"
 authors: "Willcox, M.D.P., Power, K.N., Stapleton, F., Leitch, C., Harmis, N., Sweeney, D.F."

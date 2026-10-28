@@ -1,5 +1,5 @@
 ---
-sort_key: "2017-00-00"
+sort_key: "2017-02-01"
 title: "Lipid Supplements and Clinical Aspects of Tear Film in Habitual Lens Wearers"
 authors: "Rohit, A., Willcox, M.D.P., Stapleton, F."
 type: "journal"

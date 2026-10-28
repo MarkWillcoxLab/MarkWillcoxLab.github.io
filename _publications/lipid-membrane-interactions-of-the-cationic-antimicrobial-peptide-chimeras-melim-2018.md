@@ -1,5 +1,5 @@
 ---
-sort_key: "2018-00-00"
+sort_key: "2018-08-17"
 title: "Lipid Membrane Interactions of the Cationic Antimicrobial Peptide Chimeras Melimine and Cys-Melimine"
 authors: "Berry, T., Dutta, D., Chen, R., Leong, A., Wang, H., Donald, W.A., Parviz, M., Cornell, B., Willcox, M., Kumar, N., Cranfield, C.G."
 type: "journal"

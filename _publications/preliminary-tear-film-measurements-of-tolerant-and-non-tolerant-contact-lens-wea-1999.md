@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-09-10"
 title: "Preliminary tear film measurements of tolerant and non-tolerant contact lens wearers"
 authors: "Glasson, M.J., Hseuh, S., Willcox, M.D.P."
 type: "journal"

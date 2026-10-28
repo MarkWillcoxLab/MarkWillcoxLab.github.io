@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-09-00"
 journal: "Proteomics"
 title: "Proteomic comparison of membrane and extracellular proteins from invasive (PAO1) and cytotoxic (6206) strains of Pseudomonas aeruginosa"
 authors: "Nouwens, A.S., Willcox, M.D.P., Walsh, B.J., Cordwell, S.J."

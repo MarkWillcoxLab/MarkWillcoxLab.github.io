@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-09-00"
 journal: "Cornea"
 title: "Contact lens-induced peripheral ulcers with extended wear of disposable hydrogel lenses: Histopathologic observations on the nature and type of corneal infiltrate"
 authors: "Holden, B.A., Reddy, M.K., Sankaridurg, P.R., Buddi, R., Sharma, S., Willcox, M.D.P., Sweeney, D.F., Rao, G.N."

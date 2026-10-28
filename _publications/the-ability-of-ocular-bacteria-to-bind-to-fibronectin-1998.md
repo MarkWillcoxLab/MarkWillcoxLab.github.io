@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-03-04"
 title: "The ability of ocular bacteria to bind to fibronectin"
 authors: "Baleriola-Lucas, C., Willcox, M.D.P."
 type: "journal"

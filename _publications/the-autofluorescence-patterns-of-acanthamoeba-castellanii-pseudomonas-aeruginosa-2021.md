@@ -1,5 +1,5 @@
 ---
-sort_key: "2021-07-00"
+sort_key: "2021-07-14"
 title: "The Autofluorescence Patterns of <i>Acanthamoeba castellanii, Pseudomonas aeruginosa</i> and <i>Staphylococcus aureus</i>: Effects of Antibiotics and Tetracaine"
 authors: "Hari Kumar Peguda, Saabah B. Mahbub, Tashi Doma Sherpa, Dinesh Subedi, Abbas Habibalahi, Ayad G. Anwer, Zi Gu, Mark D. P. Willcox, Ewa M. Goldys, Nicole A. Carnt"
 type: "journal"

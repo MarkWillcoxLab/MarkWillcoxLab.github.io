@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-09-01"
 journal: "Journal of Medical Microbiology"
 title: "Synergic antistaphylococcal properties of lactoferrin and lysozyme"
 authors: "Leitch, E.C., Willcox, M.D.P."

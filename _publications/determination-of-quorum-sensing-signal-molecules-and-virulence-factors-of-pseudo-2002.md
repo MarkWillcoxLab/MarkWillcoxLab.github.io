@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-12-01"
 journal: "Journal of Medical Microbiology"
 title: "Determination of quorum-sensing signal molecules and virulence factors of Pseudomonas aeruginosa isolates from contact lens-induced microbial keratitis"
 authors: "Zhu, H., Thuruthyil, S.J., Willcox, M.D.P."

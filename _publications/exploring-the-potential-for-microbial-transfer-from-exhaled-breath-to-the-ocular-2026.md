@@ -9,4 +9,5 @@ issue: "1"
 pages: "art. no. 102581"
 doi: "10.1016/j.clae.2025.102581"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105023085139&doi=10.1016%2fj.clae.2025.102581&partnerID=40&md5=f537d7bc6ee533de9646f2cfdd1a6fb2"
+sort_key: "2025-11-27"
 ---

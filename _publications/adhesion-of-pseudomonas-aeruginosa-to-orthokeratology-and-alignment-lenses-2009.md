@@ -1,5 +1,5 @@
 ---
-sort_key: "2009-00-00"
+sort_key: "2009-02-01"
 title: "Adhesion of pseudomonas aeruginosa to orthokeratology and alignment lenses"
 authors: "Choo, J.D., Holden, B.A., Papas, E.B., Willcox, M.D.P."
 type: "journal"

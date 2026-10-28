@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-01-00"
 journal: "Cornea"
 title: "Isolation of Staphylococcus aureus from a contact lens at the time of a contact lens-induced peripheral ulcer: Case report"
 authors: "Jalbert, I., Willcox, M.D.P., Sweeney, D.F."

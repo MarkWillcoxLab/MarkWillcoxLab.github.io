@@ -1,5 +1,5 @@
 ---
-sort_key: "2999-01-04"
+sort_key: "2026-04-15"
 title: "Impaired corneal nerve markers in type 2 diabetic rats: comparison to models of diet-induced obesity and diet reversal"
 authors: "Samea Khan, Md Jakir Hossain, Maria Markoulli, Mark Willcox, Michael D. Kendig, Margaret J. Morris"
 type: "journal"

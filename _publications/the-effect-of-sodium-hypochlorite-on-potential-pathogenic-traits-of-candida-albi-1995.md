@@ -1,5 +1,5 @@
 ---
-sort_key: "1995-00-00"
+sort_key: "1995-12-00"
 title: "The effect of sodium hypochlorite on potential pathogenic traits of Candida albicans and other Candida species"
 authors: "Webb, B.C., Willcox, M.D.P., Thomas, C.J., Harty, D.W.S., Knox, K.W."
 type: "journal"

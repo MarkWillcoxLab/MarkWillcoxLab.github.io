@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-02-00"
 title: "Role and regulation of CXC-chemokines in acute experimental keratitis"
 authors: "Xue, M.L., Thakur, A., Willcox, M.D.P., Zhu, H., Lloyd, A.R., Wakefield, D."
 type: "journal"

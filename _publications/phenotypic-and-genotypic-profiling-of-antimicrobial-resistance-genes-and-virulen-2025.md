@@ -8,4 +8,5 @@ volume: "38"
 pages: "pp. 392"
 doi: "10.1016/j.jtos.2025.10.011"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105021056594&doi=10.1016%2fj.jtos.2025.10.011&partnerID=40&md5=4ea3e25c63de5ce1e4a0238114cbf0ad"
+sort_key: "2025-10-30"
 ---

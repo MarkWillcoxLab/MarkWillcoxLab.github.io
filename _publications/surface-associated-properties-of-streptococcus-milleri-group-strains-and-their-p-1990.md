@@ -1,5 +1,5 @@
 ---
-sort_key: "1990-00-00"
+sort_key: "1990-04-01"
 journal: "Journal of Medical Microbiology"
 title: "Surface-associated properties of Streptococcus milleri group strains and their potential relation to pathogenesis"
 authors: "Willcox, M.D.P., Knox, K.W."

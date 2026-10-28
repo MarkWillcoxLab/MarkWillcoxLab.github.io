@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-01-01"
 journal: "International Journal of Systematic and Evolutionary Microbiology"
 title: "A new species of oral Streptococcus isolated from Sprague-Dawley rats, Streptococcus orisratti sp. nov."
 authors: "Zhu, H., Willcox, M.D.P., Knox, K.W."

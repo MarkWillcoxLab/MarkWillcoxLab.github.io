@@ -3,10 +3,11 @@ title: "Haemophilus influenzae adherent to contact lenses associated with produc
 authors: "Sankaridurg P.R., Willcox M.D.P., Sharma S., Gopinathan U., Janakiraman D., Hickson S., Vuppala N., Sweeney D.F., Rao G.N., Holden B.A."
 type: "journal"
 year: 1996
-journal: "CM"
+journal: "Journal of Clinical Microbiology"
 volume: "34"
 issue: "10"
 pages: "pp. 2426"
 doi: "10.1128/jcm.34.10.2426-2431.1996"
-url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-9544255677&doi=10.1128%2fjcm.34.10.2426-2431.1996&partnerID=40&md5=ca8236b76bb0242cf58178dfa1ca2906"
+url: "https://doi.org/10.1128/jcm.34.10.2426-2431.1996"
+sort_key: "1996-10-00"
 ---

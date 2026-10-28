@@ -1,5 +1,5 @@
 ---
-sort_key: "2011-00-00"
+sort_key: "2011-08-01"
 title: "Influence of protein deposition on bacterial adhesion to contact lenses"
 authors: "Subbaraman, L.N., Borazjani, R., Zhu, H., Zhao, Z., Jones, L., Willcox, M.D.P."
 type: "journal"

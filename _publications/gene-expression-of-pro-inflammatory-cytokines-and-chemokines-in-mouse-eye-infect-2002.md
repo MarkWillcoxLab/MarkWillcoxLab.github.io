@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-05-24"
 title: "Gene expression of pro-inflammatory cytokines and chemokines in mouse eye infected with Pseudomonas aeruginosa"
 authors: "Xue, M.-L., Thakur, A., Willcox, M."
 type: "journal"

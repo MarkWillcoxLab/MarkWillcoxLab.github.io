@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-06-00"
 title: "Effectiveness of two methods of denture sterilization"
 authors: "Webb, B.C., Thomas, C.J., Harty, D.W.S., Willcox, M.D.P."
 type: "journal"

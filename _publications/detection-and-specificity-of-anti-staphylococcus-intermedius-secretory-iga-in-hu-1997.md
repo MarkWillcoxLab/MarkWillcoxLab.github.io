@@ -3,6 +3,8 @@ title: "Detection and specificity of anti-Staphylococcus intermedius secretory I
 authors: "Lan J., Willcox M.D.P., Jackson G.D.F."
 type: "journal"
 year: 1997
+journal: "Australian and New Zealand Journal of Ophthalmology"
 volume: "25"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-0030805735&partnerID=40&md5=f8c343e3572de8a6487b13ebce973190"
+sort_key: "1997-00-00"
 ---

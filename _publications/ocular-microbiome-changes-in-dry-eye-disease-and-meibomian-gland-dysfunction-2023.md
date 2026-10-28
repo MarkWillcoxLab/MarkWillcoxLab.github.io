@@ -8,4 +8,5 @@ volume: "235"
 pages: "art. no. 109615"
 doi: "10.1016/j.exer.2023.109615"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85168437479&doi=10.1016%2fj.exer.2023.109615&partnerID=40&md5=a83454efb8fcb30550194fb5a1ce5146"
+sort_key: "2023-10-00"
 ---

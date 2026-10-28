@@ -1,5 +1,5 @@
 ---
-sort_key: "2026-04-02"
+sort_key: "2026-04-11"
 title: "Peptoid-based antimicrobial strategies against polymyxin-resistant Gram-negative bacteria"
 authors: "Shyam Kumar Mishra, Jiawei Shen, Tanzina Akter, Abiye Tigabu, Umme Laila Urmi, Meseret Alem Damtie, Elias Shiferaw Mekonen, Rajesh Kuppusamy, Kristian Sørensen, Jennifer S Lin, Edgar H H Wong, Alex Hui, Annelise E Barron, Mark Willcox"
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-01-00"
 title: "Lactoferrin increases the susceptibility of S. epidermidis biofilms to lysozyme and vancomycin"
 authors: "Leitch, E.C., Willcox, M.D.P."
 type: "journal"

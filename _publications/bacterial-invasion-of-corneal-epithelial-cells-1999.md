@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Bacterial invasion of corneal epithelial cells"
 authors: "Vallas, V., Stapleton, F., Willcox, M.D.P."
 type: "journal"

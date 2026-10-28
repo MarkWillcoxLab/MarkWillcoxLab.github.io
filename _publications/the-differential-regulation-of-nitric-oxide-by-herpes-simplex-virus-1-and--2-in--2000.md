@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-06-00"
 title: "The differential regulation of nitric oxide by Herpes simplex virus-1 and -2 in a corneal epithelial cell line"
 authors: "Thakur, A., Athmanathan, S., Willcox, M."
 type: "journal"

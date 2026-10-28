@@ -8,4 +8,5 @@ volume: "16"
 pages: "art. no. 100690"
 doi: "10.1016/j.ijregi.2025.100690"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105009593549&doi=10.1016%2fj.ijregi.2025.100690&partnerID=40&md5=91f96e978a476248dab186bb4b1abffc"
+sort_key: "2025-06-15"
 ---

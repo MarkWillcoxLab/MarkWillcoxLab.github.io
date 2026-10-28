@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-06-00"
 title: "Candida-associated denture stomatitis. Aetiology and management: A review. Part 2. Oral diseases caused by candida species"
 authors: "Webb, B.C., Thomas, C.J., Willcox, M.D.P., Harty, D.W.S., Knox, K.W."
 type: "journal"

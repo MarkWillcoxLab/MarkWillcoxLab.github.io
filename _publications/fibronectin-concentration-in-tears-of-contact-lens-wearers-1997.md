@@ -1,5 +1,5 @@
 ---
-sort_key: "1997-00-00"
+sort_key: "1997-01-00"
 title: "Fibronectin concentration in tears of contact lens wearers"
 authors: "Balerlola-Lucas, C., Fukuda, M., Willcox, M.D.P., Sweeney, D.F., Holden, B.A."
 type: "journal"

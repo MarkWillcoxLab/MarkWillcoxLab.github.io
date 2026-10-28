@@ -1,5 +1,5 @@
 ---
-sort_key: "2005-00-00"
+sort_key: "2005-04-27"
 title: "Contribution of the cornea to cytokine levels in the whole eye induced during the early phase of Pseudomonas aeruginosa challenge"
 authors: "Cole, N., Hume, E., Khan, S., Madigan, M., Husband, A.J., Garthwaite, L., Willcox, M."
 type: "journal"

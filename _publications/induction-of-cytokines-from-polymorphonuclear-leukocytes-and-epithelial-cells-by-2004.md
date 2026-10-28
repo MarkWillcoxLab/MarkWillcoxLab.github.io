@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-01-00"
 journal: "Ocular Immunology and Inflammation"
 title: "Induction of cytokines from polymorphonuclear leukocytes and epithelial cells by ocular isolates of Serratia marcescens"
 authors: "Hume, E.B.H., Sack, R.A., Stapleton, F., Willcox, M.D.P."

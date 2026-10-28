@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-12-20"
 title: "Regulatory role of IL-1β in the expression of IL-6 and IL-8 in human corneal epithelial cells during Pseudomonas aeruginosa colonization"
 authors: "Xue, M.-L., Willcox, M.D.P., Lloyd, A., Wakefield, D., Thakur, A."
 type: "journal"

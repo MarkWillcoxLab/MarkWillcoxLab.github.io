@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-03-27"
 title: "The corneal response to infection with Staphylococcus aureus in the absence of interleukin-4"
 authors: "Cole, N., Hume, E.B., Khan, S., Garthwaite, L., Schubert, T., Reeve, V., Willcox, M.D.P."
 type: "journal"

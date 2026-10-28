@@ -1,5 +1,5 @@
 ---
-sort_key: "2006-00-00"
+sort_key: "2006-12-01"
 title: "Protease IV production in Pseudomonas aeruginosa from the lungs of adults with cystic fibrosis"
 authors: "Smith, L., Rose, B., Tingpej, P., Zhu, H., Conibear, T., Manos, J., Bye, P., Elkins, M., Willcox, M., Bell, S., Wainwright, C., Harbour, C."
 type: "journal"

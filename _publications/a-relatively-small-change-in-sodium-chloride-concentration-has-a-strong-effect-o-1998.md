@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-06-00"
 title: "A relatively small change in sodium chloride concentration has a strong effect on adhesion of ocular bacteria to contact lenses"
 authors: "Cowell, B.A., Willcox, M.D.P., Schneider, R.P."
 type: "journal"

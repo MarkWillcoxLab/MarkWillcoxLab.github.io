@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-01-00"
 title: "The role of IL-1β in the regulation of IL-8 and IL-6 in human corneal epithelial cells during Pseudomonas aeruginosa colonization"
 authors: "Mei, L.X., Zhu, H., Willcox, M., Wakefield, D., Lloyd, A., Thakur, A."
 type: "journal"

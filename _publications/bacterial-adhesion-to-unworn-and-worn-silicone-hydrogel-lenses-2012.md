@@ -1,5 +1,5 @@
 ---
-sort_key: "2012-00-00"
+sort_key: "2012-08-01"
 title: "Bacterial adhesion to unworn and worn silicone hydrogel lenses"
 authors: "Vijay, A.K., Zhu, H., Ozkan, J., Wu, D., Masoudi, S., Bandara, R., Borazjani, R.N., Willcox, M.D.P."
 type: "journal"

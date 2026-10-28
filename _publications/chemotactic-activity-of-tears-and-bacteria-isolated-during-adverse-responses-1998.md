@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-02-00"
 title: "Chemotactic activity of tears and bacteria isolated during adverse responses"
 authors: "Thakur, A., Willcox, M.D.P."
 type: "journal"

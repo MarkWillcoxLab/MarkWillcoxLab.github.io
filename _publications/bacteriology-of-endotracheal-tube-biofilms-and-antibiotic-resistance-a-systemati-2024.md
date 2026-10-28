@@ -8,4 +8,5 @@ volume: "147"
 pages: "pp. 146"
 doi: "10.1016/j.jhin.2024.03.004"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85190297502&doi=10.1016%2fj.jhin.2024.03.004&partnerID=40&md5=569a703b27b7d7798b83d5f3d7b755ea"
+sort_key: "2024-03-22"
 ---

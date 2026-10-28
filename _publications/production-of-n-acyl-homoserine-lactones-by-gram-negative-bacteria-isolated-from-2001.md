@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-12-20"
 title: "Production of N-acyl homoserine lactones by Gram-negative bacteria isolated from contact lens wearers"
 authors: "Zhu, H., Thuruthyil, S.J., Willcox, M.D.P."
 type: "journal"

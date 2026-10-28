@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-12-00"
 title: "Bacterial interactions with contact lenses; effects of lens material, lens wear and microbial physiology"
 authors: "Willcox, M.D.P., Harmis, N., Cowell, B.A., Williams, T., Holden, B.A."
 type: "journal"

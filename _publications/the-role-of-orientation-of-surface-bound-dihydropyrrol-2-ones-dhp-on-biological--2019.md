@@ -9,4 +9,5 @@ issue: "14"
 pages: "art. no. 2676"
 doi: "10.3390/molecules24142676"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85069699549&doi=10.3390%2fmolecules24142676&partnerID=40&md5=f67b57e8743f915f28dd869a4cc5170f"
+sort_key: "2019-07-23"
 ---

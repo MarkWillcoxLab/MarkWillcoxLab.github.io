@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-05-00"
 title: "Does Acanthamoeba protect Pseudomonas aeruginosa from the bactericidal effects of contact lens disinfecting systems?"
 authors: "Willcox, M.D.P., Low, R., Hon, J., Harmis, N."
 type: "journal"

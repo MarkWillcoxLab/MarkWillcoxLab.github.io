@@ -1,5 +1,5 @@
 ---
-sort_key: "1993-00-00"
+sort_key: "1993-10-01"
 journal: "Journal of General Microbiology"
 title: "Albumin-binding proteins on the surface of the Streptococcus milleri group and characterization of the albumin receptor of Streptococcus intermedius C5"
 authors: "Willcox, M.D.P., Patrikakis, M., Loo, C.Y., Knox, K.W."

@@ -1,5 +1,5 @@
 ---
-sort_key: "1995-00-00"
+sort_key: "1995-04-00"
 title: "Degradative enzymes of oral streptococci"
 authors: "Willcox, M.D.P., Patrikakis, M., Knox, K.W."
 type: "journal"

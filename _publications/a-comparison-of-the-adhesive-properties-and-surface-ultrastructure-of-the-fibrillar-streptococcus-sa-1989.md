@@ -1,5 +1,5 @@
 ---
-sort_key: "1989-00-00"
+sort_key: "1989-04-00"
 title: "A comparison of the adhesive properties and surface ultrastructure of the fibrillar Streptococcus sanguis 12 and an adhesion deficient non‐fibrillar mutant 12 na"
 authors: "WILLCOX, M.D.P., WYATT, J.E., HANDLEY, P.S."
 type: "journal"

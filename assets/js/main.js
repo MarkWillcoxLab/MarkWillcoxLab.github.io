@@ -91,26 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
 
-    const publicationSearch = document.querySelector('#publicationSearch');
-    if (publicationSearch) {
-        publicationSearch.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const publications = document.querySelectorAll('.publication-item');
-            
-            publications.forEach(pub => {
-                const title = pub.querySelector('.publication-title').textContent.toLowerCase();
-                const authors = pub.querySelector('.publication-authors').textContent.toLowerCase();
-                const journal = pub.querySelector('.publication-journal').textContent.toLowerCase();
-                
-                if (title.includes(searchTerm) || authors.includes(searchTerm) || journal.includes(searchTerm)) {
-                    pub.style.display = 'block';
-                } else {
-                    pub.style.display = 'none';
-                }
-            });
-        });
-    }
-
     const teamFilter = document.querySelector('#teamFilter');
     if (teamFilter) {
         teamFilter.addEventListener('change', function() {
@@ -191,21 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     images.forEach(img => imageObserver.observe(img));
-
-    const buttons = document.querySelectorAll('.btn');
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            if (!this.classList.contains('btn-loading')) {
-                this.classList.add('btn-loading');
-                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
-                
-                setTimeout(() => {
-                    this.classList.remove('btn-loading');
-                    this.innerHTML = this.dataset.originalText || this.innerHTML;
-                }, 2000);
-            }
-        });
-    });
 
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (tooltipTriggerEl) {

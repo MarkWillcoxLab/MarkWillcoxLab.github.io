@@ -1,5 +1,5 @@
 ---
-sort_key: "1988-00-00"
+sort_key: "1988-12-00"
 title: "Fibrillar strains of Streptococcus sanguis biotype I carry a surface protein which cross‐reacts with Antigen B from Streptococcus mutans Ingbritt"
 authors: "Wyatt, J.E., Willcox, M.D.P., Russell, R.R.B., Handley, P.S."
 type: "journal"

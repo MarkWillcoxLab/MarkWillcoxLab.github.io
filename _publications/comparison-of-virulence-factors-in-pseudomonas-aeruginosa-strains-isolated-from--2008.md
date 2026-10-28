@@ -1,5 +1,5 @@
 ---
-sort_key: "2008-00-00"
+sort_key: "2008-12-01"
 title: "Comparison of virulence factors in Pseudomonas aeruginosa strains isolated from contact lens- and non-contact lens-related keratitis"
 authors: "Choy, M.H., Stapleton, F., Willcox, M.D.P., Zhu, H."
 type: "journal"

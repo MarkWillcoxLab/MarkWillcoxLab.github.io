@@ -1,5 +1,5 @@
 ---
-sort_key: "2008-00-00"
+sort_key: "2008-12-00"
 title: "A novel cationic-peptide coating for the prevention of microbial colonization on contact lenses"
 authors: "Willcox, M.D.P., Hume, E.B.H., Aliwarga, Y., Kumar, N., Cole, N."
 type: "journal"

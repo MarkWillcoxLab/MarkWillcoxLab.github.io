@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Comparison of potential pathogenic traits of staphylococci that may contribute to corneal ulceration and inflammation"
 authors: "Wu, P.Z.J., Zhu, H., Thakur, A., Willcox, M.D.P."
 type: "journal"

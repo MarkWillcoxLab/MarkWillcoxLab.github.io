@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-08-00"
 title: "1α,25-Dihydroxyvitamin D<inf>3</inf>inhibits pro-inflammatory cytokine and chemokine expression in human corneal epithelial cells colonized with Pseudomonas aeruginosa"
 authors: "Xue, M.-L., Zhu, H., Thakur, A., Willcox, M."
 type: "journal"

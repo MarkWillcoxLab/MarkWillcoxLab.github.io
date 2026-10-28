@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-03-00"
 title: "Contact lens wear alters the production of certain inflammatory mediators in tears"
 authors: "Thakur, A., Willcox, M.D.P."
 type: "journal"

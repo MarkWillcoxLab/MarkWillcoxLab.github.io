@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-11-00"
 title: "Complications associated with care product use during silicone daily wear of hydrogel contact lens"
 authors: "Papas, E.B., Carnt, N., Willcox, M.D.P., Holden, B.A."
 type: "journal"

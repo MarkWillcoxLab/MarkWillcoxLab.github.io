@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-04-00"
 title: "Balance of pro- and anti-inflammatory cytokines correlates with outcome of acute experimental Pseudomonas aeruginosa keratitis"
 authors: "Thakur, A., Xue, M., Stapleton, F., Lloyd, A.R., Wakefield, D., Willcox, M.D.P."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2999-01-01"
+sort_key: "2026-03-17"
 title: "Recent advances in computational antimicrobial peptide discovery through big data, modeling, and artificial intelligence and their interplay in ushering the next golden era of drug development"
 authors: "Tope Abraham Ibisanmi, Xiaotao Jiang, Mark Willcox, Naresh Kumar"
 type: "journal"

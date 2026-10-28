@@ -6,5 +6,5 @@ year: 2026
 journal: "Antimicrobial Agents and Chemotherapy"
 doi: "10.1128/aac.00727-26"
 url: "https://doi.org/10.1128/aac.00727-26"
-sort_key: "2026-09-16"
+sort_key: "2026-10-07"
 ---

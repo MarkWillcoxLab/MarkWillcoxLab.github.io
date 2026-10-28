@@ -8,4 +8,5 @@ volume: "250"
 pages: "art. no. 110149"
 doi: "10.1016/j.exer.2024.110149"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85209936042&doi=10.1016%2fj.exer.2024.110149&partnerID=40&md5=32fb7fa2f71f5100c1d774770bd42144"
+sort_key: "2024-11-20"
 ---

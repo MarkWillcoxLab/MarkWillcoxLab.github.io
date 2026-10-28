@@ -1,5 +1,5 @@
 ---
-sort_key: "2013-00-00"
+sort_key: "2013-02-01"
 title: "Protamine as a potential amoebicidal agent for contact lens disinfection"
 authors: "Vijay, A.K., Bandara, M., Zhu, H., Willcox, M.D.P."
 type: "journal"

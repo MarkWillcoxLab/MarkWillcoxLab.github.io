@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-07-01"
 journal: "International Journal of Systematic and Evolutionary Microbiology"
 title: "Streptococcus australis sp. nov., a novel oral streptococcus"
 authors: "Willcox, M.D.P., Zhu, H., Knox, K.W."

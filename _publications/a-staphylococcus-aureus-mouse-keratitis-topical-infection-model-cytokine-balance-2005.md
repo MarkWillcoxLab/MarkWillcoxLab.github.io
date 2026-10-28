@@ -1,5 +1,5 @@
 ---
-sort_key: "2005-00-00"
+sort_key: "2005-04-27"
 title: "A Staphylococcus aureus mouse keratitis topical infection model: Cytokine balance in different strains of mice"
 authors: "Hume, E.B.H., Cole, N., Khan, S., Garthwaite, L.L., Aliwarga, Y., Schubert, T.L., Willcox, M.D.P."
 type: "journal"

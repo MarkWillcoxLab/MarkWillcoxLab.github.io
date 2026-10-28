@@ -3,7 +3,9 @@ title: "Elucidation of the mechanism of action of lactoferrin on staphylococcus 
 authors: "Leitch E.C., Willcox M.D.P."
 type: "journal"
 year: 1997
+journal: "Investigative Ophthalmology and Visual Science"
 volume: "38"
 issue: "4"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-33749194994&partnerID=40&md5=5156078a7d664fe045073f9a8440171c"
+sort_key: "1997-00-00"
 ---

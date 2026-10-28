@@ -1,5 +1,5 @@
 ---
-sort_key: "1997-00-00"
+sort_key: "1997-05-00"
 title: "Microbial contamination of hydrogel contact lenses"
 authors: "Gopinathan, U., Stapleton, F., Sharma, S., Willcox, M.D.P., Sweeney, D.F., Rao, G.N., Holden, B.A."
 type: "journal"

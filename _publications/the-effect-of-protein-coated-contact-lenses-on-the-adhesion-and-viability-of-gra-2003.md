@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-01-00"
 title: "The effect of protein-coated contact lenses on the adhesion and viability of gram negative bacteria"
 authors: "Williams, T.J., Schneider, R.P., Willcox, M.D.P."
 type: "journal"

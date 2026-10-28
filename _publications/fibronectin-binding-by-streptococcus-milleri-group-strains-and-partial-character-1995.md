@@ -1,5 +1,5 @@
 ---
-sort_key: "1995-00-00"
+sort_key: "1995-09-00"
 title: "Fibronectin binding by streptococcus milleri group strains and partial characterisation of the fibronectin receptor of streptococcus anginosus f4"
 authors: "Willcox, M.D.P., Loo, C.Y., Harty, D.W.S., Knox, K.W."
 type: "journal"

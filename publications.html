@@ -27,7 +27,7 @@ title: Publications
         <div class="row mt-3">
             <div class="col-md-8 mx-auto text-center">
                 <label class="mb-2">Filter by Type:</label>
-                <div class="btn-group mb-3" role="group">
+                <div class="btn-group flex-wrap justify-content-center mb-3" role="group">
                     <input type="radio" class="btn-check" name="typeFilter" id="allTypes" value="all" checked>
                     <label class="btn btn-outline-primary" for="allTypes">All Types</label>
                     
@@ -45,9 +45,15 @@ title: Publications
         <div class="row mt-2">
             <div class="col-md-8 mx-auto text-center">
                 <label class="mb-2">Filter by Year:</label>
-                <div class="btn-group" role="group">
+                <div class="btn-group flex-wrap justify-content-center" role="group">
                     <input type="radio" class="btn-check" name="yearFilter" id="allYears" value="all" checked>
                     <label class="btn btn-outline-primary" for="allYears">All Years</label>
+                    
+                    <input type="radio" class="btn-check" name="yearFilter" id="year2026" value="2026">
+                    <label class="btn btn-outline-primary" for="year2026">2026</label>
+                    
+                    <input type="radio" class="btn-check" name="yearFilter" id="year2025" value="2025">
+                    <label class="btn btn-outline-primary" for="year2025">2025</label>
                     
                     <input type="radio" class="btn-check" name="yearFilter" id="year2024" value="2024">
                     <label class="btn btn-outline-primary" for="year2024">2024</label>
@@ -93,8 +99,7 @@ title: Publications
                         <div class="mt-2">
                             <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
                         </div>
-                        {% endif %}
-                        {% if pub.url %}
+                        {% elsif pub.url %}
                         <div class="mt-2">
                             <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Chapter</a>
                         </div>
@@ -109,8 +114,7 @@ title: Publications
                         <div class="mt-2">
                             <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
                         </div>
-                        {% endif %}
-                        {% if pub.url %}
+                        {% elsif pub.url %}
                         <div class="mt-2">
                             <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
                         </div>
@@ -128,8 +132,7 @@ title: Publications
                         <div class="mt-2">
                             <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
                         </div>
-                        {% endif %}
-                        {% if pub.url %}
+                        {% elsif pub.url %}
                         <div class="mt-2">
                             <a href="{{ pub.url }}" target="_blank" class="btn btn-sm btn-outline-primary">View Publication</a>
                         </div>
@@ -137,161 +140,6 @@ title: Publications
                     {% endif %}
                 </div>
                 {% endfor %}
-
-                <div class="publication-item mb-4" data-year="2024" data-type="journal">
-                    <h5 class="publication-title">
-                        Novel antimicrobial peptides for ocular surface infections
-                    </h5>
-                    <p class="publication-authors">
-                        Willcox, M.D.P., Chen, S., Rodriguez, M., Watson, E.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Antimicrobial Agents and Chemotherapy</em>, 68(3), e01523-23
-                    </p>
-                    <span class="publication-year">2024</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1128/aac.01523-23" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                        <span class="badge bg-warning ms-2">Featured</span>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2024" data-type="journal">
-                    <h5 class="publication-title">
-                        Ocular microbiome changes during contact lens wear
-                    </h5>
-                    <p class="publication-authors">
-                        Rodriguez, M., Willcox, M.D.P., Afzal, M., Chakraborty, S.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Microbiome</em>, 12(1), 45
-                    </p>
-                    <span class="publication-year">2024</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1186/s40168-024-01745-8" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2024" data-type="journal">
-                    <h5 class="publication-title">
-                        Antimicrobial coatings for medical devices: A comprehensive review
-                    </h5>
-                    <p class="publication-authors">
-                        Watson, E., Willcox, M.D.P., Chen, S., Yu, T.T.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Advanced Materials</em>, 36(8), 2304567
-                    </p>
-                    <span class="publication-year">2024</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1002/adma.202304567" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2023" data-type="journal">
-                    <h5 class="publication-title">
-                        Tear film proteomics in contact lens wearers
-                    </h5>
-                    <p class="publication-authors">
-                        Willcox, M.D.P., Sara, M., Mishra, S.K., Sarwat, S.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Proteomics</em>, 23(15), 2200123
-                    </p>
-                    <span class="publication-year">2023</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1002/pmic.202200123" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2023" data-type="journal">
-                    <h5 class="publication-title">
-                        Acanthamoeba keratitis: Current treatment strategies
-                    </h5>
-                    <p class="publication-authors">
-                        Peguda, H.K., Rayamajhee, B., Willcox, M.D.P.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Clinical Microbiology Reviews</em>, 36(4), e00123-22
-                    </p>
-                    <span class="publication-year">2023</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1128/cmr.00123-22" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                        <span class="badge bg-warning ms-2">Featured</span>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2023" data-type="journal">
-                    <h5 class="publication-title">
-                        Staphylococcus aureus antibiotic resistance in ocular infections
-                    </h5>
-                    <p class="publication-authors">
-                        Yu, T.T., Afzal, M., Willcox, M.D.P.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Journal of Medical Microbiology</em>, 72(8), 001678
-                    </p>
-                    <span class="publication-year">2023</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1099/jmm.0.001678" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2022" data-type="journal">
-                    <h5 class="publication-title">
-                        Contact lens discomfort: Biomarkers and mechanisms
-                    </h5>
-                    <p class="publication-authors">
-                        Willcox, M.D.P., Rourke, R., Chen, S., Watson, E.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Contact Lens and Anterior Eye</em>, 45(6), 101723
-                    </p>
-                    <span class="publication-year">2022</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1016/j.clae.2022.101723" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2022" data-type="journal">
-                    <h5 class="publication-title">
-                        Novel disinfectants against coronaviruses
-                    </h5>
-                    <p class="publication-authors">
-                        Chakraborty, S., Willcox, M.D.P., Rodriguez, M.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Journal of Hospital Infection</em>, 120, 89-97
-                    </p>
-                    <span class="publication-year">2022</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.1016/j.jhin.2022.01.015" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item mb-4" data-year="2022" data-type="journal">
-                    <h5 class="publication-title">
-                        Quantum dots for tear film analysis
-                    </h5>
-                    <p class="publication-authors">
-                        Sara, M., Willcox, M.D.P., Mishra, S.K.
-                    </p>
-                    <p class="publication-journal">
-                        <em>Nanomedicine</em>, 17(15), 1023-1035
-                    </p>
-                    <span class="publication-year">2022</span>
-                    <span class="badge bg-success ms-2">Journal Article</span>
-                    <div class="mt-2">
-                        <a href="https://doi.org/10.2217/nnm-2022-0123" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -417,32 +265,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('publicationSearch');
     const typeFilters = document.querySelectorAll('input[name="typeFilter"]');
     const yearFilters = document.querySelectorAll('input[name="yearFilter"]');
-    const publications = document.querySelectorAll('.publication-item');
+    const publications = Array.from(document.querySelectorAll('.publication-item')).map(function(pub) {
+        return {
+            el: pub,
+            type: pub.getAttribute('data-type') || '',
+            year: pub.getAttribute('data-year') || '',
+            text: pub.textContent.toLowerCase()
+        };
+    });
+    let searchTimer;
     
     function filterPublications() {
-        const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+        const searchTerm = searchInput ? searchInput.value.trim().toLowerCase() : '';
         const selectedType = document.querySelector('input[name="typeFilter"]:checked').value;
         const selectedYear = document.querySelector('input[name="yearFilter"]:checked').value;
         
         publications.forEach(function(pub) {
-            const pubType = pub.getAttribute('data-type') || '';
-            const pubYear = pub.getAttribute('data-year') || '';
-            const pubText = pub.textContent.toLowerCase();
-            
-            const typeMatch = selectedType === 'all' || pubType === selectedType;
-            const yearMatch = selectedYear === 'all' || pubYear === selectedYear;
-            const searchMatch = !searchTerm || pubText.includes(searchTerm);
-            
-            if (typeMatch && yearMatch && searchMatch) {
-                pub.style.display = 'block';
-            } else {
-                pub.style.display = 'none';
-            }
+            const typeMatch = selectedType === 'all' || pub.type === selectedType;
+            const yearMatch = selectedYear === 'all' || pub.year === selectedYear;
+            const searchMatch = !searchTerm || pub.text.includes(searchTerm);
+            pub.el.style.display = (typeMatch && yearMatch && searchMatch) ? '' : 'none';
         });
     }
     
     if (searchInput) {
-        searchInput.addEventListener('keyup', filterPublications);
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(filterPublications, 150);
+        });
     }
     
     typeFilters.forEach(function(filter) {

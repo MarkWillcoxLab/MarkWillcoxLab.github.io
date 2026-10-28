@@ -8,4 +8,5 @@ issue: "4"
 pages: "pp. 421"
 doi: "10.1097/00003226-200405000-00023"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-11144355913&doi=10.1097%2f00003226-200405000-00023&partnerID=40&md5=b1822f6a53c4888539318db44c5b396d"
+sort_key: "2004-05-00"
 ---

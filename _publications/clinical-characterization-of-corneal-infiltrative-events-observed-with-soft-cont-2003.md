@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-07-00"
 journal: "Cornea"
 title: "Clinical characterization of corneal infiltrative events observed with soft contact lens wear"
 authors: "Sweeney, D.F., Jalbert, I., Covey, M., Sankaridurg, P.R., Vajdic, C., Holden, B.A., Sharma, S., Ramachandran, L., Willcox, M.D.P., Rao, G.N."

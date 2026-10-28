@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-06-00"
 title: "Protein microanalysis of animal tears"
 authors: "Hemsley, S., Cole, N., Canfield, P., Willcox, M.D.P."
 type: "journal"

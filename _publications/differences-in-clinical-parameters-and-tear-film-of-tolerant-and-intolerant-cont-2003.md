@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-12-01"
 title: "Differences in Clinical Parameters and Tear Film of Tolerant and Intolerant Contact Lens Wearers"
 authors: "Glasson, M.J., Stapleton, F., Keay, L., Sweeney, D., Willcox, M.D.P."
 type: "journal"

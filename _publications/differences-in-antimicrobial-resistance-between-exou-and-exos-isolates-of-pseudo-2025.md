@@ -1,5 +1,5 @@
 ---
-sort_key: "2025-07-00"
+sort_key: "2025-04-22"
 title: "Differences in antimicrobial resistance between exoU and exoS isolates of Pseudomonas aeruginosa"
 authors: "Tanzina Akter, Fiona Stapleton, Mark Willcox"
 type: "journal"

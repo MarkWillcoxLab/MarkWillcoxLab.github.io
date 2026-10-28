@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-10-00"
 title: "Mucin degradation mechanisms by distinct Pseudomonas aeruginosa isolates in vitro"
 authors: "Aristoteli, L.P., Willcox, M.D.P."
 type: "journal"

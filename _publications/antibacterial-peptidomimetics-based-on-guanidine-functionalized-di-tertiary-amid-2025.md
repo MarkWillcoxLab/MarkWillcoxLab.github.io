@@ -9,4 +9,5 @@ issue: "12"
 pages: "pp. 6333"
 doi: "10.1039/d5md00688k"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105024434487&doi=10.1039%2fd5md00688k&partnerID=40&md5=9f9a8f3c85074ad17672a75459bb1c62"
+sort_key: "2025-10-01"
 ---

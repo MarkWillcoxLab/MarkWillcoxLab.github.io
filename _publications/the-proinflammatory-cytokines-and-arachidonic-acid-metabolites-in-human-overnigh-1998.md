@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-01-00"
 title: "The proinflammatory cytokines and arachidonic acid metabolites in human overnight tears: Homeostatic mechanisms"
 authors: "Thakur, A., Willcox, M.D.P., Stapleton, F."
 type: "journal"

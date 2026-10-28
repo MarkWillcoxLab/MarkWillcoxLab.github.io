@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-07-00"
 title: "Cytokine and lipid inflammatory mediator profile of human tears during contact lens associated inflammatory diseases"
 authors: "Thakur, A., Willcox, M.D.P."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "1995-00-00"
+sort_key: "1995-12-01"
 title: "Potential pathogenic properties of members of the 'Streptococcus milleri' group in relation to the production of endocarditis and abscesses"
 authors: "Willcox, M.D.P."
 type: "journal"

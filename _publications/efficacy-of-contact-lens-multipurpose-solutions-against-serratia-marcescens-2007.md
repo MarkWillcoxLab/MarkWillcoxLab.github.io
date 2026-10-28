@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-04-01"
 title: "Efficacy of contact lens multipurpose solutions against Serratia marcescens"
 authors: "Hume, E.B.H., Zhu, H., Cole, N., Huynh, C., Lam, S., Willcox, M.D.P."
 type: "journal"

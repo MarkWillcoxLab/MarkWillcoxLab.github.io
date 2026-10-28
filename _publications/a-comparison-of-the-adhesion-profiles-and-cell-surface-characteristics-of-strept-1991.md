@@ -1,5 +1,5 @@
 ---
-sort_key: "1991-00-00"
+sort_key: "1991-01-00"
 journal: "Microbial Ecology in Health and Disease"
 title: "A comparison of the adhesion profiles and cell surface characteristics of streptococcus mitis with those of other members of the streptococcus sanguis group"
 authors: "Willcox, M.D.P., Knox, K.W."

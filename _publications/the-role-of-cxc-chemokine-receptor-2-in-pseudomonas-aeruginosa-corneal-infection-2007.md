@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2006-10-06"
 title: "The role of CXC chemokine receptor 2 in Pseudomonas aeruginosa corneal infection"
 authors: "Khan, S., Cole, N., Hume, E.B., Garthwaite, L., Conibear, T.C.R., Miles, D.H., Aliwaga, Y., Krockenberger, M.B., Willcox, M.D.P."
 type: "journal"

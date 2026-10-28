@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-02-00"
 title: "KC production in the cornea in response to Pseudomonas aeruginosa challenge"
 authors: "Cole, N., Bao, S., Thakur, A., Willcox, M., Husband, A.J."
 type: "journal"

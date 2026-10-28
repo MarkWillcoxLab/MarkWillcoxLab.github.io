@@ -1,5 +1,5 @@
 ---
-sort_key: "2009-00-00"
+sort_key: "2009-07-01"
 title: "Influence of tear film and contact lens osmolality on ocular comfort in contact lens wear"
 authors: "Stahl, U., Willcox, M.D.P., Naduvilath, T., Stapleton, F."
 type: "journal"

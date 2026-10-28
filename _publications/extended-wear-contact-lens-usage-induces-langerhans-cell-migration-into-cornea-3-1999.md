@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-11-00"
 title: "Extended wear contact lens usage induces langerhans cell migration into cornea [3]"
 authors: "Hazlett, L.D., McClellan, S.M., Hume, E.B.H., Dajcs, J.J., O'Callaghan, R.J., Willcox, M.D.P."
 type: "journal"

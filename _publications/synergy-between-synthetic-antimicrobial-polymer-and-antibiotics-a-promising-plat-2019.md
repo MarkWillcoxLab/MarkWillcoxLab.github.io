@@ -9,4 +9,5 @@ issue: "8"
 pages: "pp. 1357"
 doi: "10.1021/acsinfecdis.9b00049"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064835553&doi=10.1021%2facsinfecdis.9b00049&partnerID=40&md5=239c18c3f857204a5d941cf6f7e7b78e"
+sort_key: "2019-04-02"
 ---

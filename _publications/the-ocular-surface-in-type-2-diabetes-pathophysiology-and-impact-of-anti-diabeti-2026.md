@@ -8,4 +8,5 @@ volume: "110"
 pages: "art. no. 101417"
 doi: "10.1016/j.preteyeres.2025.101417"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105023512101&doi=10.1016%2fj.preteyeres.2025.101417&partnerID=40&md5=1221a014c47f4a20c122fd089eca41e7"
+sort_key: "2025-11-24"
 ---

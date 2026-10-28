@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-08-00"
 title: "Macrophage inflammatory protein-2 and vascular endothelial growth factor regulate corneal neovascularization induced by infection with Pseudomonas aeruginosa in mice"
 authors: "Xue, M.-L., Thakur, A., Willcox, M."
 type: "journal"

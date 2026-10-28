@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-05-01"
 title: "Bacterial populations on high-Dk silicone hydrogel contact lenses: Effect of length of wear in asymptomatic patients"
 authors: "Willcox, M.D.P., Harmis, N.Y., Holden, B.A."
 type: "journal"

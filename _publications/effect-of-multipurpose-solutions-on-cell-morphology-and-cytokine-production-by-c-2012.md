@@ -1,5 +1,5 @@
 ---
-sort_key: "2012-00-00"
+sort_key: "2012-10-01"
 title: "Effect of multipurpose solutions on cell morphology and cytokine production by corneal epithelial cells"
 authors: "Cole, N., Garthwaite, L., Chen, R., Willcox, M.D.P."
 type: "journal"

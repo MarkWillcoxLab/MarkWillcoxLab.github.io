@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-01-00"
 journal: "Current Eye Research"
 title: "Non-steroidal anti inflammatory agents decrease bacterial colonisation of contact lenses and prevent adhesion to human corneal epithelial cells"
 authors: "Bandara, B.M.K., Sankaridurg, P.R., Willcox, M.D.P."

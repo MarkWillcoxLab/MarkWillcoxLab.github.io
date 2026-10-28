@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-06-00"
 title: "Staphylococcus aureus causes acute inflammatory episodes in the cornea during contact lens wear"
 authors: "Wu, P., Thakur, A., Stapleton, F., Willcox, M."
 type: "journal"

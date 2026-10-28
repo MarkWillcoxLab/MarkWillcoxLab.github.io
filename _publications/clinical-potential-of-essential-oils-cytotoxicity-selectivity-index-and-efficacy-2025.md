@@ -1,5 +1,5 @@
 ---
-sort_key: "2025-09-00"
+sort_key: "2025-09-24"
 title: "Clinical Potential of Essential Oils: Cytotoxicity, Selectivity Index, and Efficacy for Combating Gram-Positive ESKAPE Pathogens"
 authors: "Biruk Bayleyegn Belete, Jerome Ozkan, Parthasarathi Kalaiselvan, Mark Willcox"
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2020-08-00"
+sort_key: "2020-08-24"
 title: "Activity of Antimicrobial Peptides and Ciprofloxacin against <i>Pseudomonas aeruginosa</i> Biofilms"
 authors: "Muhammad Yasir, Debarun Dutta, Mark  D.P. Willcox"
 type: "journal"

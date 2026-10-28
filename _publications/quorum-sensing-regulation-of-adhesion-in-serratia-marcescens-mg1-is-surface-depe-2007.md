@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-04-00"
 title: "Quorum-sensing regulation of adhesion in Serratia marcescens MG1 is surface dependent"
 authors: "Labbate, M., Zhu, H., Thung, L., Bandara, R., Larsen, M.R., Willcox, M.D.P., Givskov, M., Rice, S.A., Kjelleberg, S."
 type: "journal"

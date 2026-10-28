@@ -1,5 +1,5 @@
 ---
-sort_key: "1994-00-00"
+sort_key: "1994-06-00"
 title: "Lancefield group C Streptococcus milleri group strains aggregate human platelets"
 authors: "Willcox, M.D.P., Oakey, H.J., Harty, D.W.S., Patrikakis, M., Knox, K.W."
 type: "journal"

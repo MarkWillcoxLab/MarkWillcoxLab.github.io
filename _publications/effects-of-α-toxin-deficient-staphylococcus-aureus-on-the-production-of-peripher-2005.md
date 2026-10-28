@@ -1,5 +1,5 @@
 ---
-sort_key: "2005-00-00"
+sort_key: "2005-01-00"
 journal: "Current Eye Research"
 title: "Effects of α-toxin-deficient Staphylococcus aureus on the production of peripheral corneal ulceration in an animal model"
 authors: "Wu, P.Z.J., Zhu, H., Stapleton, F., Hume, E., Aliwarga, Y., Thakur, A., Willcox, M.D.P."

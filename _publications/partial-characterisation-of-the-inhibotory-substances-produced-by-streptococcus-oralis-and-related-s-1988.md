@@ -5,4 +5,5 @@ type: "journal"
 year: 1988
 journal: "Microbios"
 url: "http://www.scopus.com/inward/record.url?eid=2-s2.0-0023823480&partnerID=MN8TOARS"
+sort_key: "1988-00-00"
 ---

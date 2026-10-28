@@ -1,5 +1,5 @@
 ---
-sort_key: "2999-01-05"
+sort_key: "2026-05-05"
 title: "Multimodal computational discovery of MvfR inhibitors targeting quorum sensing in multi-drug-resistant Pseudomonas aeruginosa"
 authors: "Tope Abraham Ibisanmi, Xiaotao Jiang, Rasel Ahmed Khan, Tsz Tin (Tom) Yu, Mark Willcox, Naresh Kumar"
 type: "journal"

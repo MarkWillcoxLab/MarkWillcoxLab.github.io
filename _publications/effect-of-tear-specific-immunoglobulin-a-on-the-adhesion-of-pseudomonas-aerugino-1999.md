@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Effect of tear-specific immunoglobulin a on the adhesion of Pseudomonas aeruginosa I to contact lenses"
 authors: "Lan, J., Willcox, M.D.P., Jackson, G.D.F."
 type: "journal"

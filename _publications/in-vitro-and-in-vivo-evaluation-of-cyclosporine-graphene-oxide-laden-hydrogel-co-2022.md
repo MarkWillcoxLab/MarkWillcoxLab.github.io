@@ -8,4 +8,5 @@ volume: "613"
 pages: "art. no. 121414"
 doi: "10.1016/j.ijpharm.2021.121414"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85122209512&doi=10.1016%2fj.ijpharm.2021.121414&partnerID=40&md5=0ff4e200c9ee7b76564111e2e28082b7"
+sort_key: "2022-02-00"
 ---

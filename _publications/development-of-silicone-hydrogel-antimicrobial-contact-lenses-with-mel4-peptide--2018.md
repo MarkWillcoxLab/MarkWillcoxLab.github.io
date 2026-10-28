@@ -1,5 +1,5 @@
 ---
-sort_key: "2018-00-00"
+sort_key: "2018-10-01"
 title: "Development of silicone hydrogel antimicrobial contact lenses with mel4 peptide coating"
 authors: "Dutta, D., Kamphuis, B., Ozcelik, B., Thissen, H., Pinarbasi, R., Kumar, N., Willcox, M.D.P."
 type: "journal"

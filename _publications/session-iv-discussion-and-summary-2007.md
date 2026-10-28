@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-11-00"
 title: "Session IV: Discussion and summary"
 authors: "Lamberts, D.W., Willcox, M."
 type: "journal"

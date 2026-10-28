@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-04-00"
 title: "TNF-α production in the cornea in response to Pseudomonas aeruginosa challenge"
 authors: "Cole, N., Bao, S., Willcox, M., Husband, A.J."
 type: "journal"

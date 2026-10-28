@@ -1,5 +1,5 @@
 ---
-sort_key: "2006-00-00"
+sort_key: "2006-09-01"
 title: "Which is more important to the initiation of contact lens related microbial keratitis, trauma to the ocular surface or bacterial pathogenic factors?"
 authors: "Willcox, M.D."
 type: "journal"

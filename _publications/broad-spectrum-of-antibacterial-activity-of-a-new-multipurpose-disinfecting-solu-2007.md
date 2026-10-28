@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-11-00"
 title: "Broad spectrum of antibacterial activity of a new multipurpose disinfecting solution"
 authors: "Zhu, H., Ding, A., Bandara, M., Willcox, M.D.P., Stapleton, F."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2013-00-00"
+sort_key: "2013-01-01"
 title: "Tear film break-up time in rabbits"
 authors: "Wei, X.E., Markoulli, M., Zhao, Z., Willcox, M.D."
 type: "journal"

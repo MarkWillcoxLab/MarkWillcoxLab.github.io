@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-05-00"
 title: "Effector mechanisms of protection against Pseudomonas aeruginosa keratitis in immunized rats"
 authors: "Thakur, A., Kyd, J., Xue, M., Willcox, M.D.P., Cripps, A."
 type: "journal"

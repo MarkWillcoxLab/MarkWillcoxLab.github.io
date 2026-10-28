@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-00-00"
+sort_key: "2007-11-00"
 title: "New strategies to prevent Pseudomonas keratitis"
 authors: "Willcox, M.D.P."
 type: "journal"

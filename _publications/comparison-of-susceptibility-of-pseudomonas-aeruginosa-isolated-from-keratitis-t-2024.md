@@ -9,4 +9,5 @@ issue: "6"
 pages: "art. no. 102288"
 doi: "10.1016/j.clae.2024.102288"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85202173093&doi=10.1016%2fj.clae.2024.102288&partnerID=40&md5=1f1702eb16af7142b1eebde644494506"
+sort_key: "2024-08-23"
 ---

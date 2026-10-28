@@ -6,4 +6,5 @@ year: 1997
 volume: "38"
 issue: "4"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-26544438848&partnerID=40&md5=055ad78ca81e8408d8f4cc28ef744028"
+sort_key: "1997-00-00"
 ---

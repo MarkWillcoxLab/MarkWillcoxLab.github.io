@@ -1,5 +1,5 @@
 ---
-sort_key: "2008-00-00"
+sort_key: "2008-10-00"
 title: "Proteomic analysis of dog tears for potential cancer markers"
 authors: "de Freitas Campos, C., Cole, N., Dyk, D.V., Walsh, B.J., Diakos, P., Almeida, D., Torrecilhas, A., Laus, J.L., Willcox, M.D.P."
 type: "journal"

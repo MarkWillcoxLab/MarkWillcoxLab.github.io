@@ -1,5 +1,5 @@
 ---
-sort_key: "2012-00-00"
+sort_key: "2012-12-01"
 title: "The effect of daily lens replacement during overnight wear on ocular adverse events"
 authors: "Ozkan, J., Willcox, M.D.P., De La Jara, P.L., Mandathara, P.S., Rathi, V.M., Thomas, V., Holden, B.A."
 type: "journal"

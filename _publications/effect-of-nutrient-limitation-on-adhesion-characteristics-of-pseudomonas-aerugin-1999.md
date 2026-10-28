@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-06-00"
 title: "Effect of nutrient limitation on adhesion characteristics of Pseudomonas aeruginosa"
 authors: "Cowell, B.A., Willcox, M.D.P., Herbert, B., Schneider, R.P."
 type: "journal"

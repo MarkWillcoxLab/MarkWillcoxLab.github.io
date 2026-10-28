@@ -1,5 +1,5 @@
 ---
-sort_key: "2017-00-00"
+sort_key: "2016-10-20"
 title: "Crosslinked Platform Coatings Incorporating Bioactive Signals for the Control of Biointerfacial Interactions"
 authors: "Ozcelik, B., Chen, R., Glattauer, V., Kumar, N., Willcox, M.P., Thissen, H."
 type: "journal"

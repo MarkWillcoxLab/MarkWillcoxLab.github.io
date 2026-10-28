@@ -1,5 +1,5 @@
 ---
-sort_key: "2016-00-00"
+sort_key: "2016-08-01"
 title: "Contact lens-induced discomfort and protein changes in tears"
 authors: "Masoudi, S., Stapleton, F.J., Willcox, M.D.P."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-12-00"
 title: "Differential interleukin-6 mRNA expression in Nippostrongylus brasiliensis infection of susceptible and resistant strains of mice"
 authors: "Bao, S., Cole, N., Willcox, M., Beagley, K., Zhou, Y., Husband, A.J."
 type: "journal"

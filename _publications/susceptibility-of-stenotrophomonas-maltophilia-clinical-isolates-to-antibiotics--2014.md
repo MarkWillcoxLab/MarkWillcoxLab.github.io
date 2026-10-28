@@ -1,5 +1,5 @@
 ---
-sort_key: "2014-00-00"
+sort_key: "2014-12-02"
 title: "Susceptibility of Stenotrophomonas maltophilia clinical isolates to antibiotics and contact lens multipurpose disinfecting solutions"
 authors: "Watanabe, K., Zhu, H., Willcox, M."
 type: "journal"

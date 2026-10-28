@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-00-00"
+sort_key: "2001-12-20"
 title: "Random amplified polymorphic DNA analysis of Acinetobacter species isolated from worn contact lenses"
 authors: "Corrigan, K.M., Zhu, H., Willcox, M.D.P."
 type: "journal"

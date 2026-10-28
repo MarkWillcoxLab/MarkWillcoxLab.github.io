@@ -1,5 +1,5 @@
 ---
-sort_key: "2005-00-00"
+sort_key: "2005-01-00"
 journal: "Current Eye Research"
 title: "Interleukin-4 is not critical to pathogenesis in a mouse model of Pseudomonas aeruginosa corneal infection"
 authors: "Cole, N., Hume, E., Khan, S., Krockenberger, M., Thakur, A., Husband, A.J., Willcox, M.D.P."

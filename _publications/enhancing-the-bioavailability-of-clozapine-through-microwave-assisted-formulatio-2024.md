@@ -8,4 +8,5 @@ volume: "690"
 pages: "art. no. 133786"
 doi: "10.1016/j.colsurfa.2024.133786"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85188725919&doi=10.1016%2fj.colsurfa.2024.133786&partnerID=40&md5=b817041b1dc026d79876cd9acb94e1be"
+sort_key: "2024-03-21"
 ---

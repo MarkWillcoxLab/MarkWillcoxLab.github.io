@@ -6,5 +6,5 @@ year: 2026
 journal: "WIREs Nanomedicine and Nanobiotechnology"
 doi: "10.1002/wnan.70074"
 url: "https://doi.org/10.1002/wnan.70074"
-sort_key: "2026-07-00"
+sort_key: "2026-08-18"
 ---

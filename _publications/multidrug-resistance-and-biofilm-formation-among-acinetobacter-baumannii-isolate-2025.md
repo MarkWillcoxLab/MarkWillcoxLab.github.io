@@ -9,4 +9,5 @@ issue: "4"
 pages: "pp. 662"
 doi: "10.33314/jnhrc.v22i04.4694"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105000657036&doi=10.33314%2fjnhrc.v22i04.4694&partnerID=40&md5=2111a294b31b65ff485f9904d11d69a0"
+sort_key: "2025-02-14"
 ---

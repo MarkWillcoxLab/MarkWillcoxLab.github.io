@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-00-00"
+sort_key: "1999-01-02"
 title: "Secretory immunoglobulin A in tears: Functions and changes during contact lens wear"
 authors: "Willcox, M.D.P., Lan, J."
 type: "journal"

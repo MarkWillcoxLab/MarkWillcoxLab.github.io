@@ -1,5 +1,5 @@
 ---
-sort_key: "2006-00-00"
+sort_key: "2006-11-01"
 title: "A protective role for IL-6 in staphylococcal microbial keratitis"
 authors: "Hume, E.B.H., Cole, N., Garthwaite, L.L., Khan, S., Willcox, M.D.P."
 type: "journal"

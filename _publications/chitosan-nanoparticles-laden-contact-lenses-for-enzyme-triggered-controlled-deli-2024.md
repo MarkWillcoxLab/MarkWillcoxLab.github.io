@@ -9,4 +9,5 @@ issue: "11"
 pages: "pp. 3212"
 doi: "10.1007/s13346-024-01543-8"
 url: "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85185974332&doi=10.1007%2fs13346-024-01543-8&partnerID=40&md5=0a18df8da6368f7554cdcdf3a5be29e3"
+sort_key: "2024-02-26"
 ---

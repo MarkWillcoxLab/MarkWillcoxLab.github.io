@@ -1,5 +1,5 @@
 ---
-sort_key: "2013-00-00"
+sort_key: "2013-01-00"
 title: "Solutions for care of silicone hydrogel lenses"
 authors: "Willcox, M.D.P."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-00-00"
+sort_key: "1998-03-04"
 title: "Some potential pathogenic traits of gram-negative bacteria isolated during ocular inflammation and infections"
 authors: "Willcox, M.D.P., Thakur, A., Holden, B.A."
 type: "journal"

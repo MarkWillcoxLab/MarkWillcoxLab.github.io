@@ -1,5 +1,5 @@
 ---
-sort_key: "1990-00-00"
+sort_key: "1990-02-00"
 journal: "Biofouling"
 title: "The surface ultrastructure and adhesive properties of a fimbriate streptococcus sanguis strain and six non-fimbriate mutants"
 authors: "Harty, D.W.S., Willcox, M.D.P., Wyatt, J.E., Oyston, P.C.F., Handley, P.S."

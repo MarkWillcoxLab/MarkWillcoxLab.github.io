@@ -1,5 +1,5 @@
 ---
-sort_key: "2002-00-00"
+sort_key: "2002-01-00"
 title: "Lipid, lipase and lipocalin differences between tolerant and intolerant contact lens wearers"
 authors: "Glasson, M.J., Stapleton, F., Willcox, M.D.P."
 type: "journal"

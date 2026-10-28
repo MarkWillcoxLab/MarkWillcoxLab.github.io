@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-06-00"
 title: "Invasive strains of Pseudomonas aeruginosa are able to cause epithelial cell cytotoxicity that is dependent on bacterial cell density"
 authors: "Zhu, H., Thuruthyil, S.J., Willcox, M."
 type: "journal"

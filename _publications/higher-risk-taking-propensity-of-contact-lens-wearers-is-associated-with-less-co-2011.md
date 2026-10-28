@@ -1,5 +1,5 @@
 ---
-sort_key: "2011-00-00"
+sort_key: "2011-10-00"
 title: "Higher risk taking propensity of contact lens wearers is associated with less compliance"
 authors: "Carnt, N., Keay, L., Willcox, M., Evans, V., Stapleton, F."
 type: "journal"

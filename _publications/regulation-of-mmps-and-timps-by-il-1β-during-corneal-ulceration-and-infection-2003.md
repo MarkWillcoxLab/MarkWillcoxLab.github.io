@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-05-01"
 title: "Regulation of MMPs and TIMPs by Il-1β during corneal ulceration and infection"
 authors: "Xue, M.L., Wakefield, D., Willcox, M.D.P., Lloyd, A.R., Di Girolamo, N., Cole, N., Thakur, A."
 type: "journal"

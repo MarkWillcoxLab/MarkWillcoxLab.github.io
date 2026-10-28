@@ -1,5 +1,5 @@
 ---
-sort_key: "2000-00-00"
+sort_key: "2000-11-00"
 journal: "Electrophoresis"
 title: "Complementing genomics with proteomics: The membrane subproteome of pseudomonas aeruginosa PAO1"
 authors: "Nouwens, A.S., Cordwell, S.J., Larsen, M.R., Molloy, M.P., Gillings, M., Willcox, M.D.P., Walsh, B.J."

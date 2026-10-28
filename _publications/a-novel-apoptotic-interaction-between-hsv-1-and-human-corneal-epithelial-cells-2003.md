@@ -1,5 +1,5 @@
 ---
-sort_key: "2003-00-00"
+sort_key: "2003-01-00"
 title: "A novel apoptotic interaction between HSV-1 and human corneal epithelial cells"
 authors: "Miles, D., Athmanathan, S., Thakur, A., Willcox, M.D.P."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-09-00"
 title: "Biological performance of a novel synthetic furanone-based antimicrobial"
 authors: "Baveja, J.K., Li, G., Nordon, R.E., Hume, E.B.H., Kumar, N., Willcox, M.D.P., Poole-Warren, L.A."
 type: "journal"

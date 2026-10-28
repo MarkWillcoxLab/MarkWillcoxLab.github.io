@@ -1,5 +1,5 @@
 ---
-sort_key: "2006-00-00"
+sort_key: "2006-11-00"
 title: "The adhesion of Pseudomonas aeruginosa to high molecular weight human tear film species corresponds to glycoproteins reactive with Sambucus nigra lectin"
 authors: "Aristoteli, L.P., Willcox, M.D.P."
 type: "journal"

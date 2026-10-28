@@ -1,5 +1,5 @@
 ---
-sort_key: "2004-00-00"
+sort_key: "2004-12-00"
 title: "Efficacy of various drugs in the prevention of posterior capsule opacification: Experimental study of rabbit eyes"
 authors: "Fernandez, V., Fragoso, M.A., Billotte, C., Lamar, P., Orozco, M.A., Dubovy, S., Willcox, M., Parel, J.-M."
 type: "journal"
