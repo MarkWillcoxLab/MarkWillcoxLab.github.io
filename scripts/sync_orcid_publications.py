@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""
-Sync publications from ORCID to Jekyll `_publications/` (FULL METADATA VERSION).
-
-- Fetches work summaries from ORCID
-- Fetches full work records using put-code
-- Extracts complete authors, year, journal, DOI, URL
-- Avoids duplicates using DOI or normalized title
-- Updates existing markdown files when a matching DOI is found
-- Creates new markdown files for genuinely new works
-- Uses ONLY Python standard library
-"""
-
 import os
 import re
 import sys
@@ -19,11 +6,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 ORCID_API = "https://pub.orcid.org/v3.0"
-# Default: Prof. Mark Willcox
 DEFAULT_ORCID = "0000-0003-3842-7563"
 
-
-# -------------------- XML HELPERS --------------------
 
 def local(tag: str) -> str:
     return tag.split("}")[-1] if tag and "}" in tag else (tag or "")
@@ -49,7 +33,6 @@ def fetch_xml(url: str) -> ET.Element:
 
 
 def get_put_code(ws: ET.Element):
-    """Get put-code from work-summary element (may be namespaced)."""
     if ws is None or not ws.attrib:
         return None
     put_code = ws.attrib.get("put-code")
@@ -77,13 +60,10 @@ def fetch_full_work(orcid_id: str, put_code: str) -> ET.Element:
     return fetch_xml(f"{ORCID_API}/{orcid_id}/work/{put_code}")
 
 
-# -------------------- FULL METADATA PARSING --------------------
-
 def parse_full_work(root: ET.Element):
     title = find_text(root, "title") or ""
     journal = find_text(root, "journal-title") or ""
     year = find_text(root, "year") or "0000"
-    # Month/day used to build a sortable key so newest appears first
     month = find_text(root, "month") or ""
     day = find_text(root, "day") or ""
     doi = ""
@@ -107,7 +87,6 @@ def parse_full_work(root: ET.Element):
 
     if not year.isdigit():
         year = "0000"
-    # normalise month/day to 2‑digit strings (or "00" if missing)
     month = month if month.isdigit() else "0"
     day = day if day.isdigit() else "0"
     month = month.zfill(2)
@@ -115,7 +94,6 @@ def parse_full_work(root: ET.Element):
 
     sort_key = f"{year}-{month}-{day}"
 
-    # Fallback authors string if ORCID record has no contributors
     authors_str = ", ".join(authors) if authors else "Willcox M.D.P. et al."
 
     return {
@@ -132,8 +110,6 @@ def parse_full_work(root: ET.Element):
     }
 
 
-# -------------------- EXISTING PUBLICATIONS (MARKDOWN) --------------------
-
 def slugify(title: str, year: str, max_len: int = 100) -> str:
     s = re.sub(r"[^a-z0-9\s-]", "", (title or "").lower())
     s = re.sub(r"[-\s]+", "-", s).strip("-")
@@ -143,12 +119,6 @@ def slugify(title: str, year: str, max_len: int = 100) -> str:
 
 
 def load_existing_publications(publications_dir: str):
-    """
-    Load existing markdown publications.
-    Returns:
-      - doi_map: {doi_lower: filepath}
-      - title_set: set of normalized titles
-    """
     doi_map = {}
     title_set = set()
     if not os.path.isdir(publications_dir):
@@ -164,12 +134,10 @@ def load_existing_publications(publications_dir: str):
         except Exception:
             continue
 
-        # Title from front matter
         m_title = re.search(r'^title:\s*"(.*)"\s*$', content, re.M)
         if m_title:
             title_set.add(normalize_title(m_title.group(1)))
 
-        # DOI from front matter
         m_doi = re.search(r'^doi:\s*"?([^"\n]+)"?\s*$', content, re.M)
         if m_doi:
             doi_map[m_doi.group(1).strip().lower()] = path
@@ -182,8 +150,6 @@ def escape_yaml(s: str) -> str:
 
 
 def update_front_matter(front: str, work: dict) -> str:
-    """Update or insert key metadata lines in existing YAML front matter."""
-
     def set_or_add(key: str, raw_value: str, quoted: bool = True):
         nonlocal front
         if raw_value is None:
@@ -212,10 +178,6 @@ def update_front_matter(front: str, work: dict) -> str:
 
 
 def update_existing_file(path: str, work: dict) -> bool:
-    """
-    Update metadata in an existing markdown file using ORCID work data.
-    Returns True if file was changed.
-    """
     try:
         with open(path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
@@ -225,7 +187,6 @@ def update_existing_file(path: str, work: dict) -> bool:
     if not content.lstrip().startswith("---"):
         return False
 
-    # Split front matter and body
     parts = content.split("---", 2)
     if len(parts) < 3:
         return False
@@ -242,7 +203,6 @@ def update_existing_file(path: str, work: dict) -> bool:
 
 
 def write_new_publication_md(publications_dir: str, work: dict):
-    """Create a new markdown file for a work."""
     slug = slugify(work["title"], work["year"])
     filepath = os.path.join(publications_dir, f"{slug}.md")
 
@@ -280,8 +240,6 @@ def write_new_publication_md(publications_dir: str, work: dict):
     return slug
 
 
-# -------------------- MAIN --------------------
-
 def main():
     repo_root = os.environ.get("GITHUB_WORKSPACE") or os.environ.get("REPO_ROOT") or os.getcwd()
     orcid_id = os.environ.get("ORCID_ID") or DEFAULT_ORCID
@@ -310,19 +268,15 @@ def main():
         title_norm = normalize_title(work.get("title", ""))
 
         if doi_lower and doi_lower in doi_map:
-            # Update existing file metadata from ORCID
             path = doi_map[doi_lower]
             if update_existing_file(path, work):
                 updated += 1
-            # Small delay to be nice to ORCID API
             time.sleep(0.1)
             continue
 
         if title_norm and title_norm in title_set:
-            # Likely already present via title match; skip creating duplicate
             continue
 
-        # New work -> create markdown file
         slug = write_new_publication_md(publications_dir, work)
         added += 1
         title_set.add(title_norm or slug)
@@ -339,4 +293,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

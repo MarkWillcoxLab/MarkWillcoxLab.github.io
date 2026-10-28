@@ -1,8 +1,5 @@
-// Main JavaScript for Mark Willcox Research Group Website
-
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -18,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
@@ -28,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Animate elements on scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -42,26 +37,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Observe elements for animation
     const animateElements = document.querySelectorAll('.card, .research-area, .team-member, .publication-item, .news-item');
     animateElements.forEach(el => {
         observer.observe(el);
     });
 
-    // Contact form handling
     const contactForm = document.querySelector('#contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
             const formData = new FormData(this);
             const name = formData.get('name');
             const email = formData.get('email');
             const subject = formData.get('subject');
             const message = formData.get('message');
             
-            // Simple validation
             if (!name || !email || !subject || !message) {
                 showAlert('Please fill in all fields.', 'danger');
                 return;
@@ -72,19 +63,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Simulate form submission
             showAlert('Thank you for your message! We will get back to you soon.', 'success');
             this.reset();
         });
     }
 
-    // Email validation function
     function isValidEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
 
-    // Alert function
     function showAlert(message, type) {
         const alertDiv = document.createElement('div');
         alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
@@ -96,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector('.container');
         container.insertBefore(alertDiv, container.firstChild);
         
-        // Auto-dismiss after 5 seconds
         setTimeout(() => {
             if (alertDiv.parentNode) {
                 alertDiv.remove();
@@ -104,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
 
-    // Publication search functionality
     const publicationSearch = document.querySelector('#publicationSearch');
     if (publicationSearch) {
         publicationSearch.addEventListener('input', function() {
@@ -125,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Team member filter
     const teamFilter = document.querySelector('#teamFilter');
     if (teamFilter) {
         teamFilter.addEventListener('change', function() {
@@ -143,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Research area accordion
     const researchToggles = document.querySelectorAll('.research-toggle');
     researchToggles.forEach(toggle => {
         toggle.addEventListener('click', function() {
@@ -162,7 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Back to top button
     const backToTopBtn = document.createElement('button');
     backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
     backToTopBtn.className = 'btn btn-primary back-to-top';
@@ -195,7 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Image lazy loading
     const images = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -210,7 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     images.forEach(img => imageObserver.observe(img));
 
-    // Add loading animation to buttons
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -226,13 +207,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize tooltips
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-    // Initialize popovers
     const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl);

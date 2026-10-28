@@ -413,7 +413,6 @@ title: Publications
 </section>
 
 <script>
-// Filter functionality
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('publicationSearch');
     const typeFilters = document.querySelectorAll('input[name="typeFilter"]');
@@ -430,16 +429,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const pubYear = pub.getAttribute('data-year') || '';
             const pubText = pub.textContent.toLowerCase();
             
-            // Check type filter
             const typeMatch = selectedType === 'all' || pubType === selectedType;
-            
-            // Check year filter
             const yearMatch = selectedYear === 'all' || pubYear === selectedYear;
-            
-            // Check search filter
             const searchMatch = !searchTerm || pubText.includes(searchTerm);
             
-            // Show/hide based on all filters
             if (typeMatch && yearMatch && searchMatch) {
                 pub.style.display = 'block';
             } else {
@@ -448,7 +441,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add event listeners
     if (searchInput) {
         searchInput.addEventListener('keyup', filterPublications);
     }
