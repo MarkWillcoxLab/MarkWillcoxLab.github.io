@@ -109,9 +109,9 @@ title: Home
         {% assign latest_news = site.news | sort: 'date' | reverse | where_exp: "item", "item.list_news != false" %}
         {% if latest_news.size > 0 %}
         <div class="row">
-            {% for item in latest_news limit: 6 %}
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100 border-0 shadow-sm">
+            {% for item in latest_news limit: 8 %}
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 border-0 shadow-sm news-card-compact">
                     {% if item.image %}
                     {% assign card_img = item.image | replace: ' ', '%20' | relative_url %}
                     {% if item.card_image_fit == "contain" %}
@@ -119,7 +119,7 @@ title: Home
                         <img src="{{ card_img }}" alt="{{ item.title }}">
                     </div>
                     {% else %}
-                    <img src="{{ card_img }}" class="card-img-top" alt="{{ item.title }}" style="height: 180px; object-fit: cover;">
+                    <img src="{{ card_img }}" class="card-img-top" alt="{{ item.title }}" style="height: 144px; object-fit: cover;">
                     {% endif %}
                     {% endif %}
                     <div class="card-body">

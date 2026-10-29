@@ -247,6 +247,20 @@ p {
     object-fit: contain;
 }
 
+.news-card-compact .news-card-media {
+    height: 144px;
+}
+
+.news-card-compact .card-body {
+    padding: 1.25rem;
+}
+
+.news-card-compact .card-title {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin-bottom: 0.75rem;
+}
+
 
 
 .card-title {
