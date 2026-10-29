@@ -6,6 +6,7 @@ permalink: /news/mukesh-kumar-dorothy-carlborg-research-award-2026/
 image: "/assets/images/octnewsupdate/mukesh-carlborg-award.jpg"
 hero_image: "/assets/images/octnewsupdate/mukesh-carlborg-award.jpg"
 thumbnail_only: true
+card_image_fit: "contain"
 hero_max_width_percent: 35
 justify_content: true
 ---

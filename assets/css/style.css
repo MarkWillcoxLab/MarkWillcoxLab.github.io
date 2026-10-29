@@ -224,6 +224,29 @@ p {
     object-fit: cover;
 }
 
+.news-card-media {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    background: #e5e7eb;
+}
+
+.news-card-media::before {
+    content: '';
+    position: absolute;
+    inset: -24px;
+    background: var(--news-card-bg) center / cover no-repeat;
+    filter: blur(18px) brightness(0.85);
+}
+
+.news-card-media img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 
 .card-title {

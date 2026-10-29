@@ -113,7 +113,14 @@ title: Home
             <div class="col-lg-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
                     {% if item.image %}
-                    <img src="{{ item.image | replace: ' ', '%20' | relative_url }}" class="card-img-top" alt="{{ item.title }}" style="height: 180px; object-fit: cover;">
+                    {% assign card_img = item.image | replace: ' ', '%20' | relative_url %}
+                    {% if item.card_image_fit == "contain" %}
+                    <div class="news-card-media" style="--news-card-bg: url('{{ card_img }}');">
+                        <img src="{{ card_img }}" alt="{{ item.title }}">
+                    </div>
+                    {% else %}
+                    <img src="{{ card_img }}" class="card-img-top" alt="{{ item.title }}" style="height: 180px; object-fit: cover;">
+                    {% endif %}
                     {% endif %}
                     <div class="card-body">
                         <p class="text-muted small mb-2">{{ item.date | date: "%B %d, %Y" }}</p>
