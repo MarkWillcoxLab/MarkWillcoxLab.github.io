@@ -1,5 +1,5 @@
 ---
-sort_key: "2013-11-01"
+sort_key: "2013-00-00"
 title: "A laboratory assessment of factors that affect bacterial adhesion to contact lenses"
 authors: "Dutta, D., Willcox, M.D.P."
 type: "journal"

@@ -9,5 +9,5 @@ issue: "9"
 pages: "art. no. 1436"
 doi: "10.3390/antibiotics12091436"
 url: "https://doi.org/10.3390/antibiotics12091436"
-sort_key: "2023-09-12"
+sort_key: "2023-09-00"
 ---

@@ -1,5 +1,5 @@
 ---
-sort_key: "2007-04-01"
+sort_key: "2007-00-00"
 title: "Pseudomonas aeruginosa infection and inflammation during contact lens wear: A review"
 authors: "Willcox, M.D.P."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-12-20"
+sort_key: "2001-00-00"
 title: "Adhesion of Pseudomonas aeruginosa ocular isolates to mucin"
 authors: "Aristoteli, L.P., Willcox, M.D.P."
 type: "journal"

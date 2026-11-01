@@ -6,5 +6,5 @@ year: 2026
 journal: "ACS Infectious Diseases"
 doi: "10.1021/acsinfecdis.6c00072"
 url: "https://doi.org/10.1021/acsinfecdis.6c00072"
-sort_key: "2026-06-26"
+sort_key: "2026-07-10"
 ---

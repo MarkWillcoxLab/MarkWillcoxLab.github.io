@@ -1,5 +1,5 @@
 ---
-sort_key: "2001-08-01"
+sort_key: "2001-00-00"
 title: "Contact lens related corneal infections"
 authors: "Willcox, M.D.P., Holden, B.A."
 type: "journal"

@@ -1,5 +1,5 @@
 ---
-sort_key: "1998-02-01"
+sort_key: "1998-00-00"
 journal: "Journal of Medical Microbiology"
 title: "Interactions between Candida species and platelets"
 authors: "Willcox, M.D.P., Webb, B.C., Thakur, A., Harty, D.W.S."

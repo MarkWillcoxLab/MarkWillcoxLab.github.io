@@ -1,5 +1,5 @@
 ---
-sort_key: "1999-09-01"
+sort_key: "1999-00-00"
 journal: "Journal of Medical Microbiology"
 title: "Elucidation of the antistaphylococcal action of lactoferrin and lysozyme"
 authors: "Leitch, E.C., Willcox, M.D.P."

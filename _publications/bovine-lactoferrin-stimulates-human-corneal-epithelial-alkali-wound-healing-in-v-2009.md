@@ -1,5 +1,5 @@
 ---
-sort_key: "2009-04-01"
+sort_key: "2009-00-00"
 title: "Bovine lactoferrin stimulates human corneal epithelial alkali wound healing in vitro"
 authors: "Pattamatta, U., Willcox, M., Stapleton, F., Cole, N., Garrett, Q."
 type: "journal"
