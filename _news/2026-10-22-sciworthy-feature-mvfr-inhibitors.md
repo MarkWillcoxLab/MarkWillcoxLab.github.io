@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "Our MvfR Inhibitor Study Featured in Sciworthy"
+title: "One of Our 2026 Nature Portfolio Studies Featured in Sciworthy"
 date: 2026-10-22 09:00:00
 permalink: /news/sciworthy-feature-mvfr-inhibitors/
 image: "/assets/images/octnewsupdate/sciworthy-mvfr.jpg"
