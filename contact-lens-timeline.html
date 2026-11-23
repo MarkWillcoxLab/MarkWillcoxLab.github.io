@@ -11,6 +11,49 @@ description: Key milestones in antimicrobial selection, coating development, pre
             <div class="col-lg-9 mx-auto text-center">
                 <p class="acl-kicker">Mark Willcox · Antimicrobial contact lens research</p>
                 <h1>A timeline of the coating</h1>
+            </div>
+        </div>
+    </div>
+    <svg class="acl-motion" viewBox="0 0 1440 108" role="img" aria-label="Cross-section of a contact lens as an antimicrobial coating is laid across the surface and particles pass clear of it">
+        <defs>
+            <linearGradient id="aclLensFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+            </linearGradient>
+            <clipPath id="aclLensClip">
+                <path d="M16 88 Q720 -8 1424 88 Q720 36 16 88 Z"/>
+            </clipPath>
+            <filter id="aclCoatGlow" x="-8%" y="-80%" width="116%" height="260%">
+                <feGaussianBlur stdDeviation="2.2" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+        <path class="acl-lens" d="M16 88 Q720 -8 1424 88 Q720 36 16 88 Z"/>
+        <g clip-path="url(#aclLensClip)" transform="skewX(-16)">
+            <rect class="acl-sheen" x="0" y="8" width="90" height="100">
+                <animateTransform attributeName="transform" type="translate" dur="8.5s" repeatCount="indefinite" values="-160 0; -160 0; 1500 0; 1500 0" keyTimes="0; 0.52; 0.8; 1"/>
+            </rect>
+        </g>
+        <path class="acl-coat" pathLength="100" d="M8 78 Q720 -34 1432 78" fill="none"/>
+        <path class="acl-head" pathLength="100" d="M8 78 Q720 -34 1432 78" fill="none"/>
+        <g class="acl-specks">
+            <circle class="s1" cx="430" cy="10" r="5">
+                <animateTransform attributeName="transform" type="translate" dur="8.5s" repeatCount="indefinite" values="0 0; 0 0; 0 0; 130 28; 280 6; 280 6" keyTimes="0; 0.42; 0.5; 0.64; 0.78; 1"/>
+            </circle>
+            <circle class="s2" cx="720" cy="6" r="4.4">
+                <animateTransform attributeName="transform" type="translate" dur="8.5s" repeatCount="indefinite" values="0 0; 0 0; 0 0; 70 16; 190 2; 190 2" keyTimes="0; 0.48; 0.56; 0.68; 0.8; 1"/>
+            </circle>
+            <circle class="s3" cx="1010" cy="12" r="5.2">
+                <animateTransform attributeName="transform" type="translate" dur="8.5s" repeatCount="indefinite" values="0 0; 0 0; 0 0; -120 26; -260 4; -260 4" keyTimes="0; 0.5; 0.58; 0.7; 0.84; 1"/>
+            </circle>
+        </g>
+    </svg>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 mx-auto text-center">
                 <p class="lead mb-0">Key milestones in antimicrobial selection, coating development, preclinical studies and human evaluation, 1998–2026.</p>
             </div>
         </div>

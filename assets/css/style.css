@@ -759,6 +759,114 @@ p {
     margin-bottom: 0.75rem;
 }
 
+.acl-motion {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 0.35rem;
+    overflow: visible;
+}
+
+.acl-lens {
+    fill: url(#aclLensFill);
+    stroke: rgba(255, 255, 255, 0.92);
+    stroke-width: 1.5;
+}
+
+.acl-sheen {
+    fill: rgba(255, 255, 255, 0.42);
+    animation: acl-sheen 8.5s ease-in-out infinite;
+}
+
+.acl-coat,
+.acl-head {
+    stroke: #f7feff;
+    stroke-linecap: round;
+    fill: none;
+}
+
+.acl-coat {
+    stroke-width: 3.4;
+    filter: url(#aclCoatGlow);
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: acl-coat 8.5s ease-in-out infinite;
+}
+
+.acl-head {
+    stroke-width: 5;
+    stroke-dasharray: 7 93;
+    stroke-dashoffset: 100;
+    opacity: 0;
+    animation: acl-head 8.5s ease-in-out infinite;
+}
+
+.acl-specks circle {
+    fill: #ffffff;
+    opacity: 0;
+}
+
+.acl-specks .s1 { animation: acl-s1 8.5s ease-in-out infinite; }
+.acl-specks .s2 { animation: acl-s2 8.5s ease-in-out infinite; }
+.acl-specks .s3 { animation: acl-s3 8.5s ease-in-out infinite; }
+
+@keyframes acl-coat {
+    0%, 6% { stroke-dashoffset: 100; opacity: 0; }
+    14% { opacity: 1; }
+    46% { stroke-dashoffset: 0; opacity: 1; }
+    78% { stroke-dashoffset: 0; opacity: 1; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+}
+
+@keyframes acl-head {
+    0%, 8% { stroke-dashoffset: 100; opacity: 0; }
+    16% { opacity: 1; }
+    46% { stroke-dashoffset: 8; opacity: 1; }
+    54%, 100% { stroke-dashoffset: 8; opacity: 0; }
+}
+
+@keyframes acl-sheen {
+    0%, 52% { opacity: 0; }
+    64% { opacity: 0.7; }
+    80%, 100% { opacity: 0; }
+}
+
+@keyframes acl-s1 {
+    0%, 42% { opacity: 0; }
+    50% { opacity: 0.9; }
+    64% { opacity: 0.75; }
+    78%, 100% { opacity: 0; }
+}
+
+@keyframes acl-s2 {
+    0%, 48% { opacity: 0; }
+    56% { opacity: 0.85; }
+    68% { opacity: 0.55; }
+    80%, 100% { opacity: 0; }
+}
+
+@keyframes acl-s3 {
+    0%, 50% { opacity: 0; }
+    58% { opacity: 0.9; }
+    70% { opacity: 0.7; }
+    84%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .acl-coat {
+        animation: none;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+
+    .acl-head,
+    .acl-sheen,
+    .acl-specks circle {
+        animation: none;
+        opacity: 0;
+    }
+}
+
 .acl-phases {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
